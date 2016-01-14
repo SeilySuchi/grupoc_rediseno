@@ -91,6 +91,88 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	font-style: normal;}
 
 
+
+/* ****************** Estilos CEMACO ******************* */
+
+.home .maincontent main,
+.page-id-2 .maincontent main{ margin:-20px auto 0}
+.maincontent{max-width:960px; margin:0 auto; width:100%;}
+	.maincontent main{width:100%;}
+		.maincontent main{width:100%;}
+.lineaverde{widht:100%;height: 2px; background-color:#9db84c; max-width: 40px;margin:0 0 2px;}
+.logogrupocemaco{margin:14px 0 17px;}
+.slider-movil{display:none;}
+.slider-desktop{display:block; margin:0 auto;text-align:center;width: 1530px; clear:both;}
+.slider-desktop img { height: 325px !important; width: 1530px !important;}
+.flex-control-paging li a{background-color:#fff !important;}
+.flex-control-paging li a.flex-active{background-color:#1b238a !important;}
+.flex-control-nav { bottom: 12px !important; z-index: 99999;}
+.boton-verde{font-family: "chalet_comprime_eighty"; text-transform: uppercase; color:#fff;
+	font-size:26px;border-bottom:2px solid #8ea763;padding:9px 24px; text-decoration:none;
+	background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0.49, #ACD16D),
+	color-stop(0.5, #A6C455)
+);
+background-image: -o-linear-gradient(bottom, #ACD16D 49%, #A6C455 50%);
+background-image: -moz-linear-gradient(bottom, #ACD16D 49%, #A6C455 50%);
+background-image: -webkit-linear-gradient(bottom, #ACD16D 49%, #A6C455 50%);
+background-image: -ms-linear-gradient(bottom, #ACD16D 49%, #A6C455 50%);
+background-image: linear-gradient(to bottom, #ACD16D 49%, #A6C455 50%);
+}
+
+.boton-verde:hover{
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0.49, #BCE378),
+	color-stop(0.5, #ACCC54)
+);
+background-image: -o-linear-gradient(bottom, #BCE378 49%, #ACCC54 50%);
+background-image: -moz-linear-gradient(bottom, #BCE378 49%, #ACCC54 50%);
+background-image: -webkit-linear-gradient(bottom, #BCE378 49%, #ACCC54 50%);
+background-image: -ms-linear-gradient(bottom, #BCE378 49%, #ACCC54 50%);
+background-image: linear-gradient(to bottom, #BCE378 49%, #ACCC54 50%);
+}
+.espaciador-boton{padding:20px 0; clear:both;display:block;}
+.boton-centrado{text-align:center; margin:0 auto;}
+.prefooter{background-color:#f8f8f8; margin: 20px 0 0; width:100%;}
+	.prefooter main{max-width:960px; margin:0 auto; padding:20px 0;}
+		.prefooter main aside{width:24.5%; display:inline-block;}
+			.prefooter main aside img{display:inline-block;
+				vertical-align: middle;}
+			.prefooter main aside h2{display:inline-block;
+				padding:7px 0 0; vertical-align: middle; text-decoration:none;}
+			.prefooter main aside a{text-decoration:none;}
+.foot{background-color:#ededed;width:100%;}
+	.foot main{max-width:960px; margin:0 auto; padding:20px 0;text-align:center;}
+		.foot main h2{text-align:center;font-size:32px; margin:0 0 20px;}
+		.foot main aside{width:19%; display:inline-block;}
+.foot a:hover, .prefooter a:hover{opacity:0.7;}
+.linea-azul{background-color:#1b238a;width:120%; margin:10px 0 15px -10%;min-height:5px;}
+.espaciador{width:100%; min-height: 30px;}
+
+/* ************ menu principal ******************* */
+
+.menup{display:none;font-family: "chalet_comprime_eighty"; text-transform:uppercase;
+	color:#9db84c; font-size:25px; float:right;}
+	.grid_16 .menup a{color:#9db84c;}
+.menu-mobile-boton{display: inline-block;float: right; margin:25px 23px 0 0; width: 15%;}
+#menup-mobile{display:none;}
+.menup-mobile{height: 100%;position:absolute;}
+	.menup-mobile aside{background-color:#fff;height: 100%;width: 20%;right:0;display:inline-block;
+			float:right;position:relative;z-index: 13;}
+		.menup-mobile aside .menup{margin:25px 25px 0 0; }
+	.menup-mobile section{background-color:#ededed;height: 100%;width: 70%;right:0;display:inline-block;
+			float:right; position:relative;z-index: 12;
+			-webkit-box-shadow: 0px 0px 27px -7px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 27px -7px rgba(0,0,0,0.75);box-shadow: 0px 0px 27px -7px rgba(0,0,0,0.75); }
+
+
+
+
 /**
 |------------------------
 | =Reset default browser CSS. http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)
@@ -125,9 +207,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
 ol, ul {
 	list-style: none;
 }
@@ -155,15 +234,18 @@ img {
 |------------------------
 */
 
-body {
-	font-family: 'Open Sans', sans-serif;
+body {line-height: 1;overflow-x: hidden;
+	font-family: arial;
 	font-size: 13px;
 	line-height: 21px;
-	background: #fff;
-	color: #2f2f2f;
+	color: #5d5d5d;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
 }
+
+
+span { clear: both; color: #5d5d5d; display: block; font-family: arial;
+    font-size: 14px;line-height: 17px; margin: 0 0 8px; padding: 0;width: 100%;}
 
 .wrapper {
 	width: 100%;
@@ -274,24 +356,21 @@ p img {
 */
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Bitter', serif;
-	color: #2f2f2f;
+	font-family: "chalet_comprime_eighty"; text-transform: uppercase;
 	font-weight: normal;
 	clear: both;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 
-h1 {
+h1 {color: #1b238a;
 	font-size: 30px;
 	line-height: 36px;
-	margin-bottom: 14px;
 }
 
-h2 {
-	font-size: 28px;
+h2 {color: #1b238a; margin:0; padding:0;
+	font-size: 24px;
 	line-height: 34px;
-	margin-bottom: 20px;
 }
 
 h3 {
@@ -392,13 +471,11 @@ sub {
 
 a,
 a:visited {
-	color: #00a498;
-	text-decoration: none;
+	text-decoration: none; color:#9ac544; text-decoration:underline;
 }
 
 a:hover,
 a:focus {
-	color: #008c8c;
 }
 
 a img {
@@ -428,9 +505,13 @@ ul {
 	list-style: square;
 }
 
-ul ul {
-	list-style: circle;
-}
+ul li{    list-style-image: url('images/casita.png'); }
+
+ul li h2{padding:2px 0 0;}
+
+ul ul {list-style: circle;}
+
+ul ul li{list-style-image: url('images/punto-azul.png');}
 
 ul ul ul {
 	list-style: disc;
@@ -651,6 +732,13 @@ td, th {
 }
 
 /** Top Level Anchors */
+.menu ul li:nth-child(1) a {color: #9ac544 !important;}
+.page-id-2 .menu ul li:nth-child(2) a,
+.page-id-7 .menu ul li:nth-child(3) a,
+.page-id-9 .menu ul li:nth-child(4) a,
+.page-id-11 .menu ul li:nth-child(5) a {text-decoration:underline;}
+
+
 .menu ul li:first-child a{margin:0;}
 .menu ul a{font-family: "chalet_comprime_eighty"; text-transform: uppercase; color:#1b238a;
 	font-size:25px; margin: 0 9%;}
@@ -675,7 +763,7 @@ td, th {
 .menu ul a:focus,
 .menu ul a:hover,
 .menu ul a:active {
-	color: #9ac544;
+	text-decoration:underline;
 }
 
 /** Global List Hover */
@@ -725,31 +813,39 @@ td, th {
 	/*border: solid 1px red;*/
 }
 
-.maincontent{max-width:960px; margin:0 auto; width:100%; }
-	.maincontent main{width:100%;}
-		.maincontent main{width:100%;}
-.lineaverde{widht:100%;height: 2px; background-color:#9db84c; max-width: 40px;margin:0 0 2px;}
 
-/* ************ menu principal ******************* */
-.menup{display:none;}
-#menup-mobile{display:block;}
 
 /*============================ MEDIA QUERIES ============================*/
 
+@media only screen and (max-width: 1350px) {
+.slider-desktop{margin:0 0 0 -5%;}
+}
+
+
+@media only screen and (max-width: 1250px) {
+.slider-desktop{margin:0 0 0 -10%;}
+}
+
 /* Smaller screens | <1120px */
 @media only screen and (max-width: 1120px) {
-
+.slider-desktop{margin:0 0 0 -21%;}
 }
 
 
 /* Tablets (landscape) | <960px */
 @media only screen and (max-width: 960px) {
-
+.slider-desktop{margin:0 0 0 -28%;}
 }
 
 /* Tablets (portrait) | <800px */
 @media only screen and (max-width: 800px) {
-
+.menu ul a{font-size: 21px;}
+.wrapper {margin: 0 auto; width: 99%;}
+.slider-desktop{margin:0 0 0 -37%;}
+.flex-control-nav { left: -117px;}
+.prefooter main aside h2 {font-size: 20px;}
+.foot main aside{width:18%; margin:0 5px 0 0;}
+.foot main aside img{width:100%;}
 }
 
 
@@ -757,12 +853,29 @@ td, th {
 
 }
 
-
-
 /* Phablets (portrait) | <640px */
 @media only screen and (max-width: 640px) {
 .menup{display:block;}
-#menup-mobile{display:none;}
+.logogrupocemaco{width:268px; display:inline-block;margin: 16px 0 17px 9px;}
+.menu-desk{display:none;}
+.menu ul a {font-size: 25px; margin: 0; padding: 0; width: 100%;}
+.menu ul li {width:94%; padding:10px 0 10px 15px; border-bottom:1px solid #d1d1d1;}
+.slider-movil{display:block;}
+.slider-desktop{display:none;}
+.flex-control-nav { left:0px;}
+#header { margin-bottom: 4px;}
+.foot main{padding:20px 0 0;}
+.prefooter main aside:nth-child(2) h2,
+.prefooter main aside:nth-child(3) h2,
+.prefooter main aside:nth-child(4) h2{display:none;}
+.prefooter main aside h2 {font-size: 23px;}
+.prefooter main aside{width:15%;}
+.prefooter main aside:first-child {padding: 0 0 0 14px;width: 45%;}
+.foot main aside{width:100%;}
+	.foot main aside img{width:180px;}
+	.foot main aside img:first-child{display:none;}
+	.foot main aside:last-child{margin:13px 0 0;}
+.centrado-en-mobil{text-align:center; margin:0 auto;}
 }
 
 
