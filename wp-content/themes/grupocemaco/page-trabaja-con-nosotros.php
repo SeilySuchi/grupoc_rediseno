@@ -69,5 +69,5 @@
 	  </div>
 	</section>
       </main> <!-- end #content -->
-  </div> <!-- end .container_16 -->
+  </div> </div> <!-- end .container_16 -->
 <?php get_footer(); ?>

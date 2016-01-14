@@ -107,7 +107,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 .flex-control-paging li a{background-color:#fff !important;}
 .flex-control-paging li a.flex-active{background-color:#1b238a !important;}
 .flex-control-nav { bottom: 12px !important; z-index: 99999;}
-.boton-verde{font-family: "chalet_comprime_eighty"; text-transform: uppercase; color:#fff;
+.boton-verde{font-family: "chalet_comprime_eighty"; text-transform: uppercase; color:#fff !important;
 	font-size:26px;border-bottom:2px solid #8ea763;padding:9px 24px; text-decoration:none;
 	background-image: -webkit-gradient(
 	linear,
@@ -138,8 +138,12 @@ background-image: -ms-linear-gradient(bottom, #BCE378 49%, #ACCC54 50%);
 background-image: linear-gradient(to bottom, #BCE378 49%, #ACCC54 50%);
 }
 .espaciador-boton{padding:20px 0; clear:both;display:block;}
+.espaciador-boton-contacto{padding:5px 0;display:block;}
+	.espaciador-boton-contacto h4{display:inline-block;margin: 0 10px 0 0;}
+.espaciador-boton-nosotros{padding:40px 0;display:block;}
+	.espaciador-boton-nosotros h3{display:inline-block;letter-spacing: 0.7px;}
 .boton-centrado{text-align:center; margin:0 auto;}
-.prefooter{background-color:#f8f8f8; margin: 20px 0 0; width:100%;}
+.prefooter{background-color:#f8f8f8; margin: 20px 0 0; width:100%;display:block;clear:both;}
 	.prefooter main{max-width:960px; margin:0 auto; padding:20px 0;}
 		.prefooter main aside{width:24.5%; display:inline-block;}
 			.prefooter main aside img{display:inline-block;
@@ -154,13 +158,32 @@ background-image: linear-gradient(to bottom, #BCE378 49%, #ACCC54 50%);
 .foot a:hover, .prefooter a:hover{opacity:0.7;}
 .linea-azul{background-color:#1b238a;width:120%; margin:10px 0 15px -10%;min-height:5px;}
 .espaciador{width:100%; min-height: 30px;}
+.espaciadormin{width:100%; min-height: 10px;}
+.nosotros-left-img{float:right; text-align:center; padding: 0 0 0 15px;}
+.desk{display:block;}
+.mobile{display:none;}
+.nosotros-left-img a{color:#737373 !important;}
+.nosotros-left-img a h2{color:#737373;}
+.contactform{max-width:500px; margin:0 auto;padding:35px 0 0;}
+.contactform .ninja-forms-required-items{display:none;}
+.contactform .ninja-forms-req-symbol{float:left;display:inline-block;width:10px;padding: 2px 0 0 4px;}
+.contactform .ninja-forms-field{float:right;min-width: 400px;}
+.contactform .ninja-forms-all-fields-wrap div:nth-child(6) .ninja-forms-field{float:inherit;min-width:0px;}
+.contactform .ninja-forms-all-fields-wrap div:nth-child(6) ul{padding:0 0 0 97px;}
+.contactform .submit-wrap{float:left;}
+.contactform .submit-wrap .ninja-forms-field{min-width:0px !important; margin: 0 0 0 88px;cursor:pointer;}
+.ninja-forms-response-msg{color: red; padding:0 0 20px;}
+.ninja-forms-field-error{clear: both; display: block; width: 100%;padding:0 0 0 102px;}
+.smessage-contacto{text-align:center;width:100%;padding:10px 0; border:solid 1px #bcbbbb;}
+	.smessage-contacto h2{}
+	.smessage-contacto span{}
 
 /* ************ menu principal ******************* */
 
 .menup{display:none;font-family: "chalet_comprime_eighty"; text-transform:uppercase;
 	color:#9db84c; font-size:25px; float:right;}
 	.grid_16 .menup a{color:#9db84c;}
-.menu-mobile-boton{display: inline-block;float: right; margin:25px 23px 0 0; width: 15%;}
+.menu-mobile-boton{display: inline-block;float: right; margin:25px 14px 0 0; width: 15%;}
 #menup-mobile{display:none;}
 .menup-mobile{height: 100%;position:absolute;}
 	.menup-mobile aside{background-color:#fff;height: 100%;width: 20%;right:0;display:inline-block;
@@ -171,6 +194,153 @@ background-image: linear-gradient(to bottom, #BCE378 49%, #ACCC54 50%);
 			-webkit-box-shadow: 0px 0px 27px -7px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 27px -7px rgba(0,0,0,0.75);box-shadow: 0px 0px 27px -7px rgba(0,0,0,0.75); }
 
 
+
+/************ Guate nuestro hogar **********************/
+.gnh-landing{background-color: #fff !important;}
+.txt-gnh{margin-top: 20px;overflow: hidden;margin-bottom: -20px;}
+.txt-gnh li{display: inline-block;float: left;width: 55%;}
+.txt-gnh li:first-child{width: 40%;font-family: 'Chalet-NewYorkNineteenSixty';font-size: 45px;
+	color: #00a7e1;	text-align: center;margin-top: 35px;}
+.txt-gnh li:last-child{margin-left: 20px;margin-top: 10px;}
+.txt-gnh h1{font-family: "chalet_comprime_eighty";color: #203680;text-transform: uppercase;font-size: 28px;
+	line-height: 35px;font-weight: normal;}
+.txt-gnh h2{color: #000000;line-height: 22px;font-size: 18px;}
+.line-divisoria-gnh{background: #94be42;width: 1px;height: 160px;float: left;}
+.nuestros-pilares-center{background-color: #101e8e; margin: 20px auto 0; max-width: 960px; width: 100%;}
+.nuestros-pilares{overflow: hidden;width: 65%;margin: 0 auto;padding: 25px 0px;}
+.nuestros-pilares li{display: inline-block;width: 33%;	/*width: 25%;*/
+	float: left;text-align: center;}
+.nuestros-pilares img{width: 100%; max-width:120px;}
+.nuestros-pilares div{font-family: "chalet_comprime_eighty";text-transform: uppercase;
+	color: #fff !important;	font-size: 35px;text-align: center;
+	margin-bottom: 10px;}
+.nuestros-pilares span{	font-family: "chalet_comprime_eighty";	text-transform: uppercase;color: #fff !important;
+	font-size: 22px;margin-top: 5px !important;display: inline-block;width: 100%;}
+.nuestros-pilares span:hover{text-decoration: underline;}
+.nuestros-pilares a:hover{opacity: 0.9;}
+.grid-gnh{width: 93%;margin: 0 auto;}
+.grid-gnhspiffs li:first-child{width: 67%;}
+.grid-gnhspiffs li:nth-child(2){margin: 0 0 0 15px !important;}
+.grid-gnhspiffs li:last-child{margin:6px 0 0 15px !important;}
+.grid-gnhspiffs span{font-family: "chalet_comprime_milan";font-size: 28px;text-transform: uppercase;text-align: center;}
+.grid-gnhspiffs h1{display: inline-block;float: left;font-family: "chalet_comprime_eighty";text-transform: uppercase;
+	font-size: 35px;color: #203680;}
+.grid-gnhspiffs h2{display: inline-block;float: left;font-family: "chalet_comprime_milan";font-size: 26px;
+	text-transform: uppercase;color: #203680;margin: 5px 0px 0px 10px;}
+.grid-gnhspiffs h1:hover, .grid-gnhspiffs h2:hover{color: #203680;text-decoration: underline;}
+.cont-grid{overflow: hidden;margin-top: 10px;}
+.guatemala-nuestra span{font-family: "chalet_comprime_milan";font-size: 26px;text-transform: uppercase;	text-align: right;}
+.guatemala-nuestra a:hover, .grid-gnhspiffs a:hover{opacity: 0.5;color: #203680 !important;}
+
+/***** tabs ****/
+body.page-id-9486 #page-id-9486,
+body.page-id-9486 #page-id-9486 a,
+body.page-id-9497 #page-id-9497,
+body.page-id-9497 #page-id-9497 a,
+body.page-id-9499 #page-id-9499,
+body.page-id-9499 #page-id-9499 a,
+body.page-id-9501 #page-id-9501,
+body.page-id-9501 #page-id-9501 a
+{background-color:#5ea6de !important; color:#fff !important;}
+.rse-tcomu{display:inline-block;font-size:56px; text-transform:uppercase;
+			font-family: "chalet_comprime_milan";}
+.guate-nuestrohogar-tabs{width:104%;}
+.guate-nuestrohogar-tabs li{/*width: 24.5%;*/width: 32.5%; margin:0;}
+.guate-nuestrohogar-tcontent{border-top: 3px solid #5ea6de !important; padding: 0 15px; font-size:14px;}
+.guate-nuestrohogar-tcontent .linea-horizontal{width:100%; height:2px; background-color:#4e55a4;
+			margin:32px 0; clear:both;}
+.guate-nuestrohogar-tcontent span{line-height: 17px;}
+.guate-nuestrohogar-tcontent span br{margin: 0 0 12px;}
+.guate-nuestrohogar-tcontent .innercontent {padding: 0 0 0 15px;}
+.guate-nuestrohogar-tcontent .logosgnh{margin:0; vertical-align:top;}
+.guate-nuestrohogar-tcontent .inlinehead{width:auto !important; display:inline-block;vertical-align:top;
+		margin: -2px 12px 7px 0;}
+.guate-nuestrohogar-tcontent .logosmarcas{margin:29px 0 0;}
+.guate-nuestrohogar-tcontent .logosmarcas h3{margin:0px 0 10px;}
+.guate-nuestrohogar-tcontent ul{margin:9px 0 0;}
+	.guate-nuestrohogar-tcontent ul li{background-image: url('images/casita.png');
+			background-repeat:no-repeat; padding:3px 0 5px 20px;}
+.guate-nuestrohogar-tcontent ul li h5{margin:-4px 0 4px 0px;}
+.guate-nuestrohogar-tcontent .medioamgienteb li {margin:0 0 15px;}
+.guate-nuestrohogar-tcontent .medioamgienteb li span{width:63%;display:block}
+.guate-nuestrohogar-tcontent .medioamgienteb li span br{ margin: 0 0 8px; width: 100%;}
+.guate-nuestrohogar-tcontent .espaciador{width:100%; clear:both; height: 36px;}
+.guate-nuestrohogar-tcontent .espaciadormin{width:100%; clear:both; height: 10px;}
+.guate-nuestrohogar-tcontent .espaciadormin2{width:100%; height: 10px;}
+.guate-nuestrohogar-tcontent h3 {color:#000056;font-family: "chalet_comprime_eighty"; font-size:25px;
+		text-transform:uppercase; }
+.guate-nuestrohogar-tcontent h4 {color:#4397d9;font-family: "chalet_comprime_eighty"; font-size:35px;
+				text-transform:uppercase;margin:10px 0 0 0; }
+.guate-nuestrohogar-tcontent h5 {color:#4397d9;font-family: "chalet_comprime_eighty"; font-size:22px;
+								text-transform:uppercase; }
+.guate-nuestrohogar-tcontent h6 {color:#91b231;font-family: "chalet_comprime_eighty"; font-size:22px;
+								text-transform:uppercase; }
+.guate-nuestrohogar-tcontent h7 {color:#1b238a; font-size:48px;font-weight: bold; }
+.guatenimg-rigth{float:right; margin: 0 0 0 15px; border-bottom: 5px solid #90b22f; }
+.guate-nuestrohogar-tcontent .boton-verde{padding:5px 34px 3px;font-size: 24px; vertical-align:top;
+	border-bottom: 3px solid #8e9e49; background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.5, #9FBD4E),
+		color-stop(0.51, #91AD4B)
+	);
+	background-image: -o-linear-gradient(bottom, #9FBD4E 50%, #91AD4B 51%);
+	background-image: -moz-linear-gradient(bottom, #9FBD4E 50%, #91AD4B 51%);
+	background-image: -webkit-linear-gradient(bottom, #9FBD4E 50%, #91AD4B 51%);
+	background-image: -ms-linear-gradient(bottom, #9FBD4E 50%, #91AD4B 51%);
+	background-image: linear-gradient(to bottom, #9FBD4E 50%, #91AD4B 51%);
+}
+.guate-nuestrohogar-tcontent .boton-verde:hover{opacity:0.8;}
+.mainimg-gnh{  display: block; margin: 0 auto; max-width: 960px; text-align: center;}
+.guatenimg-main{margin: 0 0 0 14px; width: 97%;}
+.pilares-gnh-bottomb{max-width:960px; background-color:#1b238a; margin:0 auto; display:block;
+			padding:0 0 23px;}
+.pilares-gnh-bottomb h1{color:#fff;font-family: "chalet_comprime_eighty"; font-size:35px;
+								text-transform:uppercase;text-align:center; padding:23px 0 11px; }
+.pilares-gnh-bottomb ul{ width:65%; margin:0 auto; display:block;}
+.pilares-gnh-bottomb ul li{ width:32%; display:inline-block; margin: 0;text-align:center;}
+.pilares-gnh-bottomb ul li:last-child{margin:0;}
+.pilares-gnh-bottomb ul li img{display:block;margin:0 auto;max-width: 120px;}
+.pilares-gnh-bottomb ul li h3{color:#fff;font-family: "chalet_comprime_eighty"; font-size:23px;
+								text-transform:uppercase;text-align:center; padding:5px 0; }
+.fondoblanco{background-color:#fff; width:100%; margin:21px 0 0;}
+.gnh-medio-bottom{ }
+	.gnh-medio-bottom .spiffscemaco{max-width:960px; margin:0 auto;display:block;
+		padding:35px 0 24px;}
+.gnh-valores{}
+	.gnh-valores ul{}
+		.gnh-valores ul li{margin:0 25px 0 0 !important; padding:0 !important; background-image:none !important;
+				width:11% !important; display:inline-block !important; font-family:arial !important; vertical-align:top;
+				text-align:center;}
+.gnh-orgullo-mtext{color: #1b238a;font-size: 23.5px; line-height: 28px;  text-align: center;}
+.orgullochapinlist-wall { margin:33px 0 0 18px;}
+	.orgullochapinlist-wall li{margin:0 25px 0 0 !important; padding:18px 0 7px !important; background-image:none !important;
+			width:30% !important; display:inline-block !important; font-family:arial !important; vertical-align:top;
+				text-align:center;}
+				.orgullochapinlist-wall li img {width:100%;}
+				.orgullochapinlist-wall .boton-verde{margin:0 !important; float:left;font-size: 21px;
+    					padding: 5px 7px 3px;}
+				.orgullochapinlist-wall .boton-azul{display:inline-block;font-size: 21px;
+    					padding: 5px 7px 3px; float:right;color:#fff;font-family: "chalet_comprime_eighty";
+							text-transform:uppercase; border-bottom: 3px solid #000059;
+							background-image: -webkit-gradient(	linear,	left top,	left bottom,	color-stop(0.5, #394AAB),	color-stop(0.51, #2D3C84)
+);background-image: -o-linear-gradient(bottom, #394AAB 50%, #2D3C84 51%);
+background-image: -moz-linear-gradient(bottom, #394AAB 50%, #2D3C84 51%);
+background-image: -webkit-linear-gradient(bottom, #394AAB 50%, #2D3C84 51%);
+background-image: -ms-linear-gradient(bottom, #394AAB 50%, #2D3C84 51%);
+background-image: linear-gradient(to bottom, #394AAB 50%, #2D3C84 51%);}
+.orgullochapinlist-wall .boton-azul:hover{opacity:0.8;}
+.guatenimg-rigth2{margin: 20px 0 0 ;}
+.gnh-imgarbolitos{float:right;width:33%;}
+.gnh-imgarbolitos .primera{margin: 0 0 70px;}
+.logitosmedioambiente-gnh{width:100%;}
+.logitosmedioambiente-gnh img{border-bottom:0px solid #000;float:inherit;}
+.gnh-graficoarbolitos{width:57%; margin: 15px 0 15px 0; padding: 22px; border: 1px solid #CBC9C9;}
+.gnh-graficoarbolitos-mobile{display:none;}
+.gnh-graficoreciclaje{}
+.gnh-graficoreciclaje-mobile{display:none;}
+.verde{color:color: #a0bd4e;display: inline-block;}
 
 
 /**
@@ -379,8 +549,8 @@ h3 {
 	margin-bottom: 20px;
 }
 
-h4 {
-	font-size: 16px;
+h4 {color: #1b238a;font-family: "chalet_comprime_milan" !important;
+	font-size: 32px;
 	line-height: 22px;
 	margin-bottom: 22px;
 }
@@ -652,8 +822,8 @@ td, th {
 .menu ul li:hover {
 	visibility: inherit;
 }
-
-.menu ul li {
+.menu ul li:first-child {margin: 0 2% 0 0;}
+.menu ul li {margin: 0 2%;padding:0;
 	float: left;
 	position: relative;
 	word-wrap: break-word;
@@ -715,11 +885,6 @@ td, th {
 .menu ul ul.sub-menu {
 }
 
-/** Top Level List */
-.menu ul li {
-	/*border-right: solid 1px #e7e7e7;*/
-}
-
 .menu ul li:last-child {
 	border-right: none;
 }
@@ -739,9 +904,8 @@ td, th {
 .page-id-11 .menu ul li:nth-child(5) a {text-decoration:underline;}
 
 
-.menu ul li:first-child a{margin:0;}
 .menu ul a{font-family: "chalet_comprime_eighty"; text-transform: uppercase; color:#1b238a;
-	font-size:25px; margin: 0 9%;}
+	font-size:25px; }
 
 .menu ul a,
 .menu ul a:visited {
@@ -846,6 +1010,8 @@ td, th {
 .prefooter main aside h2 {font-size: 20px;}
 .foot main aside{width:18%; margin:0 5px 0 0;}
 .foot main aside img{width:100%;}
+.espaciador-boton-nosotros h3 { letter-spacing: 0;}
+.menu ul li{margin: 0 1%;}
 }
 
 
@@ -876,6 +1042,20 @@ td, th {
 	.foot main aside img:first-child{display:none;}
 	.foot main aside:last-child{margin:13px 0 0;}
 .centrado-en-mobil{text-align:center; margin:0 auto;}
+span{text-align: justify;}
+.wrapper {width: 96%;}
+.desk{display:none;}
+.mobile{display:block}
+.nosotros-left-img { float: right;padding: 15px 35px 0 0; text-align: center; width:88%;}
+.nosotros-left-img img{ width: 100%;}
+.espaciador-boton-nosotros{text-align: center;}
+.espaciador-boton-nosotros h3{display:none;}
+.espaciador-boton-contacto h4 {display: block;font-size: 35px;line-height: 31px; margin: 0 0 30px;
+    padding: 0 34px; text-align: center;}
+.espaciador-boton-contacto{text-align: center;}
+.contactform .ninja-forms-field {min-width: 257px;}
+.page-template-page-contacto h1{text-align: center;}
+
 }
 
 
