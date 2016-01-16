@@ -196,11 +196,15 @@ background-image: linear-gradient(to bottom, #BCE378 49%, #ACCC54 50%);
 
 
 /************ Guate nuestro hogar **********************/
+.heading-gnh-home {font-size: 48px;padding: 1px 0 20px;}
+	.heading-gnh-home .verde{color:#a0bd4e;}
+.gnhhead{width: 100%;}
 .gnh-landing{background-color: #fff !important;}
-.txt-gnh{margin-top: 20px;overflow: hidden;margin-bottom: -20px;}
+.gnh-landing h2{font-family: arial;text-transform: inherit;}
+.txt-gnh{margin-top: 20px;overflow: hidden;}
 .txt-gnh li{display: inline-block;float: left;width: 55%;}
 .txt-gnh li:first-child{width: 40%;font-family: 'Chalet-NewYorkNineteenSixty';font-size: 45px;
-	color: #00a7e1;	text-align: center;margin-top: 35px;}
+	color: #00a7e1;	text-align: center;margin-top: 35px;line-height: 41px;}
 .txt-gnh li:last-child{margin-left: 20px;margin-top: 10px;}
 .txt-gnh h1{font-family: "chalet_comprime_eighty";color: #203680;text-transform: uppercase;font-size: 28px;
 	line-height: 35px;font-weight: normal;}
@@ -218,40 +222,50 @@ background-image: linear-gradient(to bottom, #BCE378 49%, #ACCC54 50%);
 	font-size: 22px;margin-top: 5px !important;display: inline-block;width: 100%;}
 .nuestros-pilares span:hover{text-decoration: underline;}
 .nuestros-pilares a:hover{opacity: 0.9;}
-.grid-gnh{width: 93%;margin: 0 auto;}
+.grid-gnh{width: 100%;margin: 30px auto 0; display:block;clear:both; min-height: 550px;}
+.grid-gnhspiffs {margin:0;}
+.grid-gnhspiffs li{list-style: none;float:left;}
 .grid-gnhspiffs li:first-child{width: 67%;}
-.grid-gnhspiffs li:nth-child(2){margin: 0 0 0 15px !important;}
-.grid-gnhspiffs li:last-child{margin:6px 0 0 15px !important;}
+.grid-gnhspiffs li:first-child img{width:97%;}
+.grid-gnhspiffs li:nth-child(2){margin: 0 0 0 37px !important;}
+.grid-gnhspiffs li:last-child{margin:35px 0 0 37px !important;}
+.grid-gnhspiffs li:nth-child(2) span,
+.grid-gnhspiffs li:nth-child(3) span{margin:8px 0 0;}
+
 .grid-gnhspiffs span{font-family: "chalet_comprime_milan";font-size: 28px;text-transform: uppercase;text-align: center;}
 .grid-gnhspiffs h1{display: inline-block;float: left;font-family: "chalet_comprime_eighty";text-transform: uppercase;
-	font-size: 35px;color: #203680;}
+	font-size: 35px;color: #203680;clear:inherit;}
 .grid-gnhspiffs h2{display: inline-block;float: left;font-family: "chalet_comprime_milan";font-size: 26px;
-	text-transform: uppercase;color: #203680;margin: 5px 0px 0px 10px;}
+	text-transform: uppercase;color: #203680;margin: 0px 0px 0px 10px;clear:inherit;}
 .grid-gnhspiffs h1:hover, .grid-gnhspiffs h2:hover{color: #203680;text-decoration: underline;}
-.cont-grid{overflow: hidden;margin-top: 10px;}
+.cont-grid{overflow: hidden;}
 .guatemala-nuestra span{font-family: "chalet_comprime_milan";font-size: 26px;text-transform: uppercase;	text-align: right;}
 .guatemala-nuestra a:hover, .grid-gnhspiffs a:hover{opacity: 0.5;color: #203680 !important;}
+.page-id-7 .prefooter{ margin: 40px 0 0;}
 
 /***** tabs ****/
-body.page-id-9486 #page-id-9486,
-body.page-id-9486 #page-id-9486 a,
-body.page-id-9497 #page-id-9497,
-body.page-id-9497 #page-id-9497 a,
-body.page-id-9499 #page-id-9499,
-body.page-id-9499 #page-id-9499 a,
-body.page-id-9501 #page-id-9501,
-body.page-id-9501 #page-id-9501 a
-{background-color:#5ea6de !important; color:#fff !important;}
-.rse-tcomu{display:inline-block;font-size:56px; text-transform:uppercase;
+body.page-id-42 #page-id-42,
+body.page-id-42 #page-id-42 a,
+body.page-id-44 #page-id-44,
+body.page-id-44 #page-id-44 a,
+body.page-id-46 #page-id-46,
+body.page-id-46 #page-id-46 a
+{background-color:#5ea6de !important; color:#fff !important;border:0 solid #fff !important;}
+.rse-tcomu{display:inline-block;font-size:48px; text-transform:uppercase;
 			font-family: "chalet_comprime_milan";}
-.guate-nuestrohogar-tabs{width:104%;}
-.guate-nuestrohogar-tabs li{/*width: 24.5%;*/width: 32.5%; margin:0;}
-.guate-nuestrohogar-tcontent{border-top: 3px solid #5ea6de !important; padding: 0 15px; font-size:14px;}
+.guate-nuestrohogar-tabs{width:104%;margin:0; }
+.guate-nuestrohogar-tabs li{/*width: 24.5%;*/width: 31.5%; margin:0; list-style: none;display:inline-block;
+		font-family: "chalet_comprime_eighty";text-transform: uppercase;color:#3c4b86;font-size:25px;
+		text-align: center;padding:9px 0;border:2px solid #f4f4f4;border-bottom:0px solid #fff !important;}
+.guate-nuestrohogar-tabs li a{text-decoration: none !important; color:2e3e7d;}
+.guate-nuestrohogar-tcontent{border-top: 3px solid #5ea6de !important; padding: 23px 15px 0; font-size:14px;
+				border:2px solid #f4f4f4;}
 .guate-nuestrohogar-tcontent .linea-horizontal{width:100%; height:2px; background-color:#4e55a4;
 			margin:32px 0; clear:both;}
 .guate-nuestrohogar-tcontent span{line-height: 17px;}
+.maincemaco-gnh span{clear:inherit; width: auto;display: inherit;}
 .guate-nuestrohogar-tcontent span br{margin: 0 0 12px;}
-.guate-nuestrohogar-tcontent .innercontent {padding: 0 0 0 15px;}
+.guate-nuestrohogar-tcontent .innercontent {padding:7px 0 0 15px;}
 .guate-nuestrohogar-tcontent .logosgnh{margin:0; vertical-align:top;}
 .guate-nuestrohogar-tcontent .inlinehead{width:auto !important; display:inline-block;vertical-align:top;
 		margin: -2px 12px 7px 0;}
@@ -268,14 +282,14 @@ body.page-id-9501 #page-id-9501 a
 .guate-nuestrohogar-tcontent .espaciadormin{width:100%; clear:both; height: 10px;}
 .guate-nuestrohogar-tcontent .espaciadormin2{width:100%; height: 10px;}
 .guate-nuestrohogar-tcontent h3 {color:#000056;font-family: "chalet_comprime_eighty"; font-size:25px;
-		text-transform:uppercase; }
+		text-transform:uppercase;margin-bottom: 4px; }
 .guate-nuestrohogar-tcontent h4 {color:#4397d9;font-family: "chalet_comprime_eighty"; font-size:35px;
-				text-transform:uppercase;margin:10px 0 0 0; }
+				text-transform:uppercase;margin:10px 0 8px;clear:inherit;}
 .guate-nuestrohogar-tcontent h5 {color:#4397d9;font-family: "chalet_comprime_eighty"; font-size:22px;
-								text-transform:uppercase; }
+								text-transform:uppercase;clear:inherit; }
 .guate-nuestrohogar-tcontent h6 {color:#91b231;font-family: "chalet_comprime_eighty"; font-size:22px;
-								text-transform:uppercase; }
-.guate-nuestrohogar-tcontent h7 {color:#1b238a; font-size:48px;font-weight: bold; }
+								text-transform:uppercase;clear:inherit; }
+.guate-nuestrohogar-tcontent h7 {color:#1b238a; font-size:48px;font-weight: bold;clear:inherit; }
 .guatenimg-rigth{float:right; margin: 0 0 0 15px; border-bottom: 5px solid #90b22f; }
 .guate-nuestrohogar-tcontent .boton-verde{padding:5px 34px 3px;font-size: 24px; vertical-align:top;
 	border-bottom: 3px solid #8e9e49; background-image: -webkit-gradient(
@@ -298,6 +312,8 @@ body.page-id-9501 #page-id-9501 a
 			padding:0 0 23px;}
 .pilares-gnh-bottomb h1{color:#fff;font-family: "chalet_comprime_eighty"; font-size:35px;
 								text-transform:uppercase;text-align:center; padding:23px 0 11px; }
+.pilares-gnh-bottomb a{color:#fff;}
+.pilares-gnh-bottomb a h2{color:#fff;}
 .pilares-gnh-bottomb ul{ width:65%; margin:0 auto; display:block;}
 .pilares-gnh-bottomb ul li{ width:32%; display:inline-block; margin: 0;text-align:center;}
 .pilares-gnh-bottomb ul li:last-child{margin:0;}
@@ -341,6 +357,14 @@ background-image: linear-gradient(to bottom, #394AAB 50%, #2D3C84 51%);}
 .gnh-graficoreciclaje{}
 .gnh-graficoreciclaje-mobile{display:none;}
 .verde{color:color: #a0bd4e;display: inline-block;}
+
+.logocemaco-comu{background-image: url('images/gnh/bg-logocemaco.jpg');text-align: center;}
+.hazsonreirimgs{min-height: 650px;padding: 18px 0 0;}
+	.hazsonreirimgs img:nth-child(1){width: 60%;}
+	.hazsonreirimgs img:nth-child(2),
+	.hazsonreirimgs img:nth-child(3),
+	.hazsonreirimgs img:nth-child(4){margin: 0 0 70px 69px; width: 32%;}
+	.hazsonreirimgs img{float:left;}
 
 
 /**
@@ -528,7 +552,6 @@ p img {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "chalet_comprime_eighty"; text-transform: uppercase;
 	font-weight: normal;
-	clear: both;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
@@ -1012,6 +1035,25 @@ td, th {
 .foot main aside img{width:100%;}
 .espaciador-boton-nosotros h3 { letter-spacing: 0;}
 .menu ul li{margin: 0 1%;}
+/*Guate Nuestro Hogar*/
+.txt-gnh li:first-child{font-size: 37px;line-height: 38px; margin-top: 4%;}
+.nuestros-pilares{width: 80%;}
+#ImgGrandeTHATM{width: 100%;}
+.guatemala-nuestra img{width: 100%;}
+.guatemala-nuestra li img{width: 100%;}
+.gridlandingspiffs .FullwidthTHATM{width: 100% !important; max-width: 100% !important;}
+#ImgGrandeRightEspTHATM{width:100% !important; float:inherit !important;}
+#ImgGrandeRightTHATM{width:59% ; float:left !important;}
+.txt-gnh h2 {font-size: 16px; line-height: 19px;}
+.txt-gnh h1 {line-height: 27px;}
+.gridlandingspiffs li:first-child {width: 66%;}
+.grid-gnhspiffs li:nth-child(2),
+.grid-gnhspiffs li:nth-child(3){width:27.2%;}
+.grid-gnhspiffs li:nth-child(2) img,
+.grid-gnhspiffs li:nth-child(3) img{width:100%;}
+.grid-gnhspiffs h1{font-size: 33px;}
+.grid-gnhspiffs span {font-size: 25px;line-height: 23px;}
+.grid-gnh { min-height: 527px;}
 }
 
 
@@ -1056,11 +1098,42 @@ span{text-align: justify;}
 .contactform .ninja-forms-field {min-width: 257px;}
 .page-template-page-contacto h1{text-align: center;}
 
+/*Guatemala Nuestro Hogar*/
+.txt-gnh{margin:4px 0 0;}
+.txt-gnh li:first-child{margin-top: 15%; font-size:22px; width: 45%; }
+.txt-gnh li:last-child{width: 50%;margin:0; padding:0 0 0 11px;}
+.grid-gnhspiffs li:nth-child(2){margin: 0 !important;}
+.gridlandingspiffs li:nth-child(2), .gridlandingspiffs li:last-child{width: 48%;}
+.gridlandingspiffs li:nth-child(2){margin-right: 3% !important; margin-top: 15px !important;}
+.gridlandingspiffs li:last-child{margin-left: 0 !important; margin-top: 15px !important;}
+.line-divisoria-gnh{height: 250px;}
+.txt-gnh h1{font-size: 25px;line-height: 22px;}
+.txt-gnh h2{font-size: 17px;}
+.mmenucemaco ul{width: 100%;}
+.nuestros-pilares span{text-align: center;}
+.gridlandingspiffs li:first-child{width: 100%;}
+.grid-gnhspiffs li:first-child img { width: 100%;}
+.grid-gnhspiffs h1 {font-size: 30px;line-height: 10px;margin: 17px 5% 4px;}
+.grid-gnhspiffs h2{margin: 0 32%;}
+.grid-gnhspiffs span{font-size: 21px;}
+.grid-gnh { min-height: 520px;}
 }
 
 
 
 @media only screen and (max-width: 533px) {
+
+/*Guatemala Nuestro Hogar*/
+.txt-gnh li:first-child{width: 100%; margin-top: 1%;}
+.txt-gnh li:last-child{width: 95%;}
+.nuestros-pilares{width: 100%;}
+.line-divisoria-gnh{display: none;}
+.grid-gnhspiffs h1{font-size: 30px;}
+.grid-gnhspiffs span{font-size: 25px;}
+.gnh-graficoarbolitos-mobile{display:block; width: 100%; margin: 20px 0 0 0;}
+.gnh-graficoarbolitos{display:none;}
+.gnh-graficoreciclaje{display:none;}
+.gnh-graficoreciclaje-mobile{display:block;}
 
 }
 
@@ -1068,7 +1141,34 @@ span{text-align: justify;}
 
 /* Smartphones | <480px */
 @media only screen and (max-width: 480px) {
-
+/*********guatenuestrohogar*********/
+.rse-tcomu{font-size: 34px;}
+.tabsentienda li {  /*min-height: 42px;*/vertical-align: top; /*width: 23.5%;*/}
+.tabsentienda li:first-child{/*padding:18px 0 2px;*/}
+.tabsentienda li a{font-size: 21px;}
+.guate-nuestrohogar-tcontent ul li{padding: 1px 0 14px 23px;}
+.guate-nuestrohogar-tcontent ul {margin: 14px 0 0 5px;}
+.guatenimg-rigth{margin: 19px 0 15px;float: inherit;margin: 19px 0 15px; width: 100%;}
+.guatenimg-rigth2 {width: 97% !important; }
+.guate-nuestrohogar-tcontent span br {margin: 0 0 5px;}
+.guate-nuestrohogar-tcontent .innercontent { margin: -30px 0 0; padding: 0;}
+.guate-nuestrohogar-tcontent .linea-horizontal{margin: 17px 0;}
+.mainimg-gnh { margin: 13px auto 0; width: 100%;}
+.pilares-gnh-bottomb ul{width: 95%;}
+.pilares-gnh-bottomb ul li { /*width: 23%;*/width: 32%;vertical-align: top;}
+.pilares-gnh-bottomb ul li img { width: 100%;margin: 0 auto 9px; max-width: 86px;}
+.pilares-gnh-bottomb ul li h3{font-size:24px;}
+.guatenimg-rigth .guatenimg-rigth2 { display: block; float: inherit;  margin: 19px auto 23px; width: 73%;}
+.guate-nuestrohogar-tcontent .medioamgienteb li span {width: 100%;}
+.guate-nuestrohogar-tcontent h6{text-align: center;}
+.guate-nuestrohogar-tcontent .boton-verde{display:block;}
+.guate-nuestrohogar-tabs { width: 100%;}
+.carrouselverano{padding: 0 23px 0 56px;}
+.carrouselhazloverano .piscina{padding: 8px 0 48px;}
+.gnh-valores ul li{ width: 41% !important;}
+.guate-nuestrohogar-tcontent span { font-size: 13px;}
+.imgdesk{display:none;}
+.imgmobile{display:inherit;}
 }
 
 
