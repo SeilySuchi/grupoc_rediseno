@@ -162,6 +162,7 @@ background-image: linear-gradient(to bottom, #BCE378 49%, #ACCC54 50%);
 .nosotros-left-img{float:right; text-align:center; padding: 0 0 0 15px;}
 .desk{display:block;}
 .mobile{display:none;}
+.maincontent .mobile{display:none;}
 .nosotros-left-img a{color:#737373 !important;}
 .nosotros-left-img a h2{color:#737373;}
 .contactform{max-width:500px; margin:0 auto;padding:35px 0 0;}
@@ -257,12 +258,16 @@ body.page-id-46 #page-id-46 a
 .guate-nuestrohogar-tabs li{/*width: 24.5%;*/width: 31.5%; margin:0; list-style: none;display:inline-block;
 		font-family: "chalet_comprime_eighty";text-transform: uppercase;color:#3c4b86;font-size:25px;
 		text-align: center;padding:9px 0;border:2px solid #f4f4f4;border-bottom:0px solid #fff !important;}
-.guate-nuestrohogar-tabs li a{text-decoration: none !important; color:2e3e7d;}
+.guate-nuestrohogar-tabs li a{text-decoration: none !important; color:#2e3e7d;}
 .guate-nuestrohogar-tcontent{border-top: 3px solid #5ea6de !important; padding: 23px 15px 0; font-size:14px;
 				border:2px solid #f4f4f4;}
+.guate-nuestrohogar-tcontent2{border-top: 3px solid #5ea6de !important; padding: 23px 15px 0; font-size:14px;
+				border:2px solid #f4f4f4;}
+.guate-nuestrohogar-tcontent2 .linea-azul { margin: 10px 0 15px 0%;width: 90%;}
+.guate-nuestrohogar-tcontent2 span{list-style:none !important;}
 .guate-nuestrohogar-tcontent .linea-horizontal{width:100%; height:2px; background-color:#4e55a4;
 			margin:32px 0; clear:both;}
-.guate-nuestrohogar-tcontent span{line-height: 17px;}
+.guate-nuestrohogar-tcontent span{line-height: 17px; list-style:none;}
 .maincemaco-gnh span{clear:inherit; width: auto;display: inherit;}
 .guate-nuestrohogar-tcontent span br{margin: 0 0 12px;}
 .guate-nuestrohogar-tcontent .innercontent {padding:7px 0 0 15px;}
@@ -271,10 +276,7 @@ body.page-id-46 #page-id-46 a
 		margin: -2px 12px 7px 0;}
 .guate-nuestrohogar-tcontent .logosmarcas{margin:29px 0 0;}
 .guate-nuestrohogar-tcontent .logosmarcas h3{margin:0px 0 10px;}
-.guate-nuestrohogar-tcontent ul{margin:9px 0 0;}
-	.guate-nuestrohogar-tcontent ul li{background-image: url('images/casita.png');
-			background-repeat:no-repeat; padding:3px 0 5px 20px;}
-.guate-nuestrohogar-tcontent ul li h5{margin:-4px 0 4px 0px;}
+.guate-nuestrohogar-tcontent ul li h5{margin:-4px 0 4px 0px; list-style: none;}
 .guate-nuestrohogar-tcontent .medioamgienteb li {margin:0 0 15px;}
 .guate-nuestrohogar-tcontent .medioamgienteb li span{width:63%;display:block}
 .guate-nuestrohogar-tcontent .medioamgienteb li span br{ margin: 0 0 8px; width: 100%;}
@@ -347,7 +349,7 @@ background-image: -webkit-linear-gradient(bottom, #394AAB 50%, #2D3C84 51%);
 background-image: -ms-linear-gradient(bottom, #394AAB 50%, #2D3C84 51%);
 background-image: linear-gradient(to bottom, #394AAB 50%, #2D3C84 51%);}
 .orgullochapinlist-wall .boton-azul:hover{opacity:0.8;}
-.guatenimg-rigth2{margin: 20px 0 0 ;}
+.guatenimg-rigth2{margin: 20px 0 0 ; clear:both;}
 .gnh-imgarbolitos{float:right;width:33%;}
 .gnh-imgarbolitos .primera{margin: 0 0 70px;}
 .logitosmedioambiente-gnh{width:100%;}
@@ -359,13 +361,22 @@ background-image: linear-gradient(to bottom, #394AAB 50%, #2D3C84 51%);}
 .verde{color:color: #a0bd4e;display: inline-block;}
 
 .logocemaco-comu{background-image: url('images/gnh/bg-logocemaco.jpg');text-align: center;}
+.maincemaco-gnh .logocemaco-comu .desk{display:inline;}
 .hazsonreirimgs{min-height: 650px;padding: 18px 0 0;}
 	.hazsonreirimgs img:nth-child(1){width: 60%;}
 	.hazsonreirimgs img:nth-child(2),
 	.hazsonreirimgs img:nth-child(3),
 	.hazsonreirimgs img:nth-child(4){margin: 0 0 70px 69px; width: 32%;}
 	.hazsonreirimgs img{float:left;}
-
+.spiffscemaco{ margin:0 0 30px;}
+.spiffscemaco ul{ margin:0; padding:0 0 25px; width: 70%; margin:0 auto; list-style:none;}
+.spiffscemaco ul li{display: inline-block; margin: 0 5.1% 0 0; max-width: 49.5%; text-align: center; vertical-align:top; list-style:none;}
+.spiffscemaco ul li img{position: relative; z-index: 1; border: 1px solid #CBC9C9; width: 100%}
+.spiffscemaco ul li:last-child{margin: 0; }
+.spiffscemaco ul li:hover{opacity:0.7;}
+.botonspiffsnormal{font-family: "chalet_comprime_eighty";text-transform: uppercase;padding:5px 0 0;}
+  .botonspiffsnormal a{color:#283583 !important; text-decoration:none; font-size:25px;font-weight: normal;}
+  
 
 /**
 |------------------------
@@ -1022,6 +1033,9 @@ td, th {
 /* Tablets (landscape) | <960px */
 @media only screen and (max-width: 960px) {
 .slider-desktop{margin:0 0 0 -28%;}
+.spiffscemaco ul li img{max-width: 260px;}
+.botonspiffs a{width: 228px; padding: 7px 0 5px;margin: 192px 0 0 17px;}
+.botonspiffsnormal a{width: 228px; padding: 7px 0 5px;margin: 192px 0 0 17px;}
 }
 
 /* Tablets (portrait) | <800px */
@@ -1054,6 +1068,21 @@ td, th {
 .grid-gnhspiffs h1{font-size: 33px;}
 .grid-gnhspiffs span {font-size: 25px;line-height: 23px;}
 .grid-gnh { min-height: 527px;}
+.hazsonreirimgs img:nth-child(2), .hazsonreirimgs img:nth-child(3), .hazsonreirimgs img:nth-child(4) {
+    margin: 0 0 6px 13px; width: 38.7%;}
+.hazsonreirimgs img:nth-child(1) { width: 59%;}
+.mainimg-gnh{width: 100%;}
+.hazsonreirimgs { min-height: 560px;}
+.tabsentienda li:first-child { padding: 10px 0;}
+.spiffscemaco ul li img { max-width: 210px;}
+.botonspiffs a {font-size: 26px;  margin: 159px 0 0 14px; width: 184px;}
+.botonspiffsnormal a {font-size: 26px;  margin: 159px 0 0 14px; width: 184px;}
+.gnh-imgarbolitos{padding: 0 0 0 18px;}
+.gnh-imgarbolitos img{width: 100%;}
+.guatenimg-rigth2 {  margin: 20px 0 0 24px;}
+.reciclaje2{ border: 1px solid #CBC9C9; clear: both;  margin: 41px 0 0 24px;}
+.espaciador-boton-nosotros h3 {max-width: 252px;}
+
 }
 
 
@@ -1117,6 +1146,21 @@ span{text-align: justify;}
 .grid-gnhspiffs h2{margin: 0 32%;}
 .grid-gnhspiffs span{font-size: 21px;}
 .grid-gnh { min-height: 520px;}
+.logocemaco-comu{background-image:none;margin:0 0 13px; width:100%}
+.logocemaco-comu img {width:100%}
+.maincemaco-gnh .logocemaco-comu .desk{display:none;}
+.guate-nuestrohogar-tcontent .innercontent { margin: 7px 0 0; }
+.heading-gnh-home { font-size: 30px; padding: 1px 0 9px;}
+.rse-tcomu { font-size: 31px;}
+.guate-nuestrohogar-tcontent .boton-verde{margin: 0 19%;}
+h2 {font-size: 23px;line-height: 23px;}
+.spiffscemaco ul {padding: 0;}
+.spiffscemaco ul li{ width: 100%; max-width:100%; text-align: center; padding: 0 0 67px; display: list-item;}
+.spiffscemaco ul li a {text-align:center;}
+.spiffscemaco ul li img { margin: 0 auto; width:300px; max-width: 300px;}
+.botonspiffs a {    font-size: 30px;  margin: 231px 0 0 -125px;  width: 250px;padding: 11px 0 8px;}
+.botonspiffsnormal a {    font-size: 30px;  margin: 231px 0 0 -125px;  width: 250px;padding: 11px 0 8px;}
+
 }
 
 
@@ -1142,16 +1186,12 @@ span{text-align: justify;}
 /* Smartphones | <480px */
 @media only screen and (max-width: 480px) {
 /*********guatenuestrohogar*********/
-.rse-tcomu{font-size: 34px;}
 .tabsentienda li {  /*min-height: 42px;*/vertical-align: top; /*width: 23.5%;*/}
 .tabsentienda li:first-child{/*padding:18px 0 2px;*/}
 .tabsentienda li a{font-size: 21px;}
-.guate-nuestrohogar-tcontent ul li{padding: 1px 0 14px 23px;}
-.guate-nuestrohogar-tcontent ul {margin: 14px 0 0 5px;}
 .guatenimg-rigth{margin: 19px 0 15px;float: inherit;margin: 19px 0 15px; width: 100%;}
 .guatenimg-rigth2 {width: 97% !important; }
 .guate-nuestrohogar-tcontent span br {margin: 0 0 5px;}
-.guate-nuestrohogar-tcontent .innercontent { margin: -30px 0 0; padding: 0;}
 .guate-nuestrohogar-tcontent .linea-horizontal{margin: 17px 0;}
 .mainimg-gnh { margin: 13px auto 0; width: 100%;}
 .pilares-gnh-bottomb ul{width: 95%;}
@@ -1161,7 +1201,6 @@ span{text-align: justify;}
 .guatenimg-rigth .guatenimg-rigth2 { display: block; float: inherit;  margin: 19px auto 23px; width: 73%;}
 .guate-nuestrohogar-tcontent .medioamgienteb li span {width: 100%;}
 .guate-nuestrohogar-tcontent h6{text-align: center;}
-.guate-nuestrohogar-tcontent .boton-verde{display:block;}
 .guate-nuestrohogar-tabs { width: 100%;}
 .carrouselverano{padding: 0 23px 0 56px;}
 .carrouselhazloverano .piscina{padding: 8px 0 48px;}
@@ -1169,6 +1208,13 @@ span{text-align: justify;}
 .guate-nuestrohogar-tcontent span { font-size: 13px;}
 .imgdesk{display:none;}
 .imgmobile{display:inherit;}
+.maincontent .mobile{display:inherit;}
+.spiffscemaco ul li img {width:89%;max-width: 400px;}
+.botonspiffs a { font-size: 28px; margin:246px 0 0 -103px; padding: 8px 0; width: 217px;}
+.botonspiffsnormal a { font-size: 28px; margin:246px auto 0; padding: 8px 0; width: 217px;}
+body.page-id-42 #page-id-42, body.page-id-42 #page-id-42 a, body.page-id-44 #page-id-44, body.page-id-44 #page-id-44 a, body.page-id-46 #page-id-46, body.page-id-46 #page-id-46 a
+{ padding: 11px 0;}
+
 }
 
 

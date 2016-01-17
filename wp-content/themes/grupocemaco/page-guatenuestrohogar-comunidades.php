@@ -10,14 +10,14 @@
 
 <!-- Fancybox -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="wp-content/themes/cemaco/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-<link rel="stylesheet" href="wp-content/themes/cemaco/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script type="text/javascript" src="wp-content/themes/cemaco/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-<link rel="stylesheet" href="wp-content/themes/cemaco/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-<script type="text/javascript" src="wp-content/themes/cemaco/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-<script type="text/javascript" src="wp-content/themes/cemaco/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-<link rel="stylesheet" href="wp-content/themes/cemaco/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-<script type="text/javascript" src="wp-content/themes/cemaco/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<link rel="stylesheet" href="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<link rel="stylesheet" href="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet" href="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 
 <div class="maincontent">
@@ -86,8 +86,9 @@ m&#225;s grandes. Esto tiene un efecto multiplicador, pues apoya la educaci&#243
 situaci&#243;n del hogar.--></span>
 
 <h4>Vivienda Digna</h4>
-<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/comunidades2.jpg" class="guatenimg-rigth"/>
-<h3>Voluntariado</h3>
+<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/comunidades2.jpg" class="guatenimg-rigth desk"/>
+<h2>Voluntariado</h2>
+<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/comunidades2.jpg" class="guatenimg-rigth mobile"/>
 <span>En CEMACO somos apasionados, nos arremangamos las manos y trabajamos con gusto, m&#225;s si es
 para ver sonre&#237;r a otro guatemalteco. Es por eso que llevamos ya muchos a&ntilde;os participando en
 diferentes actividades de voluntariado. Buscamos impactar directamente en las comunidades
@@ -99,8 +100,9 @@ Juvenil y Camino Seguro, y apoyamos el medio ambiente sembrando arbolitos con De
 
 <h1>ORGANIZACIONES QUE APOYAMOS</h1>
 <div class="innercontent">
-<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/comunidades3.jpg" class="guatenimg-rigth"/>
-<h3>HELPS</h3>
+<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/comunidades3.jpg" class="guatenimg-rigth desk"/>
+<h2>HELPS</h2>
+<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/comunidades3.jpg" class="guatenimg-rigth mobile"/>
 <span>Por muchos a&ntilde;os, hemos sido aliados orgullosos de Helps International, contribuyendo al incre&#237;ble
 trabajo que realizan en beneficio de miles de guatemaltecos y reconociendo el potencial de los
 productos ONIL que promueven.<div class="espaciadormin2"></div>
@@ -112,8 +114,9 @@ la salud de cada uno de sus miembros. Para conocer m&#225;s, visita</span>
 <img src="wp-content/themes/cemaco/images/guatenuestrohogar/logo-helps.png" class="logosgnh"/> -->
 </p></br>
 
-<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/comunidades4.jpg" class="guatenimg-rigth"/>
-<h3>H&#225;BITAT PARA LA HUMANIDAD</h3>
+<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/comunidades4.jpg" class="guatenimg-rigth desk"/>
+<h2>H&#225;BITAT PARA LA HUMANIDAD</h2>
+<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/comunidades4.jpg" class="guatenimg-rigth mobile"/>
 <span>En 2014 entramos en alianza con H&#225;bitat para la Humanidad buscando <!--mejorar las condiciones
 habitacionales de nuestros colaboradores y -->contribuir en la construcci&#243;n de hogares para familias
 necesitadas<!-- a trav&#233;s de nuestro apoyo econ&#243;mico y del trabajo de nuestro voluntariado-->. H&#225;bitat
@@ -124,8 +127,9 @@ construcci&#243;n de vivienda social. Este a&ntilde;o, alcanzaron las 75,000 sol
 <div class="espaciador"></div>
 
 
-<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/Us.jpg" class="guatenimg-rigth"/>
-<h3>UNIVERSIDADES Y ENTIDADES DE EDUCACION</h3>
+<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/Us.jpg" class="guatenimg-rigth desk"/>
+<h2>UNIVERSIDADES Y ENTIDADES DE EDUCACION</h2>
+<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/Us.jpg" class="guatenimg-rigth mobile"/>
 <span>Apoyamos a varias universidades de Guatemala con donaciones monetarias y en especie ya que sabemos
 que son ellos quienes forman a los futuros l&#237;deres de nuestro pa&#237;s y quienes han formado a muchos de nuestros colaboradores.
 Entra las universidades que reciben apoyo de Cemaco se encuentran la Universidad del Istmo,
@@ -136,15 +140,17 @@ y la Universidad Rafael Land&#237;var.</span></p></br>
 <div class="espaciador"></div>
 
 <div class="logocemaco-comu">
-  <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/jugueton-bebe.jpg" class=""/>
+  <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/jugueton-bebe.jpg" class="desk"/>
+  <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/logojugueton-m.png" class="mobile"/>
 </div>
 
 
    <h1>NUESTRA NI&ntilde;EZ, NUESTRO FUTURO</h1>
 		    <fieldset></br>
 					<div class="content">
-	    <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_elecciones.jpg" class="guatenimg-rigth"/>
-				    <h3>ELECCIONES INFANTILES / FUNDACI&oacute;N NI&ntilde;OS Y NI&ntilde;AS EN ACCI&oacute;N</h3><br>
+	    <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_elecciones.jpg" class="guatenimg-rigth desk"/>
+				    <h2>ELECCIONES INFANTILES / FUNDACI&oacute;N NI&ntilde;OS Y NI&ntilde;AS EN ACCI&oacute;N</h2><br>
+		<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_elecciones.jpg" class="guatenimg-rigth mobile"/>
 		        <p>Las Elecciones Infantiles se celebran cada 4 a&ntilde;os en congruencia con las
 		        Elecciones Generales. Con ella se promueve la participaci&oacute;n c&iacute;vica de los ni&ntilde;os
 		        y la educaci&oacute;n sobre la democraciabrindando recursos, planeaci&oacute;n y espacio
@@ -162,8 +168,9 @@ y la Universidad Rafael Land&#237;var.</span></p></br>
 		    <fieldset>
 
 <div class="espaciador"></div>
-	<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_hazsonreir.jpg" class="guatenimg-rigth"/>
+	<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_hazsonreir.jpg" class="guatenimg-rigth desk"/>
 		      <h2>HAZ SONRE&iacute;R A UN NI&ntilde;O</h2>
+	<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_hazsonreir.jpg" class="guatenimg-rigth mobile"/>
 		      <p>Las fiestas de fin de a&ntilde;o constituyen una &eacute;poca linda y llena de emociones,
 		      especialmente para los m&aacute;s peque&ntilde;itos. Todos los a&ntilde;os, JUGUET&#211;N invita a sus
 		      clientes para que nos ayuden a brindarles una sonrisa a muchos ni&ntilde;os,
@@ -176,7 +183,10 @@ y la Universidad Rafael Land&#237;var.</span></p></br>
 		      nuestros voluntarios entregan personalmente todos los regalos, acompa&ntilde;ando
 		      la actividad con una rica refacci&oacute;n, juegos y mucha alegr&iacute;a para todos los ni&ntilde;os
 		      </p>
-<img src="wp-content/themes/blog-bebejugueton/images/landing/ghn/comunidades-hazsonreir3.jpg" class="elecciones-infantiles mobile mobile borde-gris hazsorirmobile-img" />
+<a class="boton-verde boton-gnh" id="helps" href="javascript:;">GALER&#237;A DE FOTOS</a>			  
+
+<div class="espaciador"></div>
+			  
 		    </fieldset>
 <div class="hazsonreirimgs desk">
 	<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_grid-hazsonreir.jpg"/>
@@ -186,8 +196,9 @@ y la Universidad Rafael Land&#237;var.</span></p></br>
 </div>
 <div class="espaciador1"></div>
 
-<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_lactanciamaterna.jpg" class="guatenimg-rigth"/>
+<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_lactanciamaterna.jpg" class="guatenimg-rigth desk"/>
 <h2>LACTANCIA MATERNA</h2>
+<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_lactanciamaterna.jpg" class="guatenimg-rigth mobile"/>
 		    <fieldset>
 		      <span>A trav&eacute;s de Bebe Jugueton apoyamos a La Liga de la Leche en su misi&oacute;n de
 		      educar y empoderar a madres sobre la lactancia materna. </span>
@@ -243,8 +254,9 @@ y la Universidad Rafael Land&#237;var.</span></p></br>
 		      <a href="http://boyshopegirlshope.org/guatemala/Home" target="_new">www.boyshopegirlshope.org/guatemala/Home</a></span>
 		    </fieldset>
 			<div class="espaciador"></div>
-		    <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_laurora.jpg" class="guatenimg-rigth"/>
+		    <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_laurora.jpg" class="guatenimg-rigth desk"/>
 		      <h2>ZOOL&oacute;GICO LA AURORA</h2>
+			<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_laurora.jpg" class="guatenimg-rigth mobile"/>
 				<fieldset>
 		      <span>El zool&oacute;gico fue inaugurado en 1924 y busca garantizar y promover la
 		      preservaci&oacute;n y conservaci&oacute;n de todas las especies animales, tanto nativas
@@ -257,8 +269,9 @@ y la Universidad Rafael Land&#237;var.</span></p></br>
 		      tu familia o amigos.</span>
 		    </fieldset>
 			<div class="espaciador"></div>
-		    <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_museo.jpg" class="guatenimg-rigth"/>
-		      <h3>MUSEO DEL NI&ntilde;O</h3>
+		    <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_museo.jpg" class="guatenimg-rigth desk"/>
+		      <h2>MUSEO DEL NI&ntilde;O</h2>
+			<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_museo.jpg" class="guatenimg-rigth mobile"/>
 		    <fieldset>
 		      <span>El Museo de los Ni&ntilde;os de Guatemala abri&oacute; sus puertas en febrero del a&ntilde;o 2000,
 		      naci&oacute; como una iniciativa de apoyo a la educaci&oacute;n de la ni&ntilde;ez Guatemalteca. El
@@ -271,21 +284,10 @@ y la Universidad Rafael Land&#237;var.</span></p></br>
 		    </fieldset>
 	<div class="espaciador"></div>
 		    <fieldset>
-		      <h3>OLIMPIADAS DE LECTURA</h3>
+		      <h2>OLIMPIADAS DE LECTURA</h2>
 		      <fieldset><span>Las Olimpiadas de Lectura impulsa el talento de muchos j&oacute;venes que buscan desarrollarse, alcanzar sus metas y
 		preparase para ser l&iacute;deres.</span></fieldset>
 	<div class="espaciador"></div>
-	<!--<div class="espaciador1"></div>
-		      <span>UNIVERSIDADES Y ENTIDADES DE EDUCACION</span>
-		      <fieldset>Apoyamos a varias universidades de Guatemala con donaciones ya que sabemos que son ellos quienes forman a
-		      los futuros l&iacute;deres de nuestro pa&iacute;s y quienes han formado a muchos de nuestros colaboradores. Entra las
-		      universidades que reciben apoyo de Cemaco se encuentran la Universidad del Istmo, la Universidad Francisco
-		      Marroqu&iacute;n, la Universidad Galileo, la Universidad del Valle de Guatemala y la Universidad Rafael Land&iacute;var.<fieldset>
-		<div class="espaciador1"></div>
-<div class="logos-universidades">
-		<img src="wp-content/themes/blog-bebejugueton/images/landing/ghn/comunidades9.png" alt="" class="desk"/>
-		<img src="wp-content/themes/blog-bebejugueton/images/landing/ghn/comunidades9-mobil.jpg" alt="" class="mobile"/>
-</div>-->
 		    </fieldset>
 
 
@@ -296,16 +298,17 @@ y la Universidad Rafael Land&#237;var.</span></p></br>
 </section>
 
 
-<a href="<?php echo site_url(); ?>/?page_id=7"><img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/guate-nuestro-hogar-mainb.jpg" class="mainimg-gnh"/></a>
+<a href="<?php echo site_url(); ?>/?page_id=7"><img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/guate-nuestro-hogar-mainb.jpg" class="mainimg-gnh desk"/></a>
+<a href="<?php echo site_url(); ?>/?page_id=7"><img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/guate-nuestro-hogar-mainb-m.jpg" class="mainimg-gnh mobile"/></a>
 
 <div class="pilares-gnh-bottomb"><h1>NUESTROS PILARES</h1><ul>
-<li><a href="?page_id=9486"><img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/bbottom-comunidades3.png"/>
+<li><a href="<?php echo site_url(); ?>/?page_id=42"><img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/bbottom-comunidades3.png"/>
 <h2>Comunidades</h2></a></li>
 
-<li><a href="?page_id=9497"><img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/bbottom-medioambiente3.png"/>
+<li><a href="<?php echo site_url(); ?>/?page_id=44"><img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/bbottom-medioambiente3.png"/>
 <h2>MEDIO AMBIENTE</h2></a></li>
 
-<li><a href="?page_id=9499"><img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/bbottom-equipo3.png"/>
+<li><a href="<?php echo site_url(); ?>/?page_id=46"><img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/bbottom-equipo3.png"/>
 <h2>NUESTRO EQUIPO</h2></a></li>
 
 <!--<li><a href="?page_id=9501"><img src="wp-content/themes/cemaco/images/guatenuestrohogar/bbottom-orgullo3.png"/>
