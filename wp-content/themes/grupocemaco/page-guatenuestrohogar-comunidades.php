@@ -96,7 +96,8 @@ guatemaltecas a trav&#233;s de alianzas con diferentes organizaciones que trabaj
 nuestro pa&#237;s. Realizamos actividades de vivienda con Helps International y H&#225;bitat para la
 Humanidad. Apoyamos a nuestra juventud a trav&#233;s de oportunidades de voluntariado con Esperanza
 Juvenil y Camino Seguro, y apoyamos el medio ambiente sembrando arbolitos con Defensores de la
- Naturaleza y G-22.</span></p></br>
+ Naturaleza y G-22. En el 2015 m&aacute;s de 550 voluntarios participaron en nuestras diferentes actividades,
+ impacto la vida de m&aacute;s de 20000.</span></p></br>
 
 <h1>ORGANIZACIONES QUE APOYAMOS</h1>
 <div class="innercontent">
@@ -122,7 +123,8 @@ habitacionales de nuestros colaboradores y -->contribuir en la construcci&#243;n
 necesitadas<!-- a trav&#233;s de nuestro apoyo econ&#243;mico y del trabajo de nuestro voluntariado-->. H&#225;bitat
 inici&#243; operaciones en Guatemala en 1979 y cuenta ya con m&#225;s de 35 a&ntilde;os de experiencia en la
 construcci&#243;n de vivienda social. Este a&ntilde;o, alcanzaron las 75,000 soluciones habitacionales.</span></p>
-<a class="boton-verde boton-gnh" id="habitat" href="javascript:;">GALER&#237;A DE FOTOS</a><!--
+<a class="boton-verde boton-gnh" target="_blank" href="https://www.facebook.com/media/set/?set=a.10153858806277538.1073741961.285750117537&type=3">GALER&#237;A DE FOTOS</a>
+<!--<a class="boton-verde boton-gnh" id="habitat" href="javascript:;">GALER&#237;A DE FOTOS</a>
 <img src="wp-content/themes/cemaco/images/guatenuestrohogar/habitat.png" class="logosgnh"/> -->
 <div class="espaciador"></div>
 
@@ -319,21 +321,31 @@ y la Universidad Rafael Land&#237;var.</span></p></br>
 jQuery(document).ready(function() {
   $("#helps").click(function() {
     $.fancybox([
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_1.jpg',
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_2.jpg',
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_3.jpg',
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_4.jpg',
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_5.jpg',
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_6.jpg',
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_7.jpg',
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_8.jpg',
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_9.jpg',
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_10.jpg',
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_11.jpg',
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_12.jpg',
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_13.jpg',
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_14.jpg',
-      'wp-content/themes/grupocemaco/images/gnh/Helps/helps_15.jpg'
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(1).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(2).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(3).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(4).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(5).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(6).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(7).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(8).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(9).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(11).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(21).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(22).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(23).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(24).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(25).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(26).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(27).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(28).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(29).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(30).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(31).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(32).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(33).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(34).jpg',
+      'wp-content/themes/grupocemaco/images/gnh/Helps/v2/helps_(35).jpg'
     ], {
       'padding'			: 0,
       'transitionIn'		: 'none',
