@@ -936,7 +936,7 @@ td, th {
 }
 
 /** Top Level Anchors */
-.menu ul li:nth-child(1) a {color: #9ac544 !important;}
+/**.menu ul li:nth-child(1) a {color: #9ac544 !important;}*/
 .page-id-2 .menu ul li:nth-child(2) a,
 .page-id-7 .menu ul li:nth-child(3) a,
 .page-id-9 .menu ul li:nth-child(4) a,
