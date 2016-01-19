@@ -21,6 +21,27 @@
 
 <div class="foot"><main>
   <h2>NUESTRA FAMILIA</h2>
+
+
+<?php if ( is_page( array('7','42','44','46'))  ) {?>
+
+    <aside><a href="//cemaco.com/?page_id=9482" target="_blank">
+    <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/footer/cemaco-pic.jpg"/>
+    <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/footer/cemaco-logo.jpg"/>
+    </a></aside>
+
+    <aside><a href="//jugueton.com/?page_id=1975" target="_blank">
+    <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/footer/jugueton-pic.jpg"/>
+    <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/footer/jugueton-logo.jpg"/>
+    </a></aside>
+
+    <aside><a href="//bebejugueton.com/?page_id=1480" target="_blank">
+    <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/footer/bebe-pic.jpg"/>
+    <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/footer/bebe-logo.jpg"/>
+    </a></aside>
+
+<?php } else { ?>
+
     <aside><a href="//cemaco.com/" target="_blank">
     <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/footer/cemaco-pic.jpg"/>
     <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/footer/cemaco-logo.jpg"/>
@@ -35,6 +56,9 @@
     <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/footer/bebe-pic.jpg"/>
     <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/footer/bebe-logo.jpg"/>
     </a></aside>
+
+<?php }?>
+
 
     <aside><a href="//www.facebook.com/legoguatemala/" target="_blank">
     <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/footer/lego-pic.jpg"/>

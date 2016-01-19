@@ -65,7 +65,7 @@
 	    <li><h2>DESCUENTOS Y FINANCIAMIENTOS ESPECIALES EN TODAS NUESTRAS TIENDAS</h2></li>
 	  </ul>
 	  <div class="espaciador-boton centrado-en-mobil">
-	    <a class="boton-verde" href="<?php echo site_url(); ?>/rrhh">APLICA HOY</a>
+	    <a class="boton-verde" href="<?php echo site_url(); ?>/?page_id=48">APLICA HOY</a>
 	  </div>
 	</section>
       </main> <!-- end #content -->

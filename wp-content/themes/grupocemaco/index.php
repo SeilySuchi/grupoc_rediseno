@@ -14,7 +14,7 @@
 	    <span>Nos da gusto que personas como t&uacute;, buenos ciudadanos, apasionados por el servicio y orgullosos de lo nuestro quieran a unirse a nuestro
 	    gran equipo. Si eres de estas personas, te invitamos a que ingreses tus datos y apliques a nuestras plazas disponibles.</span>
 	  <div class="espaciador-boton boton-centrado">
-	    <a class="boton-verde" href="<?php echo site_url(); ?>/rrhh">APLICA AQU&#237;</a>
+	    <a class="boton-verde" href="<?php echo site_url(); ?>/?page_id=48">APLICA AQU&#237;</a>
 	  </div>
       </main> <!-- end #content -->
   </div> <!-- end .container_16 -->

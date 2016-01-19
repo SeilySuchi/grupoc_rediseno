@@ -32,7 +32,7 @@
 	    <li><span>El cliente es lo m&aacutes importante y tenemos un genuino deseo de servirle, y servirle bien.</span></li>
 	  </ul>
 	  <div class="espaciador-boton centrado-en-mobil">
-	    <a class="boton-verde" href="<?php echo site_url(); ?>/rrhh">APLICA AQU&iacute</a>
+	    <a class="boton-verde" href="<?php echo site_url(); ?>/?page_id=48">APLICA AQU&iacute</a>
 	  </div>
 	</section>
     <div class="espaciador"></div>

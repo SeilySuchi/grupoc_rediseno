@@ -376,6 +376,9 @@ background-image: linear-gradient(to bottom, #394AAB 50%, #2D3C84 51%);}
 .spiffscemaco ul li:hover{opacity:0.7;}
 .botonspiffsnormal{font-family: "chalet_comprime_eighty";text-transform: uppercase;padding:5px 0 0;}
   .botonspiffsnormal a{color:#283583 !important; text-decoration:none; font-size:25px;font-weight: normal;}
+.proximamente{text-align: center;padding:60px 0 80px;}
+	.proximamente .verde{color: #a0bd4e;display: inline-block;}
+	.proximamente span{text-align: 35px;text-align: center;}
 
 
 /**
