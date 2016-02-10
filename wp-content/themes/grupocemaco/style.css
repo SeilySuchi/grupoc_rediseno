@@ -186,7 +186,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 .login-submit{
   text-align: center !important;
 }
-.login-submit input[type='submit'], .col-a input[type='submit']{
+.login-submit input[type='submit'], .col-a input[type='submit'], .register-form input[type='submit']{
   font-family: chalet_comprime_sixty;
   text-transform: uppercase;
   text-align: center;
@@ -202,6 +202,58 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
   background-image: -ms-linear-gradient(bottom, #2947B3 50%, #213789 50%);
   background-image: linear-gradient(to bottom, #2947B3 50%, #213789 50%);
   border: 0;
+  cursor: pointer;
+}
+.register-form input[type='submit']{
+  float: right;
+}
+.register-form .wppb-user-forms ul{
+  max-width: 100%;
+}
+.register-form #wppb_register_pre_form_message{
+  display: none;
+}
+.register-form .wppb-default-first-name, .register-form .wppb-default-last-name, .register-form .wppb-default-e-mail, .register-form .wppb-default-password, .register-form .wppb-default-repeat-password{
+  width: 50%;
+  float: left;
+}
+.register-form .wppb-default-first-name label, .register-form .wppb-default-last-name label, .register-form .wppb-default-password label, .register-form .wppb-default-repeat-password label{
+  width: 50%;
+}
+.register-form input{
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border linear .2s,box-shadow linear .2s;
+  -moz-transition: border linear .2s,box-shadow linear .2s;
+  -o-transition: border linear .2s,box-shadow linear .2s;
+  transition: border linear .2s,box-shadow linear .2s;
+}
+
+.register-form input[type='text']:focus, .register-form input[type='password']:focus, .register-form input[type='email']:focus{
+  border-color: rgba(82,168,236,0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+}
+.register-form .wppb-default-first-name input[type='text'], .register-form .wppb-default-password input[type='password']{
+    width: 90%;
+}
+.register-form .wppb-default-last-name input[type='text'], .register-form .wppb-default-e-mail, .register-form .wppb-default-e-mail input[type='email'], .register-form .wppb-default-repeat-password input[type='password']{
+  width: 100%;
+}
+.wppb-required{
+  float: left;
+  width: auto;
+  margin: 0;
 }
 
 /* ****************** Estilos CEMACO ******************* */
@@ -214,7 +266,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 .lineaverde{widht:100%;height: 2px; background-color:#9db84c; max-width: 40px;margin:0 0 2px;}
 .logogrupocemaco{margin:14px 0 17px;}
 .slider-movil{display:none;}
-.slider-desktop{display:block; margin:0 auto;text-align:center;width: 1530px; clear:both;}
+.slider-desktop{display:block; margin:0 auto;email-align:center;width: 1530px; clear:both;}
 .slider-desktop img { height: 325px !important; width: 1530px !important;}
 .flex-control-paging li a{background-color:#fff !important;}
 .flex-control-paging li a.flex-active{background-color:#1b238a !important;}

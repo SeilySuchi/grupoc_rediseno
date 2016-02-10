@@ -18,7 +18,7 @@
     <h2>/ GRUPOCEMACO</h2></a></aside>
   </main>
 </div>
-<?php if ( is_page( array('60','58'))  ) {?>
+<?php if ( is_page( array('60','58','68'))  ) {?>
 <?php } else { ?>
 <div class="foot"><main>
   <h2>NUESTRA FAMILIA</h2>
