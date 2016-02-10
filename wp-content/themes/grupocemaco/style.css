@@ -129,6 +129,80 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
   margin:0 auto;
   width:100%;
 }
+.greyback {
+    background-color: #EBEBEB;
+    padding: 30px 0;
+}
+.greyback section {
+    background-color: #fff;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+    -khtml-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+    border-bottom: 6px solid #A7C959;
+    padding-top: 25px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.greyback section h3{
+  font-family: "chalet_comprime_eighty";
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 35px;
+  text-align: center;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+.greyback section .col-a{
+  float: left;
+  width: 49%;
+  text-align: center;
+}
+.greyback section .col-b{
+  float: right;
+  width: 44%;
+  border-left: 1px solid #dadada;
+  padding: 0 23px 0 41px;;
+}
+.greyback section p{
+  margin-bottom: 10px;
+  font-family: 'Helvetica Neue';
+  font-size: 14px;
+}
+.greyback section .col-b p{
+  text-align: left;
+}
+.login-username label, .login-password label{
+  width: 100% !important;
+}
+.login-username input[type='text'], .login-password input[type='password']{
+  width: 100% !important;
+}
+.login-submit{
+  text-align: center !important;
+}
+.login-submit input[type='submit'], .col-a input[type='submit']{
+  font-family: chalet_comprime_sixty;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 27px;
+  padding: 7px 29px 8px;
+  border-bottom: 3px solid #192a6b;
+  color: #fff;
+  border-radius: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #2947B3), color-stop(0.5, #213789));
+  background-image: -o-linear-gradient(bottom, #2947B3 50%, #213789 50%);
+  background-image: -moz-linear-gradient(bottom, #2947B3 50%, #213789 50%);
+  background-image: -webkit-linear-gradient(bottom, #2947B3 50%, #213789 50%);
+  background-image: -ms-linear-gradient(bottom, #2947B3 50%, #213789 50%);
+  background-image: linear-gradient(to bottom, #2947B3 50%, #213789 50%);
+  border: 0;
+}
 
 /* ****************** Estilos CEMACO ******************* */
 
