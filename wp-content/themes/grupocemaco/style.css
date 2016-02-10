@@ -3,7 +3,7 @@ Theme Name: Grupo CEMACO
 Theme URI: http://cemaco.com
 Author: cemaco.com
 Author URI: http://cemaco.com/
-Description: Diseño personalizado para Grupo CEMACO
+Description: DiseÃ±o personalizado para Grupo CEMACO
 Version: 1.0
 Tags: grupocemaco
 License: GNU General Public License, version 3 (GPLv3)
@@ -90,7 +90,45 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	font-weight: normal;
 	font-style: normal;}
 
-
+/*Mi cv Form*/
+.required {
+  color: #cc0000;
+  font-size: 15px;
+  display: grid;
+  width: auto;
+}
+.cemaco .section {
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+}
+.cemaco .tab-pane {
+    background: #F9F9F9;
+    overflow: hidden;
+}
+.cemaco .tabbable {
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 3px;
+}
+.cemaco .tab-pane h2 {
+    background-color: #F0F0F0;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #D9D9D9;
+    color: #283583;
+    font-size: 2.1em;
+    font-weight: normal;
+    line-height: 29px;
+    padding-left: 5px;
+    padding-top: 9px;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px 1px #FFF;
+}
+.main-form{
+  max-width:1020px;
+  margin:0 auto;
+  width:100%;
+}
 
 /* ****************** Estilos CEMACO ******************* */
 
