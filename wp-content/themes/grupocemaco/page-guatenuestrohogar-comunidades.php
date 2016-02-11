@@ -51,7 +51,7 @@
 <div id="wrapper-tiendas" class="hfeed contenidopagein guate-nuestrohogar-tcontent">
 	<div class="maincemaco-act maincemaco-gnh">
     <article>
-<span>Uno de nuestros valores es trabajar por el bienestar de todo miembro de grupo Cemaco, de nuestro pa&#237;s y de nuestro medio ambiente.
+<span>Uno de nuestros valores es trabajar por el bienestar de todo miembro de grupo CEMACO, de nuestro pa&#237;s y de nuestro medio ambiente.
     Queremos que todos los Guatemaltecos vivan sus hogares y apoyamos a fortalecer la calidad de vivienda de nuestras comunidades.</span>
 <!--
 <h3>OBJETIVOS DEL DEPARTAMENTO DE RESPONSABILIDAD SOCIAL EMPRESARIAL, RSE</h3></br>
@@ -80,24 +80,14 @@ peque&ntilde;os y medianos productores de todas las regiones de Guatemala. Hemos
 de 183 proveedores locales, creando relaciones a largo plazo<!--, pues con la mayor&#237;a de ellos hemos
 trabajado por varios a&ntilde;os consecutivos-->. En nuestras visitas a las diferentes regiones del pa&#237;s, hemos
 encontrado los m&#225;s diversos productos artesanales, tanto textiles, en madera y cer&#225;mica como
-gastron&#243;micas (caf&#233;, chocolates y dulces t&#237;picos).</p></br>
+gastron&#243;micos (caf&#233;, chocolates y dulces t&#237;picos).</p></br>
 <!--Muchos artesanos han logrado profesionalizarse a trav&#233;s de Guatemala Nuestra y atender mercados
 m&#225;s grandes. Esto tiene un efecto multiplicador, pues apoya la educaci&#243;n de los hijos y mejora la
 situaci&#243;n del hogar.--></span>
 
 <h4>Vivienda Digna</h4>
-<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/comunidades2.jpg" class="guatenimg-rigth desk"/>
-<h2>Voluntariado</h2>
-<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/comunidades2.jpg" class="guatenimg-rigth mobile"/>
-<span>En CEMACO somos apasionados, nos arremangamos las manos y trabajamos con gusto, m&#225;s si es
-para ver sonre&#237;r a otro guatemalteco. Es por eso que llevamos ya muchos a&ntilde;os participando en
-diferentes actividades de voluntariado. Buscamos impactar directamente en las comunidades
-guatemaltecas a trav&#233;s de alianzas con diferentes organizaciones que trabajan en beneficio de
-nuestro pa&#237;s. Realizamos actividades de vivienda con Helps International y H&#225;bitat para la
-Humanidad. Apoyamos a nuestra juventud a trav&#233;s de oportunidades de voluntariado con Esperanza
-Juvenil y Camino Seguro, y apoyamos el medio ambiente sembrando arbolitos con Defensores de la
- Naturaleza y G-22. En el 2015 m&aacute;s de 550 voluntarios participaron en nuestras diferentes actividades,
- impacto la vida de m&aacute;s de 20000.</span></p></br>
+<span>Queremos tener un impacto positivo en las comunidades donde servimos. Por ello, unimos esfuerzos para
+que m&aacute;s familias puedan tener un hogar digno.</span>
 
 <h1>ORGANIZACIONES QUE APOYAMOS</h1>
 <div class="innercontent">
@@ -129,15 +119,45 @@ construcci&#243;n de vivienda social. Este a&ntilde;o, alcanzaron las 75,000 sol
 <div class="espaciador"></div>
 
 
+<h2>ECOFILTRO</h2>
+<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/comunidades-ecofiltro.jpg" class="guatenimg-rigth desk"/>
+<span>En Guatemala el 90% de las fuentes de agua est&aacute;n contaminadas.  Las enfermedades diarreicas son
+la segunda mayor causa de muerte en ni&ntilde;os menores de 5 a&ntilde;os, y  de estas la mayor&iacute;a son causadas
+por beber agua sucia.  Adem&aacute;s las familias guatemaltecas gastan alrededor de Q250.00 mensuales en
+le&ntilde;a para hervir el agua y las botellas pl&aacute;sticas de agua pura toman 450 a&ntilde;os en desintegrarse.
+Ecofiltro inicio como una fundaci&oacute;n hace m&aacute;s de 30 a&ntilde;os con programas de agua y saneamiento, en
+el 2009 se convirti&oacute; en una empresa social sin fines de lucro, 'Ecofiltro SA', con el fin de
+ampliar la capacidad y llegar a un mayor n&uacute;mero de familias. Su meta para el 2020 es que todas
+las escuelas de Guatemala tengan agua pura.  Nosotros entendemos la necesidad de proveer servicios
+b&aacute;sicos y por eso apoyamos a Ecofiltro a trav&eacute;s de donaciones y voluntariados. En el 2016
+Cemaco estar&aacute; apoyando a alcanzar la meta de Ecofiltro, facilitando la instalaci&oacute;n de filtros
+en 300 escuelas.</span></p>
+<div class="espaciador"></div>
+
+<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/comunidades2.jpg" class="guatenimg-rigth desk"/>
+<h2>Voluntariado</h2>
+<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/comunidades2.jpg" class="guatenimg-rigth mobile"/>
+<span>En CEMACO somos apasionados, nos arremangamos las manos y trabajamos con gusto, m&#225;s si es
+para ver sonre&#237;r a otro guatemalteco. Es por eso que llevamos ya muchos a&ntilde;os participando en
+diferentes actividades de voluntariado. Buscamos impactar directamente en las comunidades
+guatemaltecas a trav&#233;s de alianzas con diferentes organizaciones que trabajan en beneficio de
+nuestro pa&#237;s. Realizamos actividades de vivienda con Helps International y H&#225;bitat para la
+Humanidad. Apoyamos a nuestra juventud a trav&#233;s de oportunidades de voluntariado con Esperanza
+Juvenil y Camino Seguro, y apoyamos el medio ambiente sembrando arbolitos con Defensores de la
+ Naturaleza y G-22. En el 2015 m&aacute;s de 550 voluntarios participaron en nuestras diferentes actividades,
+ impacto la vida de m&aacute;s de 20000.</span></p></br>
+
+</div>
+
 <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/Us.jpg" class="guatenimg-rigth desk"/>
 <h2>UNIVERSIDADES Y ENTIDADES DE EDUCACION</h2>
 <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/Us.jpg" class="guatenimg-rigth mobile"/>
-<span>Apoyamos a varias universidades de Guatemala con donaciones monetarias y en especie ya que sabemos
+<span>Apoyamos a varias universidades de Guatemala con donaciones monetarias y en especie, ya que sabemos
 que son ellos quienes forman a los futuros l&#237;deres de nuestro pa&#237;s y quienes han formado a muchos de nuestros colaboradores.
-Entra las universidades que reciben apoyo de Cemaco se encuentran la Universidad del Istmo,
+Entra las universidades que reciben apoyo de CEMACO se encuentran la Universidad del Istmo,
 la Universidad Francisco Marroqu&#237;n, la Universidad Galileo, la Universidad del Valle de Guatemala
 y la Universidad Rafael Land&#237;var.</span></p></br>
-</div>
+
 
 <div class="espaciador"></div>
 
@@ -185,10 +205,10 @@ y la Universidad Rafael Land&#237;var.</span></p></br>
 		      nuestros voluntarios entregan personalmente todos los regalos, acompa&ntilde;ando
 		      la actividad con una rica refacci&oacute;n, juegos y mucha alegr&iacute;a para todos los ni&ntilde;os
 		      </p>
-<a class="boton-verde boton-gnh" id="helps" href="javascript:;">GALER&#237;A DE FOTOS</a>			  
+<a class="boton-verde boton-gnh" id="helps" href="javascript:;">GALER&#237;A DE FOTOS</a>
 
 <div class="espaciador"></div>
-			  
+
 		    </fieldset>
 <div class="hazsonreirimgs desk">
 	<img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/comunidades_jugueton_grid-hazsonreir.jpg"/>
