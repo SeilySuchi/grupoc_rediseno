@@ -18,7 +18,8 @@
     <h2>/ GRUPOCEMACO</h2></a></aside>
   </main>
 </div>
-
+<?php if ( is_page( array('60','58','68'))  ) {?>
+<?php } else { ?>
 <div class="foot"><main>
   <h2>NUESTRA FAMILIA</h2>
 
@@ -70,7 +71,7 @@
     <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/footer/constru-logo.jpg"/>
     </a></aside>
 </main>
-
+<?php }?>
   </br>
   <center><span><small>&#169; 2016 GrupoCEMACO. Todos los derechos reservados</small></span></center>
   </br>
