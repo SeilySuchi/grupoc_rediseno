@@ -90,7 +90,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	font-weight: normal;
 	font-style: normal;}
 
-
+.wrapper b, b{font-weight: bold;}
 
 /* ****************** Estilos CEMACO ******************* */
 
@@ -204,8 +204,8 @@ background-image: linear-gradient(to bottom, #BCE378 49%, #ACCC54 50%);
 .gnh-landing h2{font-family: arial;text-transform: inherit;}
 .txt-gnh{margin-top: 20px;overflow: hidden;}
 .txt-gnh li{display: inline-block;float: left;width: 55%;}
-.txt-gnh li:first-child{width: 40%;font-family: 'Chalet-NewYorkNineteenSixty';font-size: 45px;
-	color: #00a7e1;	text-align: center;margin-top: 35px;line-height: 41px;}
+.txt-gnh li:first-child{/*width: 40%;font-family: 'Chalet-NewYorkNineteenSixty';font-size: 45px;
+	color: #00a7e1;	text-align: center;margin-top: 35px;line-height: 41px;*/}
 .txt-gnh li:last-child{margin-left: 20px;margin-top: 10px;}
 .txt-gnh h1{font-family: "chalet_comprime_eighty";color: #203680;text-transform: uppercase;font-size: 28px;
 	line-height: 35px;font-weight: normal;}
@@ -379,6 +379,31 @@ background-image: linear-gradient(to bottom, #394AAB 50%, #2D3C84 51%);}
 .proximamente{text-align: center;padding:60px 0 80px;}
 	.proximamente .verde{color: #a0bd4e;display: inline-block;}
 	.proximamente span{text-align: 35px;text-align: center;}
+.ninja-forms-all-fields-wrap .textarea-wrap .direccion{height: 40px !important;}
+
+.gnh-landing img.interno {width: 60%; display: inline-block;     margin: 0 24px 26px 0px;}
+.gnh-landing .interno { display: inline-block;text-align: justify;  vertical-align: middle; width: 33%;}
+.txt-gnh.pilares{width: 100%; display: inline-block;     text-align: center; margin: 0 0 27px 0;}
+.txt-gnh.pilares li{width: 13%; float: none; vertical-align: middle; }
+.gnh-landing .txt-gnh.pilares li:first-child{font-size: 0;line-height: 0; margin-top: 0;}
+.txt-gnh.pilares li:nth-child(2){width: 13.5%;     margin: 0 108px 0 101px;}
+.txt-gnh.pilares li img{width:100%}
+.txt-gnh.pilares li a {font-family: "chalet_comprime_eighty";    color: #203680;    text-transform: uppercase;    font-size: 18px;    line-height: 22px;    font-weight: normal;     text-decoration: underline;}
+.txt-gnh.contenido{width: 100%; display: inline-block; }
+.txt-gnh.contenido li{width: 46.5%;     margin: 0 12px 20px 0; padding: 15px 7px 15px 7px; display: inline-block; float: left; background-color: #e2e2e2;     color: #5d5d5d; text-align: justify;     min-height: 300px;}
+.txt-gnh.contenido li:nth-child(5){width: 96%;     min-height: auto;}
+.txt-gnh.contenido li:nth-child(5) img{width: 48%; margin:0 16px 0 0;}
+.txt-gnh.contenido li:nth-child(5) h1{margin: 26px 0 0 0;}
+.txt-gnh.contenido li:last-child{width: 97.5%; padding: 0;}
+.txt-gnh.contenido li .voluntarios{display: inline-block; float: left;}
+.txt-gnh.contenido li img{width: 100%}
+.txt-gnh.contenido li h1{text-align: center; font-size: 29px;}
+.txt-gnh.contenido li h1:nth-of-type(2){font-size: 43.5px;     margin: 8px 0 38px 0;}
+.txt-gnh.contenido li a{color:#203680; text-decoration: underline;}
+.txt-gnh.contenido li a.boton-verde{font-size: 25px; padding: 11px 69px 8px}
+.gnh-landing .interno h1{color: #233a87; font-size: 28px; font-family: 'Chalet-NewYorkNineteenSixty';
+		margin-bottom: 18px; text-align: left; text-transform: inherit;}
+
 
 
 /**
@@ -1055,7 +1080,7 @@ td, th {
 .espaciador-boton-nosotros h3 { letter-spacing: 0;}
 .menu ul li{margin: 0 1%;}
 /*Guate Nuestro Hogar*/
-.txt-gnh li:first-child{font-size: 37px;line-height: 38px; margin-top: 4%;}
+.txt-gnh li:first-child{/*font-size: 37px;line-height: 38px; margin-top: 4%;*/}
 .nuestros-pilares{width: 80%;}
 #ImgGrandeTHATM{width: 100%;}
 .guatemala-nuestra img{width: 100%;}
@@ -1087,11 +1112,18 @@ td, th {
 .guatenimg-rigth2 {  margin: 20px 0 0 24px;}
 .reciclaje2{ border: 1px solid #CBC9C9; clear: both;  margin: 41px 0 0 24px;}
 .espaciador-boton-nosotros h3 {max-width: 252px;}
+  .txt-gnh.contenido li h1{font-size: 24px;}
+  .txt-gnh.contenido li h1:nth-of-type(2){font-size: 36px; margin: 0 0 17px 0 !important;     font-size: 4.48vw !important;}
+  .txt-gnh.contenido li:nth-child(5) h1{margin: 17px 0 0 0;     font-size: 3vw; }
 
 }
 
 
 @media only screen and (max-width: 768px) {
+.txt-gnh.contenido li{width: 42.5%; margin: 0 12px 20px 3%}
+.txt-gnh.contenido li:nth-child(5){width: 92%}
+.txt-gnh.contenido li:nth-child(5) img{width: 45%}
+.txt-gnh.contenido li:last-child{width: 94%}
 
 }
 
@@ -1134,7 +1166,7 @@ span{text-align: justify;}
 
 /*Guatemala Nuestro Hogar*/
 .txt-gnh{margin:4px 0 0;}
-.txt-gnh li:first-child{margin-top: 15%; font-size:22px; width: 45%; }
+.txt-gnh li:first-child{/*margin-top: 15%; font-size:22px; width: 45%; */}
 .txt-gnh li:last-child{width: 50%;margin:0; padding:0 0 0 11px;}
 .grid-gnhspiffs li:nth-child(2){margin: 0 !important;}
 .gridlandingspiffs li:nth-child(2), .gridlandingspiffs li:last-child{width: 48%;}
@@ -1165,6 +1197,17 @@ h2 {font-size: 23px;line-height: 23px;}
 .spiffscemaco ul li img { margin: 0 auto; width:300px; max-width: 300px;}
 .botonspiffs a {    font-size: 30px;  margin: 231px 0 0 -125px;  width: 250px;padding: 11px 0 8px;}
 .botonspiffsnormal a {    font-size: 30px;  margin: 231px 0 0 -125px;  width: 250px;padding: 11px 0 8px;}
+/*gnh*/
+.txt-gnh.contenido li{  min-height: 339px;}
+.txt-gnh.contenido li h1{line-height: 22px}
+.txt-gnh.contenido li:last-child{min-height: auto}
+.txt-gnh.contenido li{width: 41.5%; min-height: 348px;}
+.txt-gnh.contenido li:nth-child(5) img{width: 100%}
+.txt-gnh.contenido li h1:nth-of-type(2){font-size: 8.8vw !important; margin:20px 0 31px 0 !important;}
+.txt-gnh.contenido li:nth-child(5) h1{font-size: 5.9vw;}
+.txt-gnh.contenido li a.boton-verde{    font-size: 25px;    padding: 11px 107px 8px;    margin: 0 0 0 23%;}
+.txt-gnh.contenido li:nth-child(5){padding-bottom:33px ;}
+/*gnh*/
 
 }
 
@@ -1173,7 +1216,7 @@ h2 {font-size: 23px;line-height: 23px;}
 @media only screen and (max-width: 533px) {
 
 /*Guatemala Nuestro Hogar*/
-.txt-gnh li:first-child{width: 100%; margin-top: 1%;}
+.txt-gnh li:first-child{/*width: 100%; margin-top: 1%;*/}
 .txt-gnh li:last-child{width: 95%;}
 .nuestros-pilares{width: 100%;}
 .line-divisoria-gnh{display: none;}
@@ -1219,6 +1262,27 @@ h2 {font-size: 23px;line-height: 23px;}
 .botonspiffsnormal a { font-size: 28px; margin:246px auto 0; padding: 8px 0; width: 217px;}
 body.page-id-42 #page-id-42, body.page-id-42 #page-id-42 a, body.page-id-44 #page-id-44, body.page-id-44 #page-id-44 a, body.page-id-46 #page-id-46, body.page-id-46 #page-id-46 a
 { padding: 11px 0;}
+/*gnh*/
+.txt-gnh.pilares li a{    font-size: 17px;}
+.gnh-landing img.interno{width: 100%}
+.gnh-landing .interno{width: 100%}
+.txt-gnh.pilares li{width: 25%}
+.txt-gnh.pilares li:nth-child(2){width: 26.5%;     margin: 0 2%;}
+.txt-gnh.contenido li{width: 94%; margin: 12px 0 0 1%;}
+.txt-gnh.contenido li img{width: 97%}
+.txt-gnh.contenido li h1{    margin-bottom: 15px;}
+.txt-gnh.contenido li{min-height: auto}
+.txt-gnh.contenido li h1:nth-of-type(2){    font-size: 8.6vw !important;}
+.txt-gnh.contenido li a.boton-verde{    margin: 0 0 0 10vw;}
+.txt-gnh.contenido li:nth-child(5){width: 94%}
+.txt-gnh.contenido li:last-child img{width: 100%}
+.txt-gnh.contenido li:last-child{width: 97%}
+.txt-gnh.contenido li img{width: 100%}
+.gnh-landing .interno h1 br{display: none;}
+.gnh-landing .interno h1{text-align: center;}
+/*gnh*/
+.desktop { display: none !important;}
+.gnh-landing img.interno {width: 100%;}
 
 }
 

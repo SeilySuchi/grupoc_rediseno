@@ -90,7 +90,7 @@ M&aacute;S 400 TONELADAS EN LA HUELLA DE CARBONO Y HEMOS REFORESTADO YA M&aacute
 <h3>PENSAMIENTO ECOL&oacute;GICO DE CEMACO</h3><div class="espaciadormin desk"></div>
 <ul class="medioamgienteb">
  <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/medioamgiente2.jpg" class="guatenimg-rigth"/><li>
-   <h5>PANELES SOLARES ILUMINACI&oacute;N Y VENITLACION NATURAL:</h5>
+   <h5>PANELES SOLARES ILUMINACI&oacute;N Y VENITLACI&oacute;N NATURAL:</h5>
    <span><!--Nosotros trabajamos por el bienestar de todo miembro
    del Grupo CEMACO, de nuestro pa&iacute;s y de nuestro medio ambiente.Por eso en nuestro grupo
    buscamos integrar diversas pr&aacute;cticas para impactar positivamente en el medio ambiente. --> En
@@ -106,7 +106,7 @@ M&aacute;S 400 TONELADAS EN LA HUELLA DE CARBONO Y HEMOS REFORESTADO YA M&aacute
    y varias de nuestras tiendas.</span></br>
    <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/medioamgiente3.jpg" class="guatenimg-rigth guatenimg-rigth2 desk"/>
     <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/guatenuestrohogar/medioamgiente4.jpg" class="guatenimg-rigth guatenimg-rigth2 reciclaje2 desk"/>
-<h6>DESDE QUE INICIO NUESTRO PROYECTO SE HA RECOLECTADO M&aacute;S DE 1, 000,000 DE LIBAS DE CARTON Y PAPEL Y MAS DE 7,000 LIBRAS DE PLASTICO.</h6>
+<h6>DESDE QUE INICIO NUESTRO PROYECTO SE HA RECOLECTADO M&aacute;S DE 1, 000,000 DE LIBAS DE CART&oacute;N Y PAPEL Y MAS DE 7,000 LIBRAS DE PL&aacute;STICO.</h6>
 </br>
 <span>Por aparte lanzamos la oportunidad para que clientes reciclen residuos electr&oacute;nicos en nuestras tiendas.</br>
   Los residuos electr&oacute;nicos representan el 2% de la basura de los rellenos sanitarios,
@@ -150,12 +150,12 @@ electr&oacute;nica!
   <li><a href="http://cemaco.com/?page_id=7501" target="_blank">
     <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/spiff-1-landing.png" /></a>
     <div class="botonspiffsnormal"> <a href="">VER TODO ></a>
-  </div></li> 
+  </div></li>
 
   <li><a href="http://cemaco.com/?page_id=7501" target="_blank">
     <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/gnh/spiff-2.jpg" /></a>
     <div class="botonspiffsnormal"> <a href="">C&oacute;MO PUEDES AYUDAR ></a>
-  </div></li> 
+  </div></li>
 </ul></div>
 
 
@@ -187,7 +187,7 @@ electr&oacute;nica!
       </main> <!-- end #content -->
       	    <div class="espaciador"></div>
   </div> </div> <!-- end .container_16 -->
-  
+
 <script type="text/javascript">
 jQuery(document).ready(function() {
   $("#medio").click(function() {
@@ -290,7 +290,7 @@ jQuery(document).ready(function() {
   });
 
 });
-</script>  
-  
-  
+</script>
+
+
 <?php get_footer(); ?>

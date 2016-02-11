@@ -3,9 +3,9 @@
   <main>
     <aside><a>
     <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/footer/prefoot-tel.png"/>
-    <h2>(502) 2499-6747</h2></a></aside>
+    <h2>(502) 2499-6741</h2></a></aside>
 
-    <aside><a href="mailto:rrhh">
+    <aside><a href="mailto:rrhh@cemaco.com">
     <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/footer/email.png"/>
     <h2>RRHH@CEMACO.COM</h2></a></aside>
 
