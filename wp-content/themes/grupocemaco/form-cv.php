@@ -25,7 +25,7 @@
 <script src="wp-content/themes/grupocemaco/js/jquery.functions.js"></script>
 <script src="wp-content/themes/grupocemaco/js/jquery.validationEngine-es.js"></script>
 <script src="wp-content/themes/grupocemaco/js/jquery.noty.js"></script>
-<!--<script src="wp-content/themes/grupocemaco/js/micv.js"></script>-->
+<script src="wp-content/themes/grupocemaco/js/micv.js"></script>
 
 
 <div class="maincontent">
