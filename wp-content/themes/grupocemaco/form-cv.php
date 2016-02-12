@@ -25,55 +25,61 @@
     <canvas id="activeProgress" class="progress-active"  height="275px" width="275px"></canvas>
     <p>0%</p>
   </div>
-  <div id="progressControllerContainer">
-    <input type="range" id="progressController" min="0" max="100" value="15" />
-  </div
-</div>
 
 
+<div class="espaciador" style="min-heigh:500px;"></div>
 
 
-
+<div class="mainform" id="progressControllerContainer">
  <ul id="wheel-tab" data-tabs="tabs">
-     <li class="active"><a href="#tab-1" data-toggle="tab"></a></li>
-     <li><a href="#tab-2" data-toggle="tab"></a></li>
-     <li><a href="#tab-3" data-toggle="tab"></a></li>
-     <li><a href="#tab-4" data-toggle="tab"></a></li>
+     <li class="active"><a href="#tab-1" data-toggle="tab" class="tabSobreti">¡Cuéntanos sobre ti!</a></li>
+     <li><a href="#tab-2" data-toggle="tab" class="tabEstudios">¿Qué has estudiado?</a></li>
+     <li><a href="#tab-3" data-toggle="tab" class="tabTrabajos">¿Dónde has trabajado?</a></li>
+     <li><a href="#tab-4" data-toggle="tab" class="tabTrabajar">¡A Trabajar!</a></li>
+     <li><a href="#tab-5" data-toggle="tab" class="tabUltimo">Lo último pero no menos importante...</a></li>
 </ul>
-<div class="row">
-    <div class="row">
-        <ul class="nav nav-tabs nav-justified tab-bar">
-            <li><a href="#" id="wheel-left">PREVIOUS</a></li>
-            <li><a href="#" id="wheel-right">NEXT</a></li>
-        </ul>
-    </div>
-</div>
 
-<div class="tab-content">
-    <div class="tab-pane active" id="tab-1">
-        <h2>Tab 1</h2>
-        <p>Start your engines…</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore magna aliquam erat.</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-1">
+            <h2>Tab 1</h2>
+            <p>Start your engines…</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore magna aliquam erat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+            <a href="#tab-2" data-toggle="tab" class="tabEstudios">Siguiente</a>
+        </div>
+        <div class="tab-pane" id="tab-2">
+            <h2>Tab 2</h2>
+            <p>Start your engines…</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore magna aliquam erat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                 <a href="#tab-1" data-toggle="tab" class="tabSobreti">Anterior</a>
+                 <a href="#tab-3" data-toggle="tab" class="tabTrabajos">Siguiente</a>
+        </div>
+        <div class="tab-pane" id="tab-3">
+            <h2>Tab 3</h2>
+            <p>Start your engines…</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore magna aliquam erat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                 <a href="#tab-2" data-toggle="tab" class="tabEstudios">Anterior</a>
+                 <a href="#tab-4" data-toggle="tab" class="tabTrabajar">Siguiente</a>
+        </div>
+        <div class="tab-pane" id="tab-4">
+            <h2>Tab 4</h2>
+            <p>Start your engines…</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore magna aliquam erat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                 <a href="#tab-3" data-toggle="tab" class="tabTrabajos">Anterior</a>
+                 <a href="#tab-5" data-toggle="tab" class="tabUltimo">Siguiente</a>
+        </div>
+        <div class="tab-pane" id="tab-5">
+            <h2>Tab 5</h2>
+            <p>Start your engines…</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore magna aliquam erat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                 <a href="#tab-4" data-toggle="tab" class="tabTrabajar">Anterior</a>
+        </div>
     </div>
-    <div class="tab-pane" id="tab-2">
-        <h2>Tab 2</h2>
-        <p>Start your engines…</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore magna aliquam erat.</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-    </div>
-    <div class="tab-pane" id="tab-3">
-        <h2>Tab 3</h2>
-        <p>Start your engines…</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore magna aliquam erat.</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-    </div>
-    <div class="tab-pane" id="tab-4">
-        <h2>Saturday // Evening</h2>
-        <p>Start your engines…</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore magna aliquam erat.</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-    </div>
+
 </div>
 
 
@@ -104,7 +110,7 @@
 /************* Progress circle *************/
 
 $(document).ready(function(){
-			var $pc = $('#progressController');
+			var $pc = $('.progressController');
 			var $pCaption = $('.progress-bar p');
 			var iProgress = document.getElementById('inactiveProgress');
 			var aProgress = document.getElementById('activeProgress');
@@ -162,17 +168,40 @@ $(document).ready(function(){
 				$pCaption.text( (parseInt(percentage * 100, 10)) + '%');
 			}
 
-				var percentage = $pc.val() / 100;
+				var percentage = 10 / 100;
 				drawProgress(aProgress, percentage, $pCaption);
 
 
-		});
+                    $("a.tabSobreti").click(function(){
+                       var percentage10 = 10 / 100;
+                       drawProgress(aProgress, percentage10, $pCaption);
+                    })
+                    $("a.tabEstudios").click(function(){
+                       var percentage30 = 30 / 100;
+                       drawProgress(aProgress, percentage30, $pCaption);
+                    })
+                    $("a.tabTrabajos").click(function(){
+                       var percentage50 = 50 / 100;
+                       drawProgress(aProgress, percentage50, $pCaption);
+                    })
+                    $("a.tabTrabajar").click(function(){
+                       var percentage70 = 70 / 100;
+                       drawProgress(aProgress, percentage70, $pCaption);
+                    })
+                    $("a.tabUltimo").click(function(){
+                       var percentage90 = 90 / 100;
+                       drawProgress(aProgress, percentage90, $pCaption);
+                    })
+                    $("a.prueba").click(function(){
+                       var percentage100 = 100 / 100;
+                       drawProgress(aProgress, percentage100, $pCaption);
+                    })
+            });
 
 /************* Tabs *************/
 
 
 var $tabs = $('#wheel-tab li');
-
 $('#wheel-left').on('click', function () {
     $tabs.filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');
 });

@@ -571,28 +571,15 @@ background-image: linear-gradient(to bottom, #394AAB 50%, #2D3C84 51%);}
 
 
 /* ************** Bolsa ************* */
+.hidden{display:none;}
 /* ******** Progress bar ****** */
 @import url(http://fonts.googleapis.com/css?family=Lato:700);
-@track-color: #ffffff;@thumb-color: #e1e1e1;
-
-@thumb-radius: 5px;
-@thumb-height: 30px;
-@thumb-width: 20px;
-
-@thumb-border-width: 1px;
-@thumb-border-color: #d6d6d6;
-
-@track-width: 100%;
-@track-height: 20px;
-
-@track-border-width: 1px;
-@track-border-color: #e6e6e6;
-
-@track-radius: 0px;
+@track-color: #ffffff;@thumb-color: #e1e1e1;@thumb-radius: 5px;@thumb-height: 30px;
+@thumb-width: 20px;@thumb-border-width: 1px;@thumb-border-color: #d6d6d6;@track-width: 100%;
+@track-height: 20px;@track-border-width: 1px;@track-border-color: #e6e6e6;@track-radius: 0px;
 @contrast: 5%;
 html,body{
-  height: 100%;
-  width: 100%;
+  height: 100%;  width: 100%;
 }
 
 .progress-bar{
@@ -617,7 +604,7 @@ html,body{
 	text-align: center;
 }
 #progressControllerContainer{
-  position: absolute;
+  /*position: absolute;**/
   top: 320px;
   padding: 10px 80px;
 }
@@ -703,6 +690,7 @@ input[type=range] {
   }
 }
 /* ******** Tabs bolsa ****** */
+.mainform{width: 100%;max-width: 960px; margin:0 auto;}
 
 
 
