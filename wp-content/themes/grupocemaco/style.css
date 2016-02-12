@@ -105,6 +105,8 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 .cemaco .tab-pane {
     background: #F9F9F9;
     overflow: hidden;
+    padding: 12px 20px 0;
+    width: 96%;
 }
 .cemaco .tabbable {
     border: 1px solid #E0E0E0;
@@ -143,6 +145,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 }
 .cemaco .tab-pane>.row-fluid {
     margin-bottom: 10px;
+
 }
 .cemaco .custom-btn .btn-next, .cemaco .custom-btn .btn-prev {
 	background-color: #444;
@@ -706,9 +709,9 @@ input[type=range] {  -webkit-appearance: none;  margin: @thumb-height/2 0;  widt
 			.activetab{background-color:#0F1E8E !important;}
 				.activetab a{color:#fff !important;}
 	.tabsbolsa .siguiente-anterior{display: block;clear: both;width: 100%;padding:10px 0;
-			min-height: 32px;}
+			min-height:50px;}
 		.tabsbolsa .siguiente-anterior a{font-family: "chalet_comprime_eighty";float: left;
-			color:#fff;text-transform: uppercase;font-size:23px;padding:10px 15px;
+			color:#fff;text-transform: uppercase;font-size:23px;padding:10px 28px;
 			border-botton:3px solid #101e8e;text-decoration: none;
 			background-image: -webkit-gradient(
 				linear,
