@@ -918,41 +918,6 @@ $(document).ready(function(){
       .on("change", ".onoff", function() { onoff(this); })
       .on("load",".onoff", function(){ onoff(this); });
 
-  jQuery.fn.limiter = function(options) {
-      var defaults = { action : 'create' };
-      var o = $.extend(defaults, options);
-
-      return this.each(function(){
-          var limit = ($(this).attr('maxlength')||254);
-
-          if(o.action=='create'){
-              var span = $('<span />').addClass('limiter').html(limit+' caracteres restantes.');
-              $(this).after(span);
-          }
-
-          $(this).on("keydown focus", function() {
-              setCount($(this));
-          });
-
-          function setCount(src) {
-              var span = src.siblings('span.limiter').eq(0);
-              var limit = (src.attr('maxlength')||254);
-              var chars = src.val().length;
-
-              if (chars > limit) {
-                  var text = src.val().substr(0, limit);
-                  src.val(text);
-                  chars = limit;
-              }
-
-              span.html( limit - chars + ' caracteres restantes.');
-          }
-          setCount($(this));
-      });
-  };
-
-  $('.cemaco form textarea').limiter({action:'create'});
-
   jQuery.fn.areasInteres = function(options) {
       var defaults = { max_areas_interes : 100 };
       var o = $.extend(defaults, options);
