@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="wp-content/themes/grupocemaco/css/bootstrap-responsive.css">
 <link rel="stylesheet" href="wp-content/themes/grupocemaco/css/select2.css">
 <link rel="stylesheet" href="wp-content/themes/grupocemaco/css/datepicker.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="wp-content/themes/grupocemaco/js/jquery-ui.custom.min.js"></script>
 <script src="wp-content/themes/grupocemaco/js/jquery.ui.datepicker-es.js"></script>
@@ -21,6 +22,7 @@
 <script src="wp-content/themes/grupocemaco/js/jquery.mask-money.js"></script>
 <script src="wp-content/themes/grupocemaco/js/jquery.timer.js"></script>
 <script src="wp-content/themes/grupocemaco/js/jquery.validationEngine.js"></script>
+<script src="wp-content/themes/grupocemaco/js/jquery.functions.js"></script>
 <script src="wp-content/themes/grupocemaco/js/jquery.validationEngine-es.js"></script>
 <script src="wp-content/themes/grupocemaco/js/jquery.noty.js"></script>
 <!--<script src="wp-content/themes/grupocemaco/js/micv.js"></script>-->
