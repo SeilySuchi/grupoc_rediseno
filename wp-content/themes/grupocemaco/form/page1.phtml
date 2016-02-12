@@ -2,7 +2,7 @@
 <div class="row-fluid">
   <div class="span12">
 
-    <form action="?page_id=55" method="post">
+
       <h2>¡Cuéntanos sobre ti!</h2>
       <div class="section">
         <fieldset>
@@ -52,7 +52,7 @@
           </div>
         </fieldset>
         <fieldset>
-          <label><span>Nacionalidad</span> </label>
+          <label>Nacionalidad</label>
           <div class="row-fluid">
             <div class="span12">
               <select class="span4 pais-nacimiento select2" name="Oferentes[idPaisNacionalidad]" readonly="readonly">
@@ -62,8 +62,139 @@
           </div>
         </fieldset>
       </div>
+      <div class="section">
+        <fieldset>
+          <div class="row-fluid">
+            <div class="span3">
+              <label><i class="required">* </i>Fecha de Nacimiento</label>
+              <div>
+                <select class="span4 required-send" name="Oferentes[oFechaNacimientoDay]" required="required" >
+                  <option value="">Día</option>
+                </select>
+                <select class="span4 required-send" name="Oferentes[oFechaNacimientoMonth]" required="required" >
+                  <option value="">Mes</option>
+                </select>
+                <select class="span4 required-send" name="Oferentes[oFechaNacimientoYear]" required="required" >
+                  <option value="">A&ntilde;o</option>
+                </select>
+              </div>
+            </div>
+            <div class="span3">
+              <label>Estado Civil</label>
+              <select class="span12 " name="Oferentes[oEstadoCivil]">
+                <option value="">SELECCIONAR:</option>
+              </select>
+            </div>
+            <div class="span3">
+              <label>Sexo</label>
+              <select class="span12 genre " name="Oferentes[oSexo]">
+                <option value="">SELECCIONAR:</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="section">
+        <fieldset>
+          <div class="row-fluid">
+            <div class="span4">
+              <label><i class="required">* </i>Dirección Actual</label>
+              <input class="span12 addr required-send" type="text" maxlength="100" minlength="5" required="required" name="Oferentes[oDireccion]" id="direccion-actual" value=""/>
+            </div>
+            <div class="span3">
+              <label>Colonia</label>
+              <input class="span12" maxlength="50" name="Oferentes[oColonia]" type="text" value="" />
+            </div>
+            <div class="span1">
+              <label>Zona</label>
+              <input class="span12 integer" maxlength="2" minlength="1" name="Oferentes[oZona]" type="text" value="" />
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span4">
+              <select class="span12 cctld required-send" name="Oferentes[idPaisDireccion]">
+                <option value="0">-- País --</option>
+              </select>
+            </div>
+            <div class="span4">
+              <select class="span12  depto required-send" name="Oferentes[idDepartamentoDireccion]" data-transfer="Oferentes[idMunicipioDireccion]">
+                <option value="">-- Departamento --</option>
+              </select>
+            </div>
+            <div class="span4">
+              <select class=" muni span12 required-send" name="Oferentes[idMunicipioDireccion]">
+                <option value="">-- Municipio --</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="section">
+        <fieldset>
+          <div class="row-fluid">
+            <div class="span4">
+              <label> Teléfono de Casa </label>
+              <input class="span12 phoneGT integer" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="Oferentes[oTelefono][0]" value="" type="text" />
+            </div>
+            <div class="span4">
+              <label> <i class="required">* </i>Celular</label>
+              <input class="span12 phoneGT integer required-send" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'  required="required" name="Oferentes[oTelefono][1]" type="text" value="" />
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="section">
+        <fieldset>
+          <div class="row-fluid">
+            <div class="span4">
+              <label> <i class="required">* </i>Documento de Identificación</label>
+              <select class="span12 required-send" name="OferenteIdentificacion[oiTipo]" id="tipoDocumento" required="required" >
+                <option value="">-- Selecionar --</option>
+              </select>
+            </div>
+            <div class="span4">
+              <label> <i class="required">* </i>Número de Identificación</label>
+              <input class="span8 digits required-send" maxlength="20" required="required" type="text" name="OferenteIdentificacion[oiRegistro]" value="" />
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span5">
+              <label><span class="required">* </span><span>Extendido en</span> </label>
+              <div class="row-fluid">
+                <div class="span4">
+                  <select id="country_passport" class="span12 cctld notZero required-send select2" required="required" name="OferenteIdentificacion[oiPaisExtendidoEn]" >
+                    <option value="">-- País --</option>
+                  </select>
+                </div>
 
-    </form>
+                <div class="span4">
+                  <select class="span12 depto required-send" name="OferenteIdentificacion[oiDepartamentoExtendidoEn]" data-transfer="OferenteIdentificacion[oiMunicipioExtendidoEn]">
+                    <option value="">-- Departamento --</option>
+                  </select>
+                </div>
+
+                <div class="span4">
+                  <select class="span12 muni required-send" name="OferenteIdentificacion[oiMunicipioExtendidoEn]">
+                    <option value="">-- Municipio --</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="row-fluid custom-btn">
+        <div class="span12">
+          <a class="btn btn-next pull-right" href="#tab2" url="">
+          <span>Siguiente</span> </a>
+
+          <a class="btn btn-next pull-right" url="/rrhh/micv/guardar">
+          <span>Guardar</span></a>
+				</div>
+      </div>
+
+
 
   </div>
 </div>

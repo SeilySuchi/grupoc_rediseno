@@ -124,10 +124,95 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
     padding-bottom: 5px;
     text-shadow: 1px 1px 1px #FFF;
 }
+.cemaco .custom-btn .btn {
+	background-color: #444;
+	border: none;
+	border-bottom: 1px solid #CCC !important;
+	border-top: 1px solid #CCC !important;
+	border-radius: 0 !important;
+	color: #777;
+	font: 11px Arial, sans-serif;
+	padding: 7px;
+	background: #F0F0F0;
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0.09, rgb(240,240,240)), color-stop(0.55, rgb(227,227,227)), color-stop(0.78, rgb(240, 240, 240)));
+	background: -moz-linear-gradient(center bottom, rgb(240, 240, 240) 9%, rgb(227, 227, 227) 55%, rgb(240, 240, 240) 78%);
+}
+.cemaco .custom-btn .btn:hover {
+	background: #D8D8D8;
+	color: #666;
+}
+.cemaco .tab-pane>.row-fluid {
+    margin-bottom: 10px;
+}
+.cemaco .custom-btn .btn-next, .cemaco .custom-btn .btn-prev {
+	background-color: #444;
+	border: 1px solid #CCC !important;
+	border-radius: 0 !important;
+	color: #777;
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-right: 4px;
+  margin-top: 5px;
+	padding: 13px 25px 8px 20px;
+	text-decoration: none;
+	text-shadow: 2px 2px 2px #FFF;
+	background: #F0F0F0;
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0.09, rgb(240,240,240)), color-stop(0.55, rgb(227,227,227)), color-stop(0.78, rgb(240, 240, 240)));
+	background: -moz-linear-gradient(center bottom, rgb(240, 240, 240) 9%, rgb(227, 227, 227) 55%, rgb(240, 240, 240) 78%);
+}
+.cemaco .custom-btn .btn-next:hover, .cemaco .custom-btn .btn-prev:hover {
+	background: #D8D8D8;
+	color: #666;
+	text-shadow: 1px 1px 1px #FFF;
+}
+.cemaco .custom-btn .btn-next span, .cemaco .custom-btn .btn-prev span{
+  font-size: 17px;
+}
+.cemaco .custom-btn {
+  margin-right: 10px;
+}
 .main-form{
   max-width:1020px;
   margin:0 auto;
   width:100%;
+}
+.btn-group {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.cemaco legend {
+  background: #F4F4F4;
+  border: 1px solid #DEDEDE;
+  border-radius: 3px;
+  color: #6B6B6B;
+  font: 1.2em Arial, sans-serif;
+  margin-bottom: 8px;
+  font-weight: bold;
+  padding: 5px;
+  width: 98%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.cemaco table{
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+}
+.cemaco tbody, .cemaco td{
+  background-color: transparent;
+}
+.btn{
+  text-decoration: none;
+  font-size: 13px;
+}
+.btn-group>.btn-mini span{
+  font-size: 10.5px;
 }
 .greyback {
     background-color: #EBEBEB;
