@@ -1,0 +1,154 @@
+<div class="tab-pane" id="tab3">
+              <div class="section">
+                <legend>Experiencia laboral</legend>
+                <em style="font-size: 12px;">Si aún no cuentas con experiencia laboral continua a la siguiente página.</em>
+                <label>Ingresa tres referencias</label>
+
+
+                <fieldset class="trabajos-adicionales">
+                  <div class="row-fluid">
+                    <div class="span1 text-center"><br />
+                      <i class="icon-folder-open"></i></div>
+                    <div class="span11">
+                      <legend>
+
+
+
+                      </legend>
+                      <div class="section">
+                        <div class="row-fluid">
+                          <div class="span7">
+                            <label> Nombre de la Empresa </label>
+                            <input class="span12" maxlength="100" name="" value="" type="text" />
+                          </div>
+                          <div class="span5">
+                            <label>Tipo de Industria</label>
+                            <select name="" class="span12" >
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row-fluid">
+                          <div class="span7">
+                            <label> Dirección </label>
+                            <input class="span12" maxlength="100" type="text" name="" value="" />
+                          </div>
+                          <div class="span5">
+                            <label> Teléfono </label>
+                            <input class="span12 phoneGT" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' name=""  type="text" value="" />
+                          </div>
+                        </div>
+                        <div class="row-fluid dateRanges">
+                          <div class="span6">
+                            <label> Puesto </label>
+                            <input class="span12" maxlength="100" name="" value="" type="text" />
+                          </div>
+                          <div class="span3">
+                            <label> <span class="required hidden">*</span><span>Fecha de Ingreso</span> </label>
+                            <input class="span12 require dateITA dateMin" maxlength="10" id="" name="" value="" type="text" />
+                          </div>
+                          <div class="span3">
+                            <label> <span class="required hidden">*</span><span>Fecha de Egreso</span> </label>
+                            <label class="checkbox inline" style="padding-top: 0;">
+                              <input class="estudioFechaFinal" name="" type="checkbox" checked="checked" value="hasta_fecha" />
+                              Hasta la Fecha
+                            </label>
+                            <input class="span12 require dateITA dateMax" maxlength="10" datemin="" name=""  value="" type="text"  style="display: none;"  />
+                          </div>
+                        </div>
+                        <div class="row-fluid">
+                          <div class="span4">
+                            <label> Promedio de Ingresos Mensuales <small>(en Quetzales)</small> </label>
+                            <input class="span12 number currency" maxlength="9" name="" value="" placeholder="000.00"  id="appendedPrependedInput" type="text">
+                          </div>
+                          <div class="span4">
+                            <label>Nombre de Jefe Inmediato </label>
+                            <input class="span12" maxlength="100" name="" value=""  type="text" />
+                          </div>
+                          <div class="span4">
+                            <label>Teléfono de Jefe Inmediato </label>
+                            <input class="span12 phoneGT" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="" value=""  type="text" />
+                          </div>
+                        </div>
+                        <div class="row-fluid">
+                          <div class="span12">
+                            <label> <span class="required hidden">*</span><span>Responsabilidades del Puesto</span> </label>
+                            <textarea class="span12 require" maxlength="500" name="" ></textarea>
+                          </div>
+                        </div>
+
+                        <div class="row-fluid">
+                          <div class="span12">
+                            <label> Motivo de Retiro / Razón por la deseas cambiar de empleo </label>
+                            <textarea class="span12" maxlength="100" name="" ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <div class="row-fluid">
+                  <div class="span12 text-center"> <a href="javascript:void(0)" id="addTrabajo" class="btn btn-primary">
+                    <i class="icon-chevron-down icon-white"></i> Agregar Otro Trabajo</a> </div>
+                </div>
+              </div>
+              <h2>Coloca tus Referencias Personales (No Familiares)</h2>
+              <em style="font-size: 12px;">Toma en cuenta que tu referencia recibirá una llamada telefónica o un correo electrónico para confirmar la información de contacto</em>
+              <label> Ingresa mínimo 3 referencias </label>
+
+              <fieldset class="referencias-no-familiares">
+                <div class="section">
+                  <div class="row-fluid">
+                    <div class="span12 append-referencia">
+
+                      <div class="row-fluid">
+                        <div class="span1 text-center"> <br />
+                          <i class="icon-user"></i> </div>
+
+                        <input type="hidden" name="" value="P" />
+                        <div class="span2">
+                          <label>
+                            <span class="required">* </span>
+                            <span>Nombre</span> </label>
+                          <input class="span12" required="required" maxlength="70" name="" value="" type="text" />
+                        </div>
+                        <div class="span2">
+                          <label> Correo electrónico </label>
+                          <input class="span12" name=""  value="" type="email" />
+                        </div>
+                        <div class="span2">
+                          <label>
+
+                            <span class="required">* </span>
+
+                            <span>Teléfono</span> </label>
+                          <input class="span12 phoneGT" required="required" maxlength="8" minlength="8"
+                                 onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+				 name="" value="" type="text" />
+                        </div>
+                        <div class="span2">
+                          <label>
+
+                            <span class="required">* </span>
+
+                            <span>Ocupación</span> </label>
+                          <input class="span12 " required="required" maxlength="100" name="" value="" type="text" />
+                        </div>
+                        <div class="span3">
+                          <label>
+
+                            <span class="required">* </span>
+
+                            <span>Tiempo de conocerlo (años)</span></label>
+                          <input class="span8 integer tiempo-anios" min="0" required="required" maxlength="2" name="" value="" type="number" />
+                        </div>
+                      </div>
+                      <div class="row-fluid"> </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="span12 text-center"> <a href="javascript:void(0)" class="btn btn-primary clone" id="addReferenciaNoFamiliar" type="button" > <i class="icon-chevron-down icon-white"></i> Agregar Otra Referencia</a> </div>
+</div>

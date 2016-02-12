@@ -1,0 +1,173 @@
+<div class="tab-pane" id="tab4">
+              <div class="section">
+                <legend>¿Qué tipo de contratación estás solicitando?</legend>
+                <fieldset>
+                  <div class="row-fluid">
+                    <div class="span4">
+                      <select class="span12 select2 required-send" required="required" name="">
+                        <option value="por_hora">Por Hora</option>
+                        <option value="vacacionista" >Vacacionista</option>
+                        <option value="pasantilla" >Pasantilla</option>
+                      </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                  <legend><span>Plaza a la que aplicas:</span></legend>
+                  <div class="row-fluid">
+                    <div class="span8 cemaco-list">
+                      <span><b>Tiendas:</b></span>
+
+      <label for="" class="vai error" style="display: none;">Este campo es obligatorio.</label>
+         <label class="checkbox">
+           <input type="checkbox" class="area-interes required-send" name="" value=""/>
+        </label>
+
+                    </div>                  </div>                </fieldset>
+                <div class="row-fluid">
+                    <div class="span8">
+                      <span><b>Bodegas:</b></span>
+                      <label class="checkbox">
+                        <input type="checkbox" class="area-interes required-send" name="" value="110"/>
+                        Auxiliar de bodega
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" class="area-interes required-send" id="piloto" name="" value="111"/>
+                        Pilotos
+                      </label>
+                      <div id="tipo-licencia" style="display: none;">
+                        <select name="" class="span4">
+                          <option value="" selected="selected">---Tipos de licencia---</option>
+                          <option value="A">Tipo A</option>
+                          <option value="B">Tipo B</option>
+                          <option value="C">Tipo C</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                <div class="row-fluid">
+                  <div class="span8">
+                    <span><b>Administración:</b></span></br>
+                        <label>
+                          <input type="checkbox" class="area-interes required-send admin" name="" value=""/>
+                        </label>
+                  </div>
+                </div>
+                <div class="row-fluid">
+                  <div class="span12">
+                    <fieldset>
+                      <legend> ¿Cuántos años de experiencia tienes en el área en la que estás aplicando? </legend>
+                      <div class="row-fluid">
+                        <div class="span5">
+                          <select name="OferenteAdicionales[oaExperiencia]" class="span12 onoff" >
+                            <option value="0-1">0-1 años</option>
+                            <option value="1-3">1-3 años</option>
+                            <option value="5-10">5-10 años</option>
+                            <option value="mas de 10 años">mas de 10 años años</option>
+                          </select>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+
+                <input type="hidden" name="AuxOferentesPlazas[idPlaza]" value=""/>
+                <fieldset>
+                  <legend>Pretensión Salarial</legend>
+                  <div class="row-fluid">
+                    <div class="span3">
+                      <label> <span>(en Quetzales) </span></label>
+                      <select class="span12 cn onoff" name="OferenteAdicionales[oaPretensionSalarial]">
+                        <option value="">-Seleccionar-</option>
+                        <option value="salario_de_ley">Salario de Ley - Q 3,500</option>
+                        <option value="Q3501_Q4800">Q 3,501- Q 4,800</option>
+                        <option value="Q4801_Q5500">Q 4,801- Q 5,500</option>
+                        <option value="Q5501_Q7200">Q5,501 – Q 7,200</option>
+                        <option value="Q7201_Q9600">Q 7,201- Q 9,600</option>
+                        <option value="mas_de_Q12000">Más de Q 12,000</option>
+                      </select>
+                    </div>
+
+                  </div>
+                </fieldset>
+
+                <fieldset>
+                  <legend>¿Conoces algún empleado dentro de la compañía?</legend>
+                  <div class="row-fluid">
+                    <div class="span5">
+                      <select class="span12 cn onoff" name="">
+			<option value="">-Seleccionar-</option>
+                        <option value="S">Sí</option>
+                        <option value="N">No</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row-fluid">
+                    <div class="span5">
+                      <label> <span class="required hidden">*</span><span>Nombre del empleado</span><br />
+                        <span style="font-size: 12px;">En caso que hayas sido recomendado por alguien, ingresa su nombre</span><br />
+                      </label>
+                      <input maxlength="75" class="span12 require" type="text" name="" value="" />
+Ingresa la tienda/ unidad de negocio a la que pertenece (pregunta)
+                    </div>
+                    <div class="span4">
+                      <label>Relacion con el empleado<br />
+                      <span style="font-size: 12px;">¿Algún colaborador de CEMACO te ha referido?</span><br /></label>
+                      <select class="span12 "  id="referencia" name="">
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div id="especificar" class="span2" style="display: hidden;">
+                      <label><span>Especificar</span></label>
+                      <textarea value="" name="" ></textarea>
+                    </div>
+                  </div>
+
+                </fieldset>
+                <fieldset>
+                  <legend><span>¿Cómo te enteraste de esta oportunidad de empleo? </span></legend>
+                  <div class="row-fluid">
+                    <div class="span12">
+                      <select id="medioOportunidad" name="" class="span4">
+                        <option value="prensa">Prensa</option>
+                        <option value="internet">Internet</option>
+                        <option value="referido">Referido</option>
+                        <option value="feria">Feria de Empleo</option>
+                        <option value="linkedin">Linkedin</option>
+                        <option value="gotalent">GoTalent</option>
+                        <option value="otros">otros</option>
+                      </select>
+                      <label id="medioOportunidadTexto">
+                        Especifica cual: <br/>
+                        <input type="text" class="span8" maxlength="254" name=""  value="" />
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="cemaco-choose-stores" style="display:none">
+                  <legend><span class="required">* </span><span> Si pudieras elegir tres tiendas para trabajar porque se encuentran cerca de la ubicación de tu hogar, haz una lista con las que prefieres.</legend>
+                  </label>
+                  <div class="row-fluid">
+                    <table width="100%">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Orden de preferencia:</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><?php echo $x+1?>.</td>
+                          <td><select class="span6 ListaUbicacionPreferidaCemaco" name="" >
+                              <option value="">--Selecciona Tienda--</option>
+                              <option value=""></option>
+                            </select></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </fieldset>
+              </div>
+
+            </div>
+            <!-- @end tab -->
