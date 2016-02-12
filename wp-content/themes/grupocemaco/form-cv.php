@@ -54,7 +54,7 @@
     </ul>
 
     <form action="?page_id=55" method="post">
-      <div class="tab-content wrapper cemaco">
+      <div class="tab-content cemaco">
           <div class="tab-pane active" id="tab-1">
                 <!-- Página 1 -->
                 <?php require_once('wp-content/themes/grupocemaco/form/page1.phtml') ?>
@@ -108,15 +108,6 @@
 
 
 
-<div class="wrapper cemaco">
-<div class="main-form tabbable">
-
-
-
-
-
-
-</div></div>
 
 
 <script type="text/javascript">
