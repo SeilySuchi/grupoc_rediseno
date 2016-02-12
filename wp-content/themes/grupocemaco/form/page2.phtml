@@ -9,21 +9,19 @@
   	<a class="btn btn-mini btn-next" data-toggle="tab" href="#tab3" url="">
   	<span>Siguiente &rsaquo;</span> </a>
   </div>
-<div class="row-fluid">
-  <div class="span12 cemaco">
-
 
       <h2>¿Qué has estudiado?</h2>
       <legend>Agrega tu información académica desde la más reciente hasta la más antigua</legend>
       <fieldset class="oferente-estudios">
+        <div class="row-fluid">
         <div class="span1 text-center"><br />
           <i class="icon-folder-open"></i> </div>
         <div class="span11">
           <div class="section">
-            <legend>
-              <a href="javascript:void(0)" class="pull-right btn btn-danger btn-mini delete_estudio" data-toggle="popover" tabindex="-1" data-placement="right" title="Click aquí para eliminar esta estudio" style="padding: 0 0 0 3px;">
+            <legend class="legend-curso">&nbsp;
+              <!-- <a href="javascript:void(0)" class="pull-right btn btn-danger btn-mini delete_estudio" data-toggle="popover" tabindex="-1" data-placement="right" title="Click aquí para eliminar esta estudio" style="padding: 0 0 0 3px;">
                 <i class="icon-trash icon-white"></i> &nbsp;
-              </a>
+              </a> -->
             </legend>
             <div class="row-fluid fCarreras">
               <div class="span4">
@@ -55,7 +53,7 @@
               </div>
               <div class="span3">
                 <label><span>Fecha de Inicio</span></label>
-                <input class="span12 require dateMin hasDatepicker dateITA" maxlength="10" type="text" name="OferenteEducacion[][oedFechaInicial]" value="" />
+                <input class="span12 require dateITA dateMin" maxlength="10" type="text" name="OferenteEducacion[][oedFechaInicial]" value="" />
               </div>
               <div class="span3 dateRange">
                 <label> Fecha Final </label>
@@ -78,7 +76,7 @@
         </div>
       </fieldset>
 
-      <div class="span12 text-center">
+      <div class="span10 text-center">
         <a href="javascript:void(0)" id="addEstudio" class="btn btn-primary"><i class="icon-chevron-down icon-white"></i> Agregar Estudio</a>
       </div>
 
@@ -95,9 +93,9 @@
             <div class="span11">
               <div class="section">
                 <legend class="legend-curso">&nbsp;
-                  <a href="javascript:void(0)" class="pull-right btn-mini btn btn-danger delete_curso" data-toggle="popover" tabindex="-1" data-placement="right" title="Click aquí para eliminar este curso" style="padding: 4px 5px 3px 3px;">
+                  <!-- <a href="javascript:void(0)" class="pull-right btn-mini btn btn-danger delete_curso" data-toggle="popover" tabindex="-1" data-placement="right" title="Click aquí para eliminar este curso" style="padding: 4px 5px 3px 3px;">
                     <i class="icon-trash icon-white"></i>
-                  </a>
+                  </a> -->
                 </legend>
                 <div class="row-fluid">
                   <div class="span6">
@@ -125,7 +123,7 @@
           </div>
         </fieldset>
 
-        <div class="span12 text-center">
+        <div class="span10 text-center">
           <a href="javascript:void(0)" id="addCursoMaquinaria"  class="btn btn-primary"> <i class="icon-chevron-down icon-white"></i>Agregar Conocimiento/ Curso</a>
         </div>
         <br><br>
@@ -149,7 +147,7 @@
                 <input class="span12" maxlength="25" type="text" value="" name="OferenteIdiomas[][oidIdioma]" placeholder="Idioma" />
                 </span>
                 <span class="span4" style="margin: 0">
-                <table border=1px cellpadding=7px>
+                <table border="1px" cellpadding="7px" class="span12">
                   <tr>
                     <td><b>Nivel</b></td>
                     <td>Bajo</td>
@@ -197,31 +195,34 @@
                 </div>
 
                 <span class="span2 append">
-                <a href="javascript:void(0)" class="pull-right btn btn-danger btn-mini delete_idioma" data-toggle="popover" tabindex="-1" data-placement="right" title="Click aquí para eliminar este idioma" style="padding: 0 0 0 3px;">
+                <!-- <a href="javascript:void(0)" class="pull-right btn btn-danger btn-mini delete_idioma" data-toggle="popover" tabindex="-1" data-placement="right" title="Click aquí para eliminar este idioma" style="padding: 0 0 0 3px;">
                   <i class="icon-trash icon-white"></i> &nbsp;
-                </a>
-                </span> </span> </div>
+                </a> -->
+                </span> </span>
             </fieldset>
 
-            <div class="row-fluid">
-              <div class="span12 text-center"> <a href="javascript:void(0)" class="btn btn-primary clone" data-index="3" type="button" id="addOtroIdioma"> <i class="icon-chevron-down icon-white"></i> Agregar Otro Idioma</a> </div>
-            </div>
           </div>
         </div>
       </fieldset>
 
-      <div class="row-fluid custom-btn">
-        <div class="span12">
-          <a class="btn btn-next pull-right" href="#tab2" url="">
-          <span>Siguiente</span> </a>
-
-          <a class="btn btn-next pull-right" url="/rrhh/micv/guardar">
-          <span>Guardar</span></a>
-				</div>
+      <div class="row-fluid">
+        <div class="span12 text-center">
+          <a href="javascript:void(0)" class="btn btn-primary clone" data-index="3" type="button" id="addOtroIdioma">
+            <i class="icon-chevron-down icon-white"></i> Agregar Otro Idioma</a>
+          </div>
       </div>
 
 
+      <fieldset>
+        <div class="row-fluid custom-btn">
+          <div class="span12">
+            <a class="btn btn-next pull-right" href="#tab2" url="">
+            <span>Siguiente</span> </a>
 
-  </div>
+            <a class="btn btn-next pull-right" url="/rrhh/micv/guardar">
+            <span>Guardar</span></a>
+  				</div>
+        </div>
+      </fieldset>
 </div>
 </div>

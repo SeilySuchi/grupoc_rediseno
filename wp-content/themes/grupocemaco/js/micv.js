@@ -676,7 +676,7 @@ $(document).ready(function(){
               yearRange: "-80:+5"
           });
 
-          section.find('.dateMin').dateMin();
+          section.find('.dateMin').datepicker();
           section.find('.oedTipoCarrera').change(function(){
               $(this).loadCarreras();
           });
@@ -729,7 +729,7 @@ $(document).ready(function(){
               yearRange: "-80:+5"
           });
 
-          section.find('.dateMin').dateMin();
+          section.find('.dateMin').datepicker();
 
           $('.cursos-adicionales:last').after(section);
           delete_button.tooltip('show');
@@ -817,7 +817,7 @@ $(document).ready(function(){
               changeYear:true,
               yearRange: "-80:+0",
           });
-          section.find('.dateMin').dateMin();
+          section.find('.dateMin').datepicker();
 
           $('.trabajos-adicionales:last').after(section);
           delete_button.tooltip('show');
@@ -825,6 +825,8 @@ $(document).ready(function(){
           alert('No puedes agregar más de '+maxv+' trabajos');
       }
   });
+
+  $('.dateMin').datepicker();
 
 	$('.delete_trabajo').each(function(){
 		$(this).tooltip().click(function(){
