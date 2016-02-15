@@ -1,3 +1,34 @@
+<?php
+$usuario = get_current_user_id();
+// Obtiene datos guardados en la db
+$primerNombre =  $wpdb->get_var( "SELECT p1_PrimerNombre FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$segundoNombre =  $wpdb->get_var( "SELECT p1_SegundoNombre FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$primerApellido =  $wpdb->get_var( "SELECT p1_PrimerApellido FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$segundoApellido =  $wpdb->get_var( "SELECT p1_SegundoApellido FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$apellidoCasada =  $wpdb->get_var( "SELECT p1_ApellidoCasada FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$paisNac =  $wpdb->get_var( "SELECT p1_PaisNacimiento FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$departamentoNac =  $wpdb->get_var( "SELECT p1_DepartamentoNacimiento FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$municipioNac =  $wpdb->get_var( "SELECT p1_MunicipioNacimiento FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$fechaNac =  $wpdb->get_var( "SELECT p1_FechaNacimiento FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$direccion =  $wpdb->get_var( "SELECT p1_Direccion FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$colonia =  $wpdb->get_var( "SELECT p1_ColonaDireccion FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$zona =  $wpdb->get_var( "SELECT p1_ZonaDireccion FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$paisDirec =  $wpdb->get_var( "SELECT p1_PaisDireccion FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$deptoDirec =  $wpdb->get_var( "SELECT p1_DepartamentoDireccion FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$munDirec =  $wpdb->get_var( "SELECT p1_MunicipioDireccion FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$identificacion =  $wpdb->get_var( "SELECT p1_NumeroIdentificacion FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+
+$paisExtendido =  $wpdb->get_var( "SELECT p1_ExtendidoEnPais FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$deptoExtendido =  $wpdb->get_var( "SELECT p1_ExtendidoEnDepartamento FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$munExtendido =  $wpdb->get_var( "SELECT p1_ExtendidoEnMunicipio FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+
+
+// Obtiene listas creadas de la db
+$paisNacimiento =  $wpdb->get_results( "SELECT Codigo, Pais FROM gc_info_paises" );
+$deptoNacimiento =  $wpdb->get_results( "SELECT Codigo, Descripcion FROM gc_info_departamentos" );
+$munNacimiento =  $wpdb->get_results( "SELECT Codigo, Descripcion FROM gc_info_municipios" );
+$nacionalidadNac =  $wpdb->get_results( "SELECT Codigo, Nacionalidad FROM gc_info_paises" );
+?>
 <div class="tab-pane active" id="tab1">
 <div class="row-fluid">
   <div class="span12">
@@ -7,23 +38,23 @@
           <div class="row-fluid">
             <div class="span2">
               <label> <i class="required">* </i>Primer Nombre</label>
-              <input class="span12 required-send" maxlength="20" minlength="2" required="required" name="oPrimerNombre" type="text" value="" />
+              <input class="span12 required-send" maxlength="20" minlength="2" required="required" name="PrimerNombre" type="text" value="<?php echo "{$primerNombre}" ?>" />
             </div>
             <div class="span2">
               <label>Segundo Nombre</label>
-              <input class="span12" maxlength="20" minlength="2" name="oSegundoNombre" value="" type="text" />
+              <input class="span12" maxlength="20" minlength="2" name="SegundoNombre" value="<?php echo "{$segundoNombre}" ?>" type="text" />
             </div>
             <div class="span2">
-              <label> <i class="required">* </i>Primer Apellido</label>
-              <input class="span12 required-send" maxlength="20" minlength="2" required="required" name="oPrimerApellido" value="" type="text" />
+              <label> <i class="">* </i>Primer Apellido</label>
+              <input class="span12 required-send" maxlength="20" minlength="2" required="required" name="PrimerApellido" value="<?php echo "{$primerApellido}" ?>" type="text" />
             </div>
             <div class="span2">
               <label>Segundo Apellido</label>
-              <input class="span12" maxlength="20" minlength="2" name="oSegundoApellido" value="" type="text" />
+              <input class="span12" maxlength="20" minlength="2" name="SegundoApellido" value="<?php echo "{$segundoApellido}" ?>" type="text" />
             </div>
             <div class="span3">
               <label>Apellido de Casada</label>
-              <input class="span12" maxlength="20" minlegth="2" name="oApellidoCasada" value="" type="text" />
+              <input class="span12" maxlength="20" minlegth="2" name="ApellidoCasada" value="<?php echo "{$apellidoCasada}" ?>" type="text" />
             </div>
           </div>
         </fieldset>
@@ -33,18 +64,27 @@
           <label>Lugar de Nacimiento</label>
           <div class="row-fluid">
             <div class="span4">
-              <select class="span12 cctld pais-nacimiento select2" name="Oferentes[idPaisNacimiento]">
+              <select class="span12 cctld pais-nacimiento" name="PaisNacimiento">
                 <option value="0">-- País --</option>
+                <?php foreach ($paisNacimiento as $pais) { ?>
+                 <option value="<?php echo $pais->Codigo; ?>" <?php echo((int) $pais->Codigo == (int) $paisNac?'selected="selected"':'')?>><?php echo $pais->Pais; ?></option>
+                <?php } ?>
               </select>
             </div>
             <div class="span4">
-              <select class="span12 depto required-send" name="Oferentes[idDepartamentoNacimiento]" data-transfer="Oferentes[idMunicipioNacimiento]">
+              <select class="span12 depto -send" name="DepartamentoNacimiento" data-transfer="Oferentes[idMunicipioNacimiento]">
                 <option value="">-- Departamento --</option>
+                <?php foreach ($deptoNacimiento as $depto) { ?>
+                 <option value="<?php echo $depto->Codigo; ?>" <?php echo((int) $depto->Codigo == (int) $departamentoNac?'selected="selected"':'')?>><?php echo $depto->Descripcion; ?></option>
+                <?php } ?>
               </select>
             </div>
             <div class="span4">
-              <select class="muni required-send span12" name="Oferentes[idMunicipioNacimiento]">
+              <select class="muni -send span12" name="MunicipioNacimiento">
                 <option value="">-- Municipio --</option>
+                <?php foreach ($munNacimiento as $mun) { ?>
+                 <option value="<?php echo $mun->Codigo; ?>" <?php echo((int) $mun->Codigo == (int) $municipioNac?'selected="selected"':'')?>><?php echo $mun->Descripcion; ?></option>
+                <?php } ?>
               </select>
             </div>
           </div>
@@ -53,8 +93,11 @@
           <label>Nacionalidad</label>
           <div class="row-fluid">
             <div class="span12">
-              <select class="span4 pais-nacimiento select2" name="Oferentes[idPaisNacionalidad]" readonly="readonly">
+              <select class="span4 pais-nacimiento" name="Oferentes[idPaisNacionalidad]" readonly="readonly" disabled>
                 <option value="" selected="selected">-- Nacionalidad --</option>
+                <?php foreach ($nacionalidadNac as $nacionalidad) { ?>
+                 <option value="<?php echo $nacionalidad->Codigo; ?>" <?php echo((int) $nacionalidad->Codigo == (int) $paisNac?'selected="selected"':'')?>><?php echo $nacionalidad->Nacionalidad; ?></option>
+                <?php } ?>
               </select>
             </div>
           </div>
@@ -63,30 +106,36 @@
       <div class="section">
         <fieldset>
           <div class="row-fluid">
-            <div class="span3">
+            <div class="span4">
               <label><i class="required">* </i>Fecha de Nacimiento</label>
               <div>
-                <select class="span4 required-send" name="Oferentes[oFechaNacimientoDay]" required="required" >
+                <?php
+                  list($year, $month, $day) = explode('-', $fechaNac);
+                ?>
+                <select class="span3 required-send" name="DiaNacimiento" required="required" >
                   <option value="">Día</option>
+                  <?php for($i=1;$i<=31;$i++) echo '<option value="'.$i.'" '.($day==$i?'selected="selected"':'').'>'.$i.'</option>'; ?>
                 </select>
-                <select class="span4 required-send" name="Oferentes[oFechaNacimientoMonth]" required="required" >
+                <select class="span3 required-send" name="MesNacimiento" required="required" >
                   <option value="">Mes</option>
+                  <?php for($i=1;$i<=12;$i++) echo '<option value="'.$i.'" '.($day==$i?'selected="selected"':'').'>'.$i.'</option>'; ?>
                 </select>
-                <select class="span4 required-send" name="Oferentes[oFechaNacimientoYear]" required="required" >
+                <select class="span4 required-send" name="AnioNacimiento" required="required" >
                   <option value="">A&ntilde;o</option>
+                  <?php for($i=(new DateTime('now - 60 year'))->format('Y'), $today=date('Y');$i<=$today;$i++) echo '<option value="'.$i.'"  '.($year==$i?'selected="selected"':'').'>'.$i.'</option>'; ?>
                 </select>
               </div>
             </div>
             <div class="span3">
               <label>Estado Civil</label>
               <select class="span12 " name="Oferentes[oEstadoCivil]">
-                <option value="">SELECCIONAR:</option>
+                <option value="">---SELECCIONAR---</option>
               </select>
             </div>
             <div class="span3">
               <label>Sexo</label>
               <select class="span12 genre " name="Oferentes[oSexo]">
-                <option value="">SELECCIONAR:</option>
+                <option value="">---SELECCIONAR---</option>
               </select>
             </div>
           </div>
@@ -97,31 +146,40 @@
           <div class="row-fluid">
             <div class="span4">
               <label><i class="required">* </i>Dirección Actual</label>
-              <input class="span12 addr required-send" type="text" maxlength="100" minlength="5" required="required" name="Oferentes[oDireccion]" id="direccion-actual" value=""/>
+              <input class="span12 addr required-send" type="text" maxlength="100" minlength="5" required="required" name="Direccion" id="direccion-actual" value="<?php echo "{$direccion}" ?>"/>
             </div>
             <div class="span3">
               <label>Colonia</label>
-              <input class="span12" maxlength="50" name="Oferentes[oColonia]" type="text" value="" />
+              <input class="span12" maxlength="50" name="Colonia" type="text" value="<?php echo "{$colonia}" ?>" />
             </div>
             <div class="span1">
               <label>Zona</label>
-              <input class="span12 integer" maxlength="2" minlength="1" name="Oferentes[oZona]" type="text" value="" />
+              <input class="span12 integer" maxlength="2" minlength="1" name="Zona" type="text" value="<?php echo "{$zona}" ?>" />
             </div>
           </div>
           <div class="row-fluid">
             <div class="span4">
-              <select class="span12 cctld required-send" name="Oferentes[idPaisDireccion]">
+              <select class="span12 cctld required-send" name="PaisDireccion">
                 <option value="0">-- País --</option>
+                <?php foreach ($paisNacimiento as $pais) { ?>
+                 <option value="<?php echo $pais->Codigo; ?>" <?php echo((int) $pais->Codigo == (int) $paisDirec?'selected="selected"':'')?>><?php echo $pais->Pais; ?></option>
+                <?php } ?>
               </select>
             </div>
             <div class="span4">
-              <select class="span12  depto required-send" name="Oferentes[idDepartamentoDireccion]" data-transfer="Oferentes[idMunicipioDireccion]">
+              <select class="span12  depto required-send" name="DeptoDireccion" data-transfer="Oferentes[idMunicipioDireccion]">
                 <option value="">-- Departamento --</option>
+                <?php foreach ($deptoNacimiento as $depto) { ?>
+                 <option value="<?php echo $depto->Codigo; ?>" <?php echo((int) $depto->Codigo == (int) $deptoDirec?'selected="selected"':'')?>><?php echo $depto->Descripcion; ?></option>
+                <?php } ?>
               </select>
             </div>
             <div class="span4">
-              <select class=" muni span12 required-send" name="Oferentes[idMunicipioDireccion]">
+              <select class=" muni span12 required-send" name="MunicipioDireccion">
                 <option value="">-- Municipio --</option>
+                <?php foreach ($munNacimiento as $mun) { ?>
+                 <option value="<?php echo $mun->Codigo; ?>" <?php echo((int) $mun->Codigo == (int) $munDirec?'selected="selected"':'')?>><?php echo $mun->Descripcion; ?></option>
+                <?php } ?>
               </select>
             </div>
           </div>
@@ -132,11 +190,11 @@
           <div class="row-fluid">
             <div class="span4">
               <label> Teléfono de Casa </label>
-              <input class="span12 phoneGT integer" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="Oferentes[oTelefono][0]" value="" type="text" />
+              <input class="span12 phoneGT integer" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="Telefono" value="" type="text" />
             </div>
             <div class="span4">
               <label> <i class="required">* </i>Celular</label>
-              <input class="span12 phoneGT integer required-send" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'  required="required" name="Oferentes[oTelefono][1]" type="text" value="" />
+              <input class="span12 phoneGT integer required-send" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'  required="required" name="Celular" type="text" value="" />
             </div>
           </div>
         </fieldset>
@@ -146,34 +204,44 @@
           <div class="row-fluid">
             <div class="span4">
               <label> <i class="required">* </i>Documento de Identificación</label>
-              <select class="span12 required-send" name="OferenteIdentificacion[oiTipo]" id="tipoDocumento" required="required" >
+              <select class="span12 required-send" name="p1_DocumentoIdentificacion" id="tipoDocumento"  >
                 <option value="">-- Selecionar --</option>
               </select>
             </div>
             <div class="span4">
               <label> <i class="required">* </i>Número de Identificación</label>
-              <input class="span8 digits required-send" maxlength="20" required="required" type="text" name="OferenteIdentificacion[oiRegistro]" value="" />
+              <input class="span8 digits required-send" maxlength="20" required="required" type="text" name="NumeroIdentificacion" value="<?php echo "{$identificacion}" ?>" />
             </div>
           </div>
           <div class="row-fluid">
-            <div class="span5">
-              <label><span class="required">* </span><span>Extendido en</span> </label>
+            <div class="span7">
+              <label><i class="required">* </i>Extendido en </label>
               <div class="row-fluid">
                 <div class="span4">
-                  <select id="country_passport" class="span12 cctld notZero required-send select2" required="required" name="OferenteIdentificacion[oiPaisExtendidoEn]" >
+                  <select id="country_passport" class="span12 cctld notZero required-send select2" required="required" name="PaisExtendidoEn" >
                     <option value="">-- País --</option>
+                    <?php foreach ($paisNacimiento as $pais) { ?>
+                     <option value="<?php echo $pais->Codigo; ?>" <?php echo((int) $pais->Codigo == (int) $paisExtendido?'selected="selected"':'')?>><?php echo $pais->Pais; ?></option>
+                    <?php } ?>
                   </select>
                 </div>
 
                 <div class="span4">
-                  <select class="span12 depto required-send" name="OferenteIdentificacion[oiDepartamentoExtendidoEn]" data-transfer="OferenteIdentificacion[oiMunicipioExtendidoEn]">
+                  <select class="span12 depto required-send" name="DepartamentoExtendidoEn" data-transfer="MunicipioExtendidoEn">
                     <option value="">-- Departamento --</option>
+                    <?php foreach ($deptoNacimiento as $depto) { ?>
+                     <option value="<?php echo $depto->Codigo; ?>" <?php echo((int) $depto->Codigo == (int) $deptoExtendido?'selected="selected"':'')?>><?php echo $depto->Descripcion; ?></option>
+                    <?php } ?>
                   </select>
                 </div>
 
                 <div class="span4">
-                  <select class="span12 muni required-send" name="OferenteIdentificacion[oiMunicipioExtendidoEn]">
+                  <select class="span12 muni required-send" name="MunicipioExtendidoEn">                </div>
+
                     <option value="">-- Municipio --</option>
+                    <?php foreach ($munNacimiento as $mun) { ?>
+                     <option value="<?php echo $mun->Codigo; ?>" <?php echo((int) $mun->Codigo == (int) $munExtendido?'selected="selected"':'')?>><?php echo $mun->Descripcion; ?></option>
+                    <?php } ?>
                   </select>
                 </div>
               </div>
