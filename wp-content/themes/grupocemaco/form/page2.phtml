@@ -1,6 +1,7 @@
 <?php
-$estudios =  $wpdb->get_results( "SELECT * FROM gc_usuarios_pagina2_estudios" );
-
+$usuario = get_current_user_id();
+// Obtiene datos guardados en la db
+// $titulo =  $wpdb->get_var( "SELECT p2_e_Titulo FROM gc_usuarios_pagina2_estudios WHERE UserId=$usuario LIMIT 5" );
 
 // Obtiene listas creadas de la db
 $paises =  $wpdb->get_results( "SELECT Codigo, Pais FROM gc_info_paises" );
@@ -29,11 +30,11 @@ $municipios =  $wpdb->get_results( "SELECT Codigo, Descripcion FROM gc_info_muni
             <div class="row-fluid fCarreras">
               <div class="span4">
                 <label> Título o Diploma Obtenido </label>
-                <input class="span12" type="text" maxlength="90" name="Estudios[titulo][<?php echo $i++ ?>]" value="" />
+                <input class="span12" type="text" maxlength="90" name="titulo[]" value="" />
               </div>
               <div class="span4">
                 <label> Nivel de estudios </label>
-                <select name="Estudios[nivelEstudios][]" class="span12">
+                <select name="nivelEstudios[]" class="span12">
                   <option value="Primaria">Primaria</option>
                   <option value="Basicos">Básicos</option>
                   <option value="Diversificado">Diversificado</option>
