@@ -59,6 +59,7 @@
                 <!-- Página 1 -->
                 <?php require_once('wp-content/themes/grupocemaco/form/page1.phtml') ?>
               <div class="siguiente-anterior">
+                <input type="submit" name="guardar" value="Guardar">
                 <a href="#tab-2" data-toggle="tab" class="tabEstudios siguiente">Siguiente</a>
               </div>
           </div>
