@@ -810,7 +810,7 @@ $(document).ready(function(){
               if($(this).is(':checked')) $(this).removeAttr('checked');
           });
 
-          section.find('legend.legend-trabajo').html('Trabajos Anteriores').prepend(delete_button);
+          section.find('legend.legend-trabajo').prepend(delete_button);
           section.find('.dateITA').removeAttr('id').removeClass('hasDatepicker').datepicker({
               dateFormat:"dd/mm/yy",
               changeMonth:true,
@@ -831,7 +831,7 @@ $(document).ready(function(){
 	$('.delete_trabajo').each(function(){
 		$(this).tooltip().click(function(){
 			if (confirm('¿Estas seguro que deseas eliminar esta opción?'))
-        $(this).closest('fieldset').remove();
+        $(this).closest('.trabajos-adicionales').remove();
 		});
 	});
 

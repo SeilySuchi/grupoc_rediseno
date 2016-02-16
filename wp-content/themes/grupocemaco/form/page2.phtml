@@ -4,7 +4,7 @@ $usuario = get_current_user_id();
 $estudios =  $wpdb->get_results( "SELECT * FROM gc_usuarios_estudios WHERE UserId=$usuario" );
 $cursos =  $wpdb->get_results( "SELECT * FROM gc_usuarios_estudios_cursos WHERE UserId=$usuario" );
 $idiomas =  $wpdb->get_results( "SELECT * FROM gc_usuarios_estudios_idioma WHERE UserId=$usuario" );
-$idiomasSiNo =  $wpdb->get_results( "SELECT * FROM gc_usuarios_estudios_idioma WHERE UserId=$usuario" );
+$idiomasSiNo =  $wpdb->get_results( "SELECT * FROM gc_usuarios_estudios_idioma WHERE UserId=$usuario LIMIT 1" );
 
 $titulo =  $wpdb->get_results( "SELECT e_Titulo FROM gc_usuarios_estudios WHERE UserId=$usuario" );
 
@@ -24,7 +24,7 @@ $municipios =  $wpdb->get_results( "SELECT Codigo, Descripcion FROM gc_info_muni
       <fieldset class="oferente-estudios">
         <div class="row-fluid">
         <div class="span1 text-center"><br />
-          <i class="icon-folder-open"></i> </div>
+          <i class="icon-asterisk"></i> </div>
         <div class="span11">
           <div class="section">
             <legend class="legend-curso">&nbsp;
@@ -108,7 +108,7 @@ $municipios =  $wpdb->get_results( "SELECT Codigo, Descripcion FROM gc_info_muni
         <fieldset class="cursos-maquinaria">
           <div class="row-fluid">
             <div class="span1 text-center"><br />
-              <i class="icon-folder-open"></i> </div>
+              <i class="icon-asterisk"></i> </div>
             <div class="span11">
               <div class="section">
                 <legend class="legend-curso" style="width: 95%;">&nbsp;</legend>
@@ -150,13 +150,13 @@ $municipios =  $wpdb->get_results( "SELECT Codigo, Descripcion FROM gc_info_muni
         <div class="section">
         <div class="row-fluid">
           <div class="span5">
-            <?php foreach($idiomasSiNo as $index => $idioma) if($idioma++<=1){ ?>
+            <?php $userIdioma = (is_array($idiomasSiNo)&&count($idiomasSiNo)>0?$idiomasSiNo:array(0=>array())); foreach($userIdioma as $index => $idioma){ ?>
               <?php $dominas = $idioma->ei_DominasIdioma ?>
               <select class="span12 onoff" name="idiomaSiNo[]">
                 <option value="S" <?php echo ($dominas=='S'?'selected="selected"':'') ?>>Sí</option>
                 <option value="N" <?php echo ($dominas=='N'?'selected="selected"':'') ?>>No</option>
               </select>
-            <?php break;} ?>
+            <?php } ?>
           </div>
         </div><br>
         <div class="row-fluid">

@@ -20,6 +20,8 @@ $deptoDirec =  $wpdb->get_var( "SELECT s_DepartamentoDireccion FROM gc_usuarios_
 $munDirec =  $wpdb->get_var( "SELECT s_MunicipioDireccion FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
 $identificacion =  $wpdb->get_var( "SELECT s_NumeroIdentificacion FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
 
+$tipoDocumento =  $wpdb->get_var( "SELECT s_DocumentoIdentificacion FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+
 $paisExtendido =  $wpdb->get_var( "SELECT s_ExtendidoEnPais FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
 $deptoExtendido =  $wpdb->get_var( "SELECT s_ExtendidoEnDepartamento FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
 $munExtendido =  $wpdb->get_var( "SELECT s_ExtendidoEnMunicipio FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
@@ -95,7 +97,7 @@ $nacionalidadNac =  $wpdb->get_results( "SELECT Codigo, Nacionalidad FROM gc_inf
           <label>Nacionalidad</label>
           <div class="row-fluid">
             <div class="span12">
-              <select class="span4 pais-nacimiento" name="Oferentes[idPaisNacionalidad]" readonly="readonly" disabled>
+              <select class="span4 pais-nacimiento" name="nacionalidad" readonly="readonly" disabled>
                 <option value="" selected="selected">-- Nacionalidad --</option>
                 <?php foreach ($nacionalidadNac as $nacionalidad) { ?>
                  <option value="<?php echo $nacionalidad->Codigo; ?>" <?php echo((int) $nacionalidad->Codigo == (int) $paisNac?'selected="selected"':'')?>><?php echo $nacionalidad->Nacionalidad; ?></option>
@@ -206,8 +208,10 @@ $nacionalidadNac =  $wpdb->get_results( "SELECT Codigo, Nacionalidad FROM gc_inf
           <div class="row-fluid">
             <div class="span4">
               <label> <i class="required">* </i>Documento de Identificación</label>
-              <select class="span12 required-send" name="s_DocumentoIdentificacion" id="tipoDocumento"  >
+              <select class="span12 required-send" name="tipoDocomento">
                 <option value="">-- Selecionar --</option>
+                <option value="Pasaporte" <?php echo($tipoDocumento=='Pasaporte'?'selected="selected"':'') ?>>Pasaporte</option>
+                <option value="DPI" <?php echo($tipoDocumento=='DPI'?'selected="selected"':'') ?>>DPI</option>
               </select>
             </div>
             <div class="span4">
