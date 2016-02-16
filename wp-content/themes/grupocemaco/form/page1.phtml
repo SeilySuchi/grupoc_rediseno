@@ -221,7 +221,7 @@ $nacionalidadNac =  $wpdb->get_results( "SELECT Codigo, Nacionalidad FROM gc_inf
               <div class="row-fluid">
                 <div class="span4">
                   <select id="country_passport" class="span12 cctld notZero required-send select2" required="required" name="PaisExtendidoEn" >
-                    <option value="">-- País --</option>
+                    <option class="required-send" required="required" value="">-- País --</option>
                     <?php foreach ($paisNacimiento as $pais) { ?>
                      <option value="<?php echo $pais->Codigo; ?>" <?php echo((int) $pais->Codigo == (int) $paisExtendido?'selected="selected"':'')?>><?php echo $pais->Pais; ?></option>
                     <?php } ?>
