@@ -726,8 +726,15 @@ input[type=range] {  -webkit-appearance: none;  margin: @thumb-height/2 0;  widt
 			background-image: -ms-linear-gradient(bottom, #2B4AAE 49%, #20358A 50%);
 			background-image: linear-gradient(to bottom, #2B4AAE 49%, #20358A 50%);}
 		.tabsbolsa .siguiente-anterior .siguiente{float: right;}
-.error{color:red;}
+
 .siguienteyanterior{cursor: pointer;}
+
+/********** Validaciones *********/
+.error{color:red;}
+select.error, textarea.error, input.error {color:#FF0000;border:#FF0000 1px solid;}
+.clase-mensaje-error{position:absolute;}
+.errorhighlight{border:#FF0000 2px solid !important;}
+
 
 /**
 |------------------------

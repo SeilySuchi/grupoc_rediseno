@@ -21,9 +21,9 @@
 <script src="wp-content/themes/grupocemaco/js/jquery.mask.js"></script>
 <script src="wp-content/themes/grupocemaco/js/jquery.mask-money.js"></script>
 <script src="wp-content/themes/grupocemaco/js/jquery.timer.js"></script>
-<script src="wp-content/themes/grupocemaco/js/jquery.validationEngine.js"></script>
+<!--<script src="wp-content/themes/grupocemaco/js/jquery.validationEngine.js"></script>-->
 <script src="wp-content/themes/grupocemaco/js/jquery.functions.js"></script>
-<script src="wp-content/themes/grupocemaco/js/jquery.validationEngine-es.js"></script>
+<!--<script src="wp-content/themes/grupocemaco/js/jquery.validationEngine-es.js"></script>-->
 <script src="wp-content/themes/grupocemaco/js/jquery.noty.js"></script>
 <script src="wp-content/themes/grupocemaco/js/micv.js"></script>
 
@@ -174,13 +174,13 @@ $(document).ready(function(){
 
 
     $("a.tabEstudios").click(function(){
-        //if ($($myForm).valid()){
+        if ($($myForm).valid()){
             var percentage30 = 30 / 100;
             drawProgress(aProgress, percentage30, $pCaption);
             $( ".tabsb" ).removeClass( "activetab" );
             $( ".tabsb2" ).addClass( "activetab" );
             $("#tab-2").show(); $('#tab-1').hide(); $('#tab-3').hide(); $('#tab-4').hide(); $('#tab-5').hide();
-        //}
+        }
     });
     $("a.tabTrabajos").click(function(){
         if ($($myForm).valid()){
@@ -192,13 +192,13 @@ $(document).ready(function(){
         }
     });
     $("a.tabTrabajar").click(function(){
-        //if ($($myForm).valid()){
+        if ($($myForm).valid()){
             var percentage70 = 70 / 100;
             drawProgress(aProgress, percentage70, $pCaption);
             $( ".tabsb" ).removeClass( "activetab" );
             $( ".tabsb4" ).addClass( "activetab" );
             $("#tab-4").show(); $('#tab-1').hide(); $('#tab-2').hide(); $('#tab-3').hide(); $('#tab-5').hide();
-        //}
+        }
     });
     $("a.tabUltimo").click(function(){
         if ($($myForm).valid()){
@@ -220,7 +220,6 @@ $(document).ready(function(){
 
 /************* Tabs *************/
 
-
 var $tabs = $('#wheel-tab li');
 $('#wheel-left').on('click', function () {
     $tabs.filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');
@@ -229,6 +228,17 @@ $('#wheel-left').on('click', function () {
 $('#wheel-right').on('click', function () {
     $tabs.filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
 });
+
+/************* Color en validaciones *************/
+$("#formBolsa").validate({
+    errorClass: "clase-mensaje-error",
+    validClass: "validacion-clase",
+    highlight: function(element, errorClass) {
+        $(element).addClass('errorhighlight');
+    }
+});
+
+
 
     </script>
 
