@@ -20,6 +20,9 @@ $month = $_POST['MesNacimiento'];
 $year =  $_POST['AnioNacimiento'];
 $born = $year.'-'.$month.'-'.$day;
 
+// $wpdb->query(" DELETE FROM gc_usuarios_sobreTi WHERE UserId = $userID ");
+
+// Page 1 - Sobre Ti
 $wpdb->insert(
   'gc_usuarios_sobreTi',
   array(
@@ -49,12 +52,18 @@ $wpdb->insert(
   )
 );
 
-// Page 2
+// Page 2 - Estudios
 for($i=0 ;$i < count($_POST['titulo']); $i++) {
   $insert_values = array(
     'UserId' => $userID,
     'e_Titulo' => $_POST['titulo'][$i],
     'e_NivelEstudios' => $_POST['nivelEstudios'][$i],
+    'e_NombreCentroEstudios' => $_POST['nombreCentroEstudios'][$i],
+    'e_PaisCentroEstudios' => $_POST['pais'][$i],
+    'e_FechaInicio' => $_POST['fechaInicio'][$i],
+    'e_FechaFinal' => $_POST['fechaFinal'][$i],
+    'e_HastaLaFecha' => $_POST['hastaLaFecha'][$i],
+    'e_Estado' => $_POST['estado'][$i],
     'e_FechaCreacion' => date( "{$date_format} {$time_format}", current_time( 'timestamp' ) )
   );
   $wpdb->insert(
@@ -62,6 +71,35 @@ for($i=0 ;$i < count($_POST['titulo']); $i++) {
   );
 }
 
+// Page 2 - Conocimientos y cursos
+for($i=0 ;$i < count($_POST['conocimientoNombre']); $i++) {
+  $insert_values = array(
+    'UserId' => $userID,
+    'ec_NombreCursoOConocimiento' => $_POST['conocimientoNombre'][$i],
+    'ec_Nivel' => $_POST['conocimientoNivel'][$i],
+    'ec_Descripcion' => $_POST['conocimientoDescripcion'][$i],
+    'ec_FechaCreacion' => date( "{$date_format} {$time_format}", current_time( 'timestamp' ) )
+  );
+  $wpdb->insert(
+    'gc_usuarios_estudios_cursos', $insert_values
+  );
+}
+
+// Page 2 - Idiomas
+for($i=0 ;$i < count($_POST['idiomaNombre']); $i++) {
+  $insert_values = array(
+    'UserId' => $userID,
+    'ei_DominasIdioma' => $_POST['idiomaSiNo'][$i],
+    'ei_TipoIdioma' => $_POST['idiomaNombre'][$i],
+    'ei_NivelLeido' => $_POST['lectura'][$i],
+    'ei_NivelEscrito' => $_POST['escritura'][$i],
+    'ei_NivelConversacion' => $_POST['conversacion'][$i],
+    'ei_FechaCreacion' => date( "{$date_format} {$time_format}", current_time( 'timestamp' ) )
+  );
+  $wpdb->insert(
+    'gc_usuarios_estudios_idioma', $insert_values
+  );
+}
 ?>
 
 Guardado!
