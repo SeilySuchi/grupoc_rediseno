@@ -83,16 +83,14 @@
             </div>
           </div>
           <div class="tab-pane" id="tab-4">
-            <!-- Página 3 -->
-            <?php require_once('wp-content/themes/grupocemaco/form/page4.phtml') ?>
+              <?php require_once('wp-content/themes/grupocemaco/form/page4.phtml') ?>
               <div class="siguiente-anterior">
                    <a class="siguienteyanterior tabTrabajos">Anterior</a>
                    <a class="siguienteyanterior tabUltimo siguiente">Siguiente</a>
               </div>
           </div>
           <div class="tab-pane" id="tab-5">
-            <!-- Página 3 -->
-            <?php require_once('wp-content/themes/grupocemaco/form/page5.phtml') ?>
+              <?php require_once('wp-content/themes/grupocemaco/form/page5.phtml') ?>
               <div class="siguiente-anterior">
                    <a class="siguienteyanterior tabTrabajar">Anterior</a>
               </div>

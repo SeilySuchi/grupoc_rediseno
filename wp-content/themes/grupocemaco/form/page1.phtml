@@ -1,26 +1,28 @@
 <?php
 $usuario = get_current_user_id();
 // Obtiene datos guardados en la db
-$primerNombre =  $wpdb->get_var( "SELECT p1_PrimerNombre FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$segundoNombre =  $wpdb->get_var( "SELECT p1_SegundoNombre FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$primerApellido =  $wpdb->get_var( "SELECT p1_PrimerApellido FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$segundoApellido =  $wpdb->get_var( "SELECT p1_SegundoApellido FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$apellidoCasada =  $wpdb->get_var( "SELECT p1_ApellidoCasada FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$paisNac =  $wpdb->get_var( "SELECT p1_PaisNacimiento FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$departamentoNac =  $wpdb->get_var( "SELECT p1_DepartamentoNacimiento FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$municipioNac =  $wpdb->get_var( "SELECT p1_MunicipioNacimiento FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$fechaNac =  $wpdb->get_var( "SELECT p1_FechaNacimiento FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$direccion =  $wpdb->get_var( "SELECT p1_Direccion FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$colonia =  $wpdb->get_var( "SELECT p1_ColonaDireccion FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$zona =  $wpdb->get_var( "SELECT p1_ZonaDireccion FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$paisDirec =  $wpdb->get_var( "SELECT p1_PaisDireccion FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$deptoDirec =  $wpdb->get_var( "SELECT p1_DepartamentoDireccion FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$munDirec =  $wpdb->get_var( "SELECT p1_MunicipioDireccion FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$identificacion =  $wpdb->get_var( "SELECT p1_NumeroIdentificacion FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$primerNombre =  $wpdb->get_var( "SELECT s_PrimerNombre FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$segundoNombre =  $wpdb->get_var( "SELECT s_SegundoNombre FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$primerApellido =  $wpdb->get_var( "SELECT s_PrimerApellido FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$segundoApellido =  $wpdb->get_var( "SELECT s_SegundoApellido FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$apellidoCasada =  $wpdb->get_var( "SELECT s_ApellidoCasada FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$paisNac =  $wpdb->get_var( "SELECT s_PaisNacimiento FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$departamentoNac =  $wpdb->get_var( "SELECT s_DepartamentoNacimiento FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$municipioNac =  $wpdb->get_var( "SELECT s_MunicipioNacimiento FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$fechaNac =  $wpdb->get_var( "SELECT s_FechaNacimiento FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$direccion =  $wpdb->get_var( "SELECT s_Direccion FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$telefono =  $wpdb->get_var( "SELECT s_Telefono FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$celular =  $wpdb->get_var( "SELECT s_Celular FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$colonia =  $wpdb->get_var( "SELECT s_ColonaDireccion FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$zona =  $wpdb->get_var( "SELECT s_ZonaDireccion FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$paisDirec =  $wpdb->get_var( "SELECT s_PaisDireccion FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$deptoDirec =  $wpdb->get_var( "SELECT s_DepartamentoDireccion FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$munDirec =  $wpdb->get_var( "SELECT s_MunicipioDireccion FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$identificacion =  $wpdb->get_var( "SELECT s_NumeroIdentificacion FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
 
-$paisExtendido =  $wpdb->get_var( "SELECT p1_ExtendidoEnPais FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$deptoExtendido =  $wpdb->get_var( "SELECT p1_ExtendidoEnDepartamento FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
-$munExtendido =  $wpdb->get_var( "SELECT p1_ExtendidoEnMunicipio FROM gc_usuarios_pagina1 WHERE UserId=$usuario LIMIT 1" );
+$paisExtendido =  $wpdb->get_var( "SELECT s_ExtendidoEnPais FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$deptoExtendido =  $wpdb->get_var( "SELECT s_ExtendidoEnDepartamento FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
+$munExtendido =  $wpdb->get_var( "SELECT s_ExtendidoEnMunicipio FROM gc_usuarios_sobreTi WHERE UserId=$usuario LIMIT 1" );
 
 
 // Obtiene listas creadas de la db
@@ -118,7 +120,7 @@ $nacionalidadNac =  $wpdb->get_results( "SELECT Codigo, Nacionalidad FROM gc_inf
                 </select>
                 <select class="span3 required-send" name="MesNacimiento" required="required" >
                   <option value="">Mes</option>
-                  <?php for($i=1;$i<=12;$i++) echo '<option value="'.$i.'" '.($day==$i?'selected="selected"':'').'>'.$i.'</option>'; ?>
+                  <?php for($i=1;$i<=12;$i++) echo '<option value="'.$i.'" '.($month==$i?'selected="selected"':'').'>'.$i.'</option>'; ?>
                 </select>
                 <select class="span4 required-send" name="AnioNacimiento" required="required" >
                   <option value="">A&ntilde;o</option>
@@ -190,11 +192,11 @@ $nacionalidadNac =  $wpdb->get_results( "SELECT Codigo, Nacionalidad FROM gc_inf
           <div class="row-fluid">
             <div class="span4">
               <label> Teléfono de Casa </label>
-              <input class="span12 phoneGT integer" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="Telefono" value="" type="text" />
+              <input class="span12 phoneGT integer" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="Telefono" value="<?php echo "{$telefono}" ?>" type="text" />
             </div>
             <div class="span4">
               <label> <i class="required">* </i>Celular</label>
-              <input class="span12 phoneGT integer required-send" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'  required="required" name="Celular" type="text" value="" />
+              <input class="span12 phoneGT integer required-send" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'  required="required" name="Celular" type="text" value="<?php echo "{$celular}" ?>" />
             </div>
           </div>
         </fieldset>
@@ -204,7 +206,7 @@ $nacionalidadNac =  $wpdb->get_results( "SELECT Codigo, Nacionalidad FROM gc_inf
           <div class="row-fluid">
             <div class="span4">
               <label> <i class="required">* </i>Documento de Identificación</label>
-              <select class="span12 required-send" name="p1_DocumentoIdentificacion" id="tipoDocumento"  >
+              <select class="span12 required-send" name="s_DocumentoIdentificacion" id="tipoDocumento"  >
                 <option value="">-- Selecionar --</option>
               </select>
             </div>
