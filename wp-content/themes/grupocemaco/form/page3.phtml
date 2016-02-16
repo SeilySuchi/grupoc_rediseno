@@ -7,19 +7,14 @@
 
                 <fieldset class="trabajos-adicionales">
                   <div class="row-fluid">
-                    <div class="span1 text-center"><br />
-                      <i class="icon-folder-open"></i></div>
                     <div class="span11">
-                      <legend>
 
+                        <div class="section">
 
-
-                      </legend>
-                      <div class="section">
                         <div class="row-fluid">
                           <div class="span7">
                             <label> Nombre de la Empresa </label>
-                            <input class="span12" maxlength="100" name="" value="" type="text" />
+                            <input class="span12" name="" value="" type="text" />
                           </div>
                           <div class="span5">
                             <label>Tipo de Industria</label>
@@ -28,6 +23,7 @@
                             </select>
                           </div>
                         </div>
+
                         <div class="row-fluid">
                           <div class="span7">
                             <label> Dirección </label>
@@ -38,6 +34,7 @@
                             <input class="span12 phoneGT" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' name=""  type="text" value="" />
                           </div>
                         </div>
+
                         <div class="row-fluid dateRanges">
                           <div class="span6">
                             <label> Puesto </label>
@@ -56,6 +53,7 @@
                             <input class="span12 require dateITA dateMax" maxlength="10" datemin="" name=""  value="" type="text"  style="display: none;"  />
                           </div>
                         </div>
+
                         <div class="row-fluid">
                           <div class="span4">
                             <label> Promedio de Ingresos Mensuales <small>(en Quetzales)</small> </label>
@@ -70,6 +68,7 @@
                             <input class="span12 phoneGT" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="" value=""  type="text" />
                           </div>
                         </div>
+
                         <div class="row-fluid">
                           <div class="span12">
                             <label> <span class="required hidden">*</span><span>Responsabilidades del Puesto</span> </label>
@@ -83,6 +82,7 @@
                             <textarea class="span12" maxlength="100" name="" ></textarea>
                           </div>
                         </div>
+
                       </div>
                     </div>
                   </div>
@@ -108,40 +108,26 @@
 
                         <input type="hidden" name="" value="P" />
                         <div class="span2">
-                          <label>
-                            <span class="required">* </span>
-                            <span>Nombre</span> </label>
-                          <input class="span12" required="required" maxlength="70" name="" value="" type="text" />
+                          <label><i class="required">* </i>Nombre</label>
+                            <input class="span12 required-send" required="required" maxlength="70" name="PrimerNombre" value="" type="text" />
                         </div>
                         <div class="span2">
                           <label> Correo electrónico </label>
                           <input class="span12" name=""  value="" type="email" />
                         </div>
                         <div class="span2">
-                          <label>
-
-                            <span class="required">* </span>
-
-                            <span>Teléfono</span> </label>
-                          <input class="span12 phoneGT" required="required" maxlength="8" minlength="8"
+                          <label><i class="required">* </i>Teléfono</label>
+                          <input class="span12 phoneGT required-send" required="required" maxlength="8" minlength="8" name="Telefono"
                                  onkeypress='return event.charCode >= 48 && event.charCode <= 57'
-				 name="" value="" type="text" />
+				 value="" type="text" />
                         </div>
                         <div class="span2">
-                          <label>
-
-                            <span class="required">* </span>
-
-                            <span>Ocupación</span> </label>
-                          <input class="span12 " required="required" maxlength="100" name="" value="" type="text" />
+                          <label><i class="required">* </i>Ocupación</label>
+                          <input class="span12 required-send" required="required" maxlength="100" type="text" name="Ocupacion" value=""/>
                         </div>
                         <div class="span3">
-                          <label>
-
-                            <span class="required">* </span>
-
-                            <span>Tiempo de conocerlo (años)</span></label>
-                          <input class="span8 integer tiempo-anios" min="0" required="required" maxlength="2" name="" value="" type="number" />
+                          <label><i class="required">* </i>Tiempo de conocerlo (años)</label>
+                          <input class="span8 integer tiempo-anios required-send" min="0" required="required" maxlength="2" type="number" name="tiempo-anios" value=""/>
                         </div>
                       </div>
                       <div class="row-fluid"> </div>
