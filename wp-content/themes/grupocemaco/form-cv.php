@@ -21,9 +21,9 @@
 <script src="wp-content/themes/grupocemaco/js/jquery.mask.js"></script>
 <script src="wp-content/themes/grupocemaco/js/jquery.mask-money.js"></script>
 <script src="wp-content/themes/grupocemaco/js/jquery.timer.js"></script>
-<script src="wp-content/themes/grupocemaco/js/jquery.validationEngine.js"></script>
+<!--<script src="wp-content/themes/grupocemaco/js/jquery.validationEngine.js"></script>-->
 <script src="wp-content/themes/grupocemaco/js/jquery.functions.js"></script>
-<script src="wp-content/themes/grupocemaco/js/jquery.validationEngine-es.js"></script>
+<!--<script src="wp-content/themes/grupocemaco/js/jquery.validationEngine-es.js"></script>-->
 <script src="wp-content/themes/grupocemaco/js/jquery.noty.js"></script>
 <script src="wp-content/themes/grupocemaco/js/micv.js"></script>
 
@@ -32,6 +32,9 @@
   <?php get_header();	?>
 </div></div>
 
+<div id="error-main-message">
+    <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/exclamation.png"/>
+    Por Favor ingresar la información requerida en los campos obligatorios</div>
 <!-- --------- main content ------------- -->
 <div class="headmicv"><h1>Mi curriculum</h1></div>
 <div class="greycontent">
@@ -169,18 +172,19 @@ $(document).ready(function(){
             $( ".tabsb" ).removeClass( "activetab" );
             $( ".tabsb1" ).addClass( "activetab" );
             $("#tab-1").show(); $('#tab-2').hide(); $('#tab-3').hide(); $('#tab-4').hide(); $('#tab-5').hide();
+            $("#error-main-message").removeClass("mostrar");
         }
     });
 
-
     $("a.tabEstudios").click(function(){
-        //if ($($myForm).valid()){
+        if ($($myForm).valid()){
             var percentage30 = 30 / 100;
             drawProgress(aProgress, percentage30, $pCaption);
             $( ".tabsb" ).removeClass( "activetab" );
             $( ".tabsb2" ).addClass( "activetab" );
             $("#tab-2").show(); $('#tab-1').hide(); $('#tab-3').hide(); $('#tab-4').hide(); $('#tab-5').hide();
-        //}
+            $("#error-main-message").removeClass("mostrar");
+        }
     });
     $("a.tabTrabajos").click(function(){
         if ($($myForm).valid()){
@@ -189,16 +193,18 @@ $(document).ready(function(){
             $( ".tabsb" ).removeClass( "activetab" );
             $( ".tabsb3" ).addClass( "activetab" );
             $("#tab-3").show(); $('#tab-1').hide(); $('#tab-2').hide(); $('#tab-4').hide(); $('#tab-5').hide();
+            $("#error-main-message").removeClass("mostrar");
         }
     });
     $("a.tabTrabajar").click(function(){
-        //if ($($myForm).valid()){
+        if ($($myForm).valid()){
             var percentage70 = 70 / 100;
             drawProgress(aProgress, percentage70, $pCaption);
             $( ".tabsb" ).removeClass( "activetab" );
             $( ".tabsb4" ).addClass( "activetab" );
             $("#tab-4").show(); $('#tab-1').hide(); $('#tab-2').hide(); $('#tab-3').hide(); $('#tab-5').hide();
-        //}
+            $("#error-main-message").removeClass("mostrar");
+        }
     });
     $("a.tabUltimo").click(function(){
         if ($($myForm).valid()){
@@ -207,6 +213,7 @@ $(document).ready(function(){
             $( ".tabsb" ).removeClass( "activetab" );
             $( ".tabsb5" ).addClass( "activetab" );
             $("#tab-5").show(); $('#tab-1').hide(); $('#tab-2').hide(); $('#tab-3').hide(); $('#tab-4').hide();
+            $("#error-main-message").removeClass("mostrar");
         }
     });
     $("a.prueba").click(function(){
@@ -214,12 +221,12 @@ $(document).ready(function(){
             var percentage100 = 100 / 100;
             drawProgress(aProgress, percentage100, $pCaption);
             $( ".tabsb" ).removeClass( "activetab" );
+            $("#error-main-message").removeClass("mostrar");
         }
     });
 });
 
 /************* Tabs *************/
-
 
 var $tabs = $('#wheel-tab li');
 $('#wheel-left').on('click', function () {
@@ -229,6 +236,18 @@ $('#wheel-left').on('click', function () {
 $('#wheel-right').on('click', function () {
     $tabs.filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
 });
+
+/************* Color en validaciones *************/
+$("#formBolsa").validate({
+    errorClass: "clase-mensaje-error",
+    validClass: "validacion-clase",
+    highlight: function(element, errorClass) {
+        $(element).addClass('errorhighlight');
+        $("#error-main-message").addClass("mostrar");
+    }
+});
+
+
 
     </script>
 
