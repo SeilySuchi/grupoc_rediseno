@@ -726,7 +726,8 @@ input[type=range] {  -webkit-appearance: none;  margin: @thumb-height/2 0;  widt
 			background-image: -ms-linear-gradient(bottom, #2B4AAE 49%, #20358A 50%);
 			background-image: linear-gradient(to bottom, #2B4AAE 49%, #20358A 50%);}
 		.tabsbolsa .siguiente-anterior .siguiente{float: right;}
-
+.error{color:red;}
+.siguienteyanterior{cursor: pointer;}
 
 /**
 |------------------------
@@ -734,7 +735,7 @@ input[type=range] {  -webkit-appearance: none;  margin: @thumb-height/2 0;  widt
 |------------------------
 */
 
-
+b{font-weight: bold !important;}
 
 
 html, body, div, span, applet, object, iframe,
