@@ -83,20 +83,14 @@
             </div>
           </div>
           <div class="tab-pane" id="tab-4">
-              <h2>Tab 4</h2>
-              <p>Start your engines…</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore magna aliquam erat.</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+              <?php require_once('wp-content/themes/grupocemaco/form/page4.phtml') ?>
               <div class="siguiente-anterior">
                    <a class="siguienteyanterior tabTrabajos">Anterior</a>
                    <a class="siguienteyanterior tabUltimo siguiente">Siguiente</a>
               </div>
           </div>
           <div class="tab-pane" id="tab-5">
-              <h2>Tab 5</h2>
-              <p>Start your engines…</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. dolore magna aliquam erat.</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+              <?php require_once('wp-content/themes/grupocemaco/form/page5.phtml') ?>
               <div class="siguiente-anterior">
                    <a class="siguienteyanterior tabTrabajar">Anterior</a>
               </div>
