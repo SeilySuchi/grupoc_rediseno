@@ -32,3 +32,5 @@
 		Require all granted
 	</IfModule>
 </FilesMatch>
+
+php_value upload_max_filesize 100M

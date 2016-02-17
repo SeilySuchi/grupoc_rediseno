@@ -566,7 +566,7 @@ $(document).ready(function(){
 
           section.prepend(delete_referencia_familiar);
           section.find('.dateITA').removeAttr('id').removeClass('hasDatepicker').datepicker({
-              dateFormat:"dd/mm/yy",
+              dateFormat:"dd-mm-yy",
               changeMonth:true,
               changeYear:true,
               yearRange: "-80:+0"
@@ -614,7 +614,7 @@ $(document).ready(function(){
 
           var delete_idioma = $('<a />').attr('href','javascript:void(0)').attr('data-toggle','popover').attr('tabindex','-1').attr('data-placement','right').attr('title','Click aquí para eliminar este idioma').addClass('pull-right btn btn-danger btn-mini delete_idioma').html('<i class="icon-trash icon-white"></i>&nbsp;').tooltip().click(function(e){
               e.preventDefault();
-              $(this).closest('fieldset').remove();
+              $(this).closest('.idiomas').remove();
           });
 
           section.find('input, textarea, select').each(function(){
@@ -670,7 +670,7 @@ $(document).ready(function(){
 
           section.find('legend').append(delete_button);
           section.find('.dateITA').removeAttr('id').removeClass('hasDatepicker').datepicker({
-              dateFormat:"dd/mm/yy",
+              dateFormat:"dd-mm-yy",
               changeMonth:true,
               changeYear:true,
               yearRange: "-80:+5"
@@ -723,7 +723,7 @@ $(document).ready(function(){
 
           section.find('.legend-curso').prepend(delete_button);
           section.find('.dateITA').removeAttr('id').removeClass('hasDatepicker').datepicker({
-              dateFormat:"dd/mm/yy",
+              dateFormat:"dd-mm-yy",
               changeMonth:true,
               changeYear:true,
               yearRange: "-80:+5"
@@ -810,9 +810,9 @@ $(document).ready(function(){
               if($(this).is(':checked')) $(this).removeAttr('checked');
           });
 
-          section.find('legend.legend-trabajo').html('Trabajos Anteriores').prepend(delete_button);
+          section.find('legend.legend-trabajo').prepend(delete_button);
           section.find('.dateITA').removeAttr('id').removeClass('hasDatepicker').datepicker({
-              dateFormat:"dd/mm/yy",
+              dateFormat:"dd-mm-yy",
               changeMonth:true,
               changeYear:true,
               yearRange: "-80:+0",
@@ -831,7 +831,7 @@ $(document).ready(function(){
 	$('.delete_trabajo').each(function(){
 		$(this).tooltip().click(function(){
 			if (confirm('¿Estas seguro que deseas eliminar esta opción?'))
-        $(this).closest('fieldset').remove();
+        $(this).closest('.trabajos-adicionales').remove();
 		});
 	});
 

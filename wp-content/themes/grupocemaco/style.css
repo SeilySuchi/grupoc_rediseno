@@ -259,7 +259,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 }
 .greyback section p{
   margin-bottom: 10px;
-  font-family: 'Helvetica Neue';
+  font-family: 'arial';
   font-size: 14px;
 }
 .greyback section .col-b p{
@@ -274,7 +274,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 .login-submit{
   text-align: center !important;
 }
-.login-submit input[type='submit'], .col-a input[type='submit'], .register-form input[type='submit']{
+input#edit_profile, input#wppb-recover-password-button, .login-submit input[type='submit'], .col-a input[type='submit'], .register-form input[type='submit']{
   font-family: chalet_comprime_sixty;
   text-transform: uppercase;
   text-align: center;
@@ -292,6 +292,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
   border: 0;
   cursor: pointer;
 }
+
 .register-form input[type='submit']{
   float: right;
 }
@@ -727,6 +728,80 @@ input[type=range] {  -webkit-appearance: none;  margin: @thumb-height/2 0;  widt
 			background-image: linear-gradient(to bottom, #2B4AAE 49%, #20358A 50%);}
 		.tabsbolsa .siguiente-anterior .siguiente{float: right;}
 
+.siguienteyanterior{cursor: pointer;}
+
+/********** Validaciones *********/
+.error{color:red;}
+select.error, textarea.error, input.error {color:#FF0000;border:#FF0000 1px solid;}
+.clase-mensaje-error{padding:2px 0;position: absolute;width: 150px; color:#fff;
+	text-align: center;background-color: #0f1e8e;/*border:3px solid #0f1e8e;*/z-index: 99999;
+	-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 6px;
+	-webkit-box-shadow: 2px 2px 4px #888;-moz-box-shadow: 2px 2px 4px #888;	box-shadow: 2px 2px 4px #888;}
+.clase-mensaje-error:after{content: ' ';position: absolute;width: 0;height: 0;left:19px;
+	top: -16px;border: 8px solid;border-color: transparent transparent #0f1e8e #0f1e8e ;}
+.errorhighlight{border:#FF0000 2px solid !important;}
+#error-main-message{display:none;width: 100%;background-color:#EBEBEB;padding:20px;max-width: 960px; margin:-18px auto 14px;
+		font-family: "chalet_comprime_milan"; text-transform: uppercase;font-size:30px;color: #c24444;font-weight: normal;}
+.mostrar{display:block !important;}
+
+/********** Popup Contrato *********/
+.black_overlay{
+        display: block; position: absolute; top: 0%; left: 0%; width: 100%; height: 150%;
+        background-color: black; z-index:99999; -moz-opacity: 0.8; opacity:.80; filter: alpha(opacity=80); }
+.white_content { display: block; position: absolute; top: 25%; left: 25%; width: 50%; height: 50%;
+        padding: 16px; background-color: white; z-index:100000; overflow: auto;}
+
+.popupbox{max-width: 550px;}
+.popupbox .botonazul, .popupbox .botonverde{float:right;vertical-align: bottom;}
+#contrato{}
+#bienvenido{display:none;}
+#bienvenido section{text-align: center;padding:10px 0;}
+#bienvenido section br{}
+#bienvenido section h1{text-align: center;}
+.blocked-button{cursor: not-allowed !important;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.49, #C9C9C9),color-stop(0.5, #B5B5B5)) !important;
+	background-image: -o-linear-gradient(bottom, #C9C9C9 49%, #B5B5B5 50%) !important;
+	background-image: -moz-linear-gradient(bottom, #C9C9C9 49%, #B5B5B5 50%) !important;
+	background-image: -webkit-linear-gradient(bottom, #C9C9C9 49%, #B5B5B5 50%) !important;
+	background-image: -ms-linear-gradient(bottom, #C9C9C9 49%, #B5B5B5 50%) !important;
+	background-image: linear-gradient(to bottom, #C9C9C9 49%, #B5B5B5 50%) !important;
+}
+.botonazul{font-family: "chalet_comprime_eighty";float: left;color:#fff;text-transform: uppercase;font-size:23px;padding:10px 28px;
+	border-botton:3px solid #101e8e !important;text-decoration: none; cursor: pointer;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.49, #2B4AAE),color-stop(0.5, #20358A));
+	background-image: -o-linear-gradient(bottom, #2B4AAE 49%, #20358A 50%);
+	background-image: -moz-linear-gradient(bottom, #2B4AAE 49%, #20358A 50%);
+	background-image: -webkit-linear-gradient(bottom, #2B4AAE 49%, #20358A 50%);
+	background-image: -ms-linear-gradient(bottom, #2B4AAE 49%, #20358A 50%);
+	background-image: linear-gradient(to bottom, #2B4AAE 49%, #20358A 50%);}
+.botonazul:hover{color:#fff;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.49, #3156C4),color-stop(0.5, #2640A6));
+	background-image: -o-linear-gradient(bottom, #3156C4 49%, #2640A6 50%);
+	background-image: -moz-linear-gradient(bottom, #3156C4 49%, #2640A6 50%);
+	background-image: -webkit-linear-gradient(bottom, #3156C4 49%, #2640A6 50%);
+	background-image: -ms-linear-gradient(bottom, #3156C4 49%, #2640A6 50%);
+	background-image: linear-gradient(to bottom, #3156C4 49%, #2640A6 50%);}
+.botonverde{font-family: "chalet_comprime_eighty";float: left;color:#fff;text-transform: uppercase;font-size:23px;padding:10px 28px;
+	border-botton:3px solid #8dc53d !important;text-decoration: none; cursor: pointer;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.49, #AEDB54),color-stop(0.5, #95D500));
+	background-image: -o-linear-gradient(bottom, #AEDB54 49%, #95D500 50%);
+	background-image: -moz-linear-gradient(bottom, #AEDB54 49%, #95D500 50%);
+	background-image: -webkit-linear-gradient(bottom, #AEDB54 49%, #95D500 50%);
+	background-image: -ms-linear-gradient(bottom, #AEDB54 49%, #95D500 50%);
+	background-image: linear-gradient(to bottom, #AEDB54 49%, #95D500 50%);}
+.botonverde:hover{color:#fff;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.49, #BBEB5B),color-stop(0.5, #9DDE04));
+	background-image: -o-linear-gradient(bottom, #BBEB5B 49%, #9DDE04 50%);
+	background-image: -moz-linear-gradient(bottom, #BBEB5B 49%, #9DDE04 50%);
+	background-image: -webkit-linear-gradient(bottom, #BBEB5B 49%, #9DDE04 50%);
+	background-image: -ms-linear-gradient(bottom, #BBEB5B 49%, #9DDE04 50%);
+	background-image: linear-gradient(to bottom, #BBEB5B 49%, #9DDE04 50%);}
+.botonazul:visited, .botonverde:visited{color:#fff;}
+.guardado-completo{padding:100px 0;text-align: center;background-color:#EBEBEB;width: 100%;}
+	.guardado-completo h1{font-family: "chalet_comprime_eighty";color:#101e8e;text-transform: uppercase;font-size:35px;}
+.terms-container { background-color: #fff;border: 1px solid #555; height: 200px;margin:0 auto 13px;overflow: scroll;padding: 10px; width: 95%;}
+.aceptoterminos-main{}
+
 
 /**
 |------------------------
@@ -734,7 +809,7 @@ input[type=range] {  -webkit-appearance: none;  margin: @thumb-height/2 0;  widt
 |------------------------
 */
 
-
+b{font-weight: bold !important;}
 
 
 html, body, div, span, applet, object, iframe,
@@ -1363,8 +1438,21 @@ td, th {
 	/*border: solid 1px red;*/
 }
 
+/*recover password styles*/
+div#wppb-recover-password{ width: 448px;    margin: 0 auto;}
+div#wppb-recover-password p.form-submit{text-align: center;}
+div#wppb-recover-password p {    font-size: 18px;    text-align: center;}
+div#wppb-recover-password ol{margin: 0 0 18px 16px}
+div#wppb-recover-password input#username_email{width: 100%}
+h3.recover_pass{    color: #1b238a;    font-size: 56px !important;    line-height: 36px;}
 
 
+/*editar tu cuenta*/
+.wppb-user-forms ul li, #wppb-login-wrap p, #select_user_to_edit_form p{width: 600px; margin: 0 auto !important}
+.wppb-edit-user p.form-submit{text-align: center;}
+select.default_field_display-name{margin: 19px 0 0 0 !important;}
+li#wppb-form-element-6 {    padding: 0px 0 14px 10px;}
+li#wppb-form-element-6 label {margin: 0 -7px 0 0;}
 /*============================ MEDIA QUERIES ============================*/
 
 @media only screen and (max-width: 1350px) {
@@ -1388,6 +1476,7 @@ td, th {
 .spiffscemaco ul li img{max-width: 260px;}
 .botonspiffs a{width: 228px; padding: 7px 0 5px;margin: 192px 0 0 17px;}
 .botonspiffsnormal a{width: 228px; padding: 7px 0 5px;margin: 192px 0 0 17px;}
+
 }
 
 /* Tablets (portrait) | <800px */
