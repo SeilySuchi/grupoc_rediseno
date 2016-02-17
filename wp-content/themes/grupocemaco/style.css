@@ -732,7 +732,7 @@ input[type=range] {  -webkit-appearance: none;  margin: @thumb-height/2 0;  widt
 /********** Validaciones *********/
 .error{color:red;}
 select.error, textarea.error, input.error {color:#FF0000;border:#FF0000 1px solid;}
-.clase-mensaje-error{padding:2px 0;position: absolute;opacity:0.8;width: 150px; color:#fff;
+.clase-mensaje-error{padding:2px 0;position: absolute;width: 150px; color:#fff;
 	text-align: center;background-color: #0f1e8e;/*border:3px solid #0f1e8e;*/z-index: 99999;
 	-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 6px;
 	-webkit-box-shadow: 2px 2px 4px #888;-moz-box-shadow: 2px 2px 4px #888;	box-shadow: 2px 2px 4px #888;}

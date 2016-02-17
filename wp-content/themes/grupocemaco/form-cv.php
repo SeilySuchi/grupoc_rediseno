@@ -32,6 +32,7 @@
   <?php get_header();	?>
 </div></div>
 
+<a name="toptop"></a>
 <div id="error-main-message">
     <img src="<?php echo site_url(); ?>/wp-content/themes/grupocemaco/images/exclamation.png"/>
     Por Favor ingresar la información requerida en los campos obligatorios</div>
@@ -49,11 +50,11 @@
 <div class="tabsbolsa">
     <!-- ----- Tabs links ------ -->
     <ul id="wheel-tab" data-tabs="tabs">
-       <li class="tabsb activetab tabsb1"><a class="siguienteyanterior tabSobreti">¡Cuéntanos sobre ti!</a></li>
-       <li class="tabsb tabsb2"><a class="siguienteyanterior tabEstudios">¿Qué has estudiado?</a></li>
-       <li class="tabsb tabsb3"><a class="siguienteyanterior tabTrabajos">¿Dónde has trabajado?</a></li>
-       <li class="tabsb tabsb4"><a class="siguienteyanterior tabTrabajar">¡A Trabajar!</a></li>
-       <li class="tabsb tabsb5"><a class="siguienteyanterior tabUltimo">Lo último</a></li>
+       <li class="tabsb activetab tabsb1"><a href="#toptop" class="siguienteyanterior tabSobreti">¡Cuéntanos sobre ti!</a></li>
+       <li class="tabsb tabsb2"><a href="#toptop" class="siguienteyanterior tabEstudios">¿Qué has estudiado?</a></li>
+       <li class="tabsb tabsb3"><a href="#toptop" class="siguienteyanterior tabTrabajos">¿Dónde has trabajado?</a></li>
+       <li class="tabsb tabsb4"><a href="#toptop" class="siguienteyanterior tabTrabajar">¡A Trabajar!</a></li>
+       <li class="tabsb tabsb5"><a href="#toptop" class="siguienteyanterior tabUltimo">Lo último</a></li>
     </ul>
 
     <form action="?page_id=55" method="post" id="formBolsa">
@@ -63,7 +64,7 @@
                 <?php require_once('wp-content/themes/grupocemaco/form/page1.phtml') ?>
               <div class="siguiente-anterior">
                 <input type="submit" name="guardar" value="Guardar">
-                <a class="siguienteyanterior tabEstudios siguiente">Siguiente</a>
+                <a href="#toptop" class="siguienteyanterior tabEstudios siguiente">Siguiente</a>
                 <!--<a data-toggle="tab" href="#tab-2"></a>-->
               </div>
           </div>
@@ -72,8 +73,8 @@
                 <!-- Página 2 -->
                 <?php require_once('wp-content/themes/grupocemaco/form/page2.phtml') ?>
               <div class="siguiente-anterior">
-                   <a class="siguienteyanterior tabSobreti">Anterior</a>
-                   <a class="siguienteyanterior tabTrabajos siguiente">Siguiente</a>
+                   <a href="#toptop" class="siguienteyanterior tabSobreti">Anterior</a>
+                   <a href="#toptop" class="siguienteyanterior tabTrabajos siguiente">Siguiente</a>
               </div>
           </div>
 
@@ -81,21 +82,21 @@
             <!-- Página 3 -->
             <?php require_once('wp-content/themes/grupocemaco/form/page3.phtml') ?>
             <div class="siguiente-anterior">
-                 <a class="siguienteyanterior tabEstudios">Anterior</a>
-                 <a class="siguienteyanterior tabTrabajar siguiente">Siguiente</a>
+                 <a href="#toptop" class="siguienteyanterior tabEstudios">Anterior</a>
+                 <a href="#toptop" class="siguienteyanterior tabTrabajar siguiente">Siguiente</a>
             </div>
           </div>
           <div class="tab-pane" id="tab-4">
               <?php require_once('wp-content/themes/grupocemaco/form/page4.phtml') ?>
               <div class="siguiente-anterior">
-                   <a class="siguienteyanterior tabTrabajos">Anterior</a>
-                   <a class="siguienteyanterior tabUltimo siguiente">Siguiente</a>
+                   <a href="#toptop" class="siguienteyanterior tabTrabajos">Anterior</a>
+                   <a href="#toptop" class="siguienteyanterior tabUltimo siguiente">Siguiente</a>
               </div>
           </div>
           <div class="tab-pane" id="tab-5">
               <?php require_once('wp-content/themes/grupocemaco/form/page5.phtml') ?>
               <div class="siguiente-anterior">
-                   <a class="siguienteyanterior tabTrabajar">Anterior</a>
+                   <a href="#toptop" class="siguienteyanterior tabTrabajar">Anterior</a>
               </div>
           </div>
       </div>
