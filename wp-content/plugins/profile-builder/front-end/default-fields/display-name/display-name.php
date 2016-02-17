@@ -36,7 +36,7 @@ function wppb_display_name_handler( $output, $form_location, $field, $user_id, $
         $public_display = array_map( 'trim', $public_display );
         $public_display = array_unique( $public_display );
 
-        $output = '<label for="display_name">'.$item_title.$error_mark.'</label>';
+        $output = '<label for="display_name">'."$item_title.$error_mark".'</label>';
         $output .= '<select class="default_field_display-name" name="display_name" id="display-name">';
 
             foreach( $public_display as $display_name_option ) {

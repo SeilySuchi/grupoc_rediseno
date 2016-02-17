@@ -274,7 +274,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 .login-submit{
   text-align: center !important;
 }
-input#wppb-recover-password-button, .login-submit input[type='submit'], .col-a input[type='submit'], .register-form input[type='submit']{
+input#edit_profile, input#wppb-recover-password-button, .login-submit input[type='submit'], .col-a input[type='submit'], .register-form input[type='submit']{
   font-family: chalet_comprime_sixty;
   text-transform: uppercase;
   text-align: center;
@@ -1445,6 +1445,14 @@ div#wppb-recover-password p {    font-size: 18px;    text-align: center;}
 div#wppb-recover-password ol{margin: 0 0 18px 16px}
 div#wppb-recover-password input#username_email{width: 100%}
 h3.recover_pass{    color: #1b238a;    font-size: 56px !important;    line-height: 36px;}
+
+
+/*editar tu cuenta*/
+.wppb-user-forms ul li, #wppb-login-wrap p, #select_user_to_edit_form p{width: 600px; margin: 0 auto !important}
+.wppb-edit-user p.form-submit{text-align: center;}
+select.default_field_display-name{margin: 19px 0 0 0 !important;}
+li#wppb-form-element-6 {    padding: 0px 0 14px 10px;}
+li#wppb-form-element-6 label {margin: 0 -7px 0 0;}
 /*============================ MEDIA QUERIES ============================*/
 
 @media only screen and (max-width: 1350px) {
@@ -1468,6 +1476,7 @@ h3.recover_pass{    color: #1b238a;    font-size: 56px !important;    line-heigh
 .spiffscemaco ul li img{max-width: 260px;}
 .botonspiffs a{width: 228px; padding: 7px 0 5px;margin: 192px 0 0 17px;}
 .botonspiffsnormal a{width: 228px; padding: 7px 0 5px;margin: 192px 0 0 17px;}
+
 }
 
 /* Tablets (portrait) | <800px */
