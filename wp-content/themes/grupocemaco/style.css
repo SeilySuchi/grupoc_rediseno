@@ -259,7 +259,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 }
 .greyback section p{
   margin-bottom: 10px;
-  font-family: 'Helvetica Neue';
+  font-family: 'arial';
   font-size: 14px;
 }
 .greyback section .col-b p{
@@ -274,7 +274,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 .login-submit{
   text-align: center !important;
 }
-.login-submit input[type='submit'], .col-a input[type='submit'], .register-form input[type='submit']{
+input#wppb-recover-password-button, .login-submit input[type='submit'], .col-a input[type='submit'], .register-form input[type='submit']{
   font-family: chalet_comprime_sixty;
   text-transform: uppercase;
   text-align: center;
@@ -292,6 +292,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
   border: 0;
   cursor: pointer;
 }
+
 .register-form input[type='submit']{
   float: right;
 }
@@ -1371,8 +1372,13 @@ td, th {
 	/*border: solid 1px red;*/
 }
 
-
-
+/*recover password styles*/
+div#wppb-recover-password{ width: 448px;    margin: 0 auto;}
+div#wppb-recover-password p.form-submit{text-align: center;}
+div#wppb-recover-password p {    font-size: 18px;    text-align: center;}
+div#wppb-recover-password ol{margin: 0 0 18px 16px}
+div#wppb-recover-password input#username_email{width: 100%}
+h3.recover_pass{    color: #1b238a;    font-size: 56px !important;    line-height: 36px;}
 /*============================ MEDIA QUERIES ============================*/
 
 @media only screen and (max-width: 1350px) {

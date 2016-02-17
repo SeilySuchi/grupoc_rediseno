@@ -108,15 +108,17 @@ function wppb_create_recover_password_form( $user, $post_data ){
 	?>
 	<form enctype="multipart/form-data" method="post" id="wppb-recover-password" class="wppb-user-forms" action="<?php echo esc_url( add_query_arg( 'submitted', 'yes', wppb_curpageurl() ) ); ?>">
 	<?php
-	$recover_notification = '<p>' . __( 'Please enter your username or email address.', 'profile-builder' );
-	$recover_notification .= '<br/>'.__( 'You will receive a link to create a new password via email.', 'profile-builder' ).'</p>';
+	$recover_notification = '<p>' . __( '¡No hay problema! Te ayudaremos a recuperarla', 'profile-builder' );
+	$recover_notification .= '<ol>'.'<li>'.__( 'Ingresa el correo electrónico asociado con tu cuenta de cemaco.com', 'profile-builder' ).'</li>';
+		$recover_notification .='<li>'.__( 'Haz clic en “continuar”', 'profile-builder' ).'</li>';
+		$recover_notification .='<li>'.__( 'Recibirás un correo con instrucciones para crear tu nueva contraseña', 'profile-builder' ).'</li>'.'</ol>';
 	echo apply_filters( 'wppb_recover_password_message1', $recover_notification );
 
 	$username_email = ( isset( $post_data['username_email'] ) ? $post_data['username_email'] : '' );
 
 	$recover_input = '<ul>
 			<li class="wppb-form-field wppb-username-email">
-				<label for="username_email">'.__( 'Username or E-mail', 'profile-builder' ).'</label>
+				<label for="username_email">'.__( 'Correo electrónico', 'profile-builder' ).'</label><br/>
 				<input class="text-input" name="username_email" type="text" id="username_email" value="'.trim( $username_email ).'" />
 			</li><!-- .username_email --></ul>';
 	echo apply_filters( 'wppb_recover_password_generate_password_input', $recover_input, trim( $username_email ) );
@@ -178,7 +180,7 @@ function wppb_front_end_password_recovery(){
 					$messageNo = $retVal [1];
 
 				}else{
-					$message = sprintf( __( 'Check your e-mail for the confirmation link.', 'profile-builder'), $postedData );
+					$message = sprintf( __( 'Porfavor revisa tu correo electrónico, te hemos enviado las instrucciones para que puedas recuperar tu contraseña.', 'profile-builder'), $postedData );
 					$message = apply_filters( 'wppb_recover_password_sent_message1', $message, $postedData );
 					$messageNo = '1';
 
