@@ -28,6 +28,68 @@
 <script src="wp-content/themes/grupocemaco/js/micv.js"></script>
 
 
+<!-- ----------- popup contrato ------------- -->
+<?php $usuario = get_current_user_id( );
+        $usuarioAceptoContrato =  $wpdb->get_results( "SELECT Acepto FROM gc_usuarios_contrato WHERE UserId=$usuario" );
+        if (count($usuarioAceptoContrato) == 1) { }else{ ?>
+        <!-- ---------Popup box---------- -->
+            <div id="light" class="white_content popupbox">
+            <form action="?page_id=85" method="post" id="formContrato">
+            <!-- ---------Contrato---------- -->
+                <div id="contrato">
+                    <h1>¡ Bienvenido a la Bolsa de Empleo !</h1>
+                       <p>Para empezar, debes aceptar nuestros terminos y condiciones</p>
+                        <div class="terms-container">
+                            Yo, el infrascrito aceptante, declaro bien enterado de la pena de los delitos de perjurio y falso testimonio
+                            que&nbsp;toda la información que proporcionaré para ingresar a la bolsa de trabajo de Grupo Cemaco es verídica.
+                            Así mismo, autorizo que la información  que suministre sea recopilada y cotejada   con la información que posean
+                            entidades públicas o privadas, así como  la generada por relaciones contractuales, crediticias o comerciales, o
+                            la que haya sido reportada a centrales de riesgo o burós de crédito.
+                            De tal cuenta todos  los datos que proporcionaré a Grupo CEMACO,  serán entregados de forma
+                            legítima y de manera voluntaria. Por lo tanto declaro que, Grupo Cemaco y las entidades que formen parte de
+                            su grupo empresarial, pueden utilizar mis datos personales a su total discreción, así como  recopilar y formar
+                            un registro con ella. <br>
+                            <br>
+                            Al mismo tiempo, yo el infrascrito aceptante, declaro que conozco que Grupo CEMACO implementará controles
+                            adecuados que permitan  la protección de la información cedida; sin embargo, manifiesto que Grupo CEMACO
+                            quedará  exento de toda responsabilidad por cualquier daño que se le ocasione, como resultado de causas
+                            constitutivas de caso fortuito o fuerza mayor, actos mal intencionados de terceros,  y cualquier otro acto,
+                            evento o circunstancia imprevisible o que siendo previsible sea insuperable, que tenga como resultado
+                            la fuga, robo o hurto de la información que he proporcionado.<br>
+                            <br>
+                            Por último, manifiesto que la ilegalidad, ineficacia, invalidez o nulidad de una o varias de las
+                            estipulaciones del presente, declaradas por autoridad competente, no afectarán la validez,
+                            eficacia o legalidad de las restantes estipulaciones.<br>
+                            <br>
+                        </div>
+                        <label class="checkbox aceptoterminos-main">
+                            <input type="checkbox" name="acepto-terminos[]" value="1" class="checkbox_contrato">
+	                    Acepto los terminos y condiciones</label><br>
+                      <a class="abienvenido botonazul blocked-button">Siguiente</a>
+                </div>
+            <!-- ---------Pagina Bienvenido---------- -->
+                <div id="bienvenido">
+                        <h1>¡Somos una gran familia y queremos que tú seas parte de ella!</h1>
+                        <section>
+                            Para que crezcas con nosotros nos interesa conocerte.</p>
+                            En esta primera parte del proceso, es importante que tengas cerca de ti, tus documentos personales,
+                            constancias de  estudio y laborales para rellenar el formulario.</p>
+                            Para que te puedas organizar, toma en cuenta que la duración estimada para llenar la solicitud
+                            es aproximadamente de unos 30 minutos. Si quieres comenzar la aplicación y volver en un momento
+                            posterior para completarla, elige la opción guardar, que está en la parte inferior de la aplicación.</p>
+                            Recuerda que siempre cuentas con la opción de volver a ingresar a la Bolsa de Empleo Cemaco, y continuar
+                            completando el formulario.</p>
+                        </section>
+                        <input type="submit" value="Comenzar" class="botonverde" >
+                </div>
+            </form>
+            </div>
+            <div id="fade" class="black_overlay"></div>
+<?php }; ?>
+
+
+
+
 <div class="maincontent">
   <?php get_header();	?>
 </div></div>
@@ -246,6 +308,28 @@ $("#formBolsa").validate({
         $(element).addClass('errorhighlight');
         $("#error-main-message").addClass("mostrar");
     }
+});
+
+/************* Popup Contrato *************/
+
+$('input.checkbox_contrato').val($(this).is(':checked'));
+
+$('input.checkbox_contrato').change(function() {
+    if($(this).is(":checked")) {
+        $("a.abienvenido").click(function(){
+            $("#contrato").hide();
+            $("#bienvenido").show();
+        });
+        $("a.abienvenido").removeClass("blocked-button");
+    }
+    else{
+        $("a.abienvenido").click(function(){
+           $("#bienvenido").hide();
+           $("#contrato").show();
+        });
+        $("a.abienvenido").addClass("blocked-button");
+    }
+    $('input.checkbox_contrato').val($(this).is(':checked'));
 });
 
 

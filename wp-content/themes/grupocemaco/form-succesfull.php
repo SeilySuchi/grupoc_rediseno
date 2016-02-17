@@ -143,6 +143,12 @@ for($i=0 ;$i < count($_POST['nombreReferencia']); $i++) {
 }
 ?>
 
-Guardado!
+<div class="guardado-completo">
+<h1>&#161;Aplicación completada!</h1>
+</div>
 
 <?php get_footer(); ?>
+
+	<script>
+window.location.href = document.referrer;
+	</script>
