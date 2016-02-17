@@ -1,25 +1,43 @@
+<?php
+// Obtiene datos guardados en la db
+$trabajos =  $wpdb->get_results( "SELECT * FROM gc_usuarios_trabajos WHERE UserId=$usuario" );
+$referencias =  $wpdb->get_results( "SELECT * FROM gc_usuarios_trabajos_refencias WHERE UserId=$usuario" );
+
+// Obtiene listas creadas de la db
+$empresas =  $wpdb->get_results( "SELECT Codigo, Empresa FROM gc_info_tipoindustrias" );
+?>
+
 <div class="tab-pane" id="tab3">
+            <div class="row-fluid">
               <div class="section">
                 <legend>Experiencia laboral</legend>
                 <em style="font-size: 12px;">Si aún no cuentas con experiencia laboral continua a la siguiente página.</em>
-                <label>Ingresa tres referencias</label>
 
-
+                <?php
+                $userTrabajos = (is_array($trabajos)&&count($trabajos)>0?$trabajos:array(0=>array()));
+                $i=0;
+                foreach($userTrabajos as $index => $trabajo){ ?>
                 <fieldset class="trabajos-adicionales">
-                  <div class="row-fluid">
+                  <div class="span1 text-center"><br />
+                    <i class="icon-asterisk"></i> </div>
+
                     <div class="span11">
 
                         <div class="section">
-
+                          <legend class="legend-trabajo">&nbsp;</legend>
                         <div class="row-fluid">
                           <div class="span7">
                             <label> Nombre de la Empresa </label>
-                            <input class="span12" name="" value="" type="text" />
+                            <input class="span12" name="nombreEmpresa[]" value="<?php echo $trabajo->t_NombreEmpresa ?>" type="text" />
                           </div>
                           <div class="span5">
+                            <?php $tipoIndustria = $trabajo->t_TipoIndustria ?>
                             <label>Tipo de Industria</label>
-                            <select name="" class="span12" >
-                              <option value=""></option>
+                            <select name="tipoIndustria[]" class="span12" >
+                              <option value="">-- Tipo de Industria --</option>
+                              <?php foreach ($empresas as $empresa): ?>
+                                <option value="<?php echo $empresa->Codigo ?>" <?php echo($tipoIndustria==$empresa->Codigo?'selected="selected"':'') ?>><?php echo $empresa->Empresa ?></option>
+                              <?php endforeach; ?>
                             </select>
                           </div>
                         </div>
@@ -27,76 +45,75 @@
                         <div class="row-fluid">
                           <div class="span7">
                             <label> Dirección </label>
-                            <input class="span12" maxlength="100" type="text" name="" value="" />
+                            <input class="span12" type="text" name="direccionTrabajo[]" value="<?php echo $trabajo->t_Direccion ?>" />
                           </div>
                           <div class="span5">
                             <label> Teléfono </label>
-                            <input class="span12 phoneGT" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' name=""  type="text" value="" />
+                            <input class="span12 phoneGT" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="telefonoTrabajo[]"  type="text" value="<?php echo $trabajo->t_Telefono ?>" />
                           </div>
                         </div>
 
                         <div class="row-fluid dateRanges">
                           <div class="span6">
                             <label> Puesto </label>
-                            <input class="span12" maxlength="100" name="" value="" type="text" />
+                            <input class="span12" maxlength="100" name="puestoTrabajo[]" value="<?php echo $trabajo->t_Puesto ?>" type="text" />
                           </div>
                           <div class="span3">
                             <label> <span class="required hidden">*</span><span>Fecha de Ingreso</span> </label>
-                            <input class="span12 require dateITA dateMin" maxlength="10" id="" name="" value="" type="text" />
+                            <input class="span12 require dateITA dateMin" maxlength="10" id="" name="fechaIngreso[]" value="<?php echo $trabajo->t_FechaIngreso ?>" type="text" />
                           </div>
                           <div class="span3">
                             <label> <span class="required hidden">*</span><span>Fecha de Egreso</span> </label>
                             <label class="checkbox inline" style="padding-top: 0;">
-                              <input class="estudioFechaFinal" name="" type="checkbox" checked="checked" value="hasta_fecha" />
+                              <input class="estudioFechaFinal" name="hasta_fecha_egreso[]" type="checkbox" value="hasta_fecha" <?php if ($trabajo->t_HastaLaFecha=='hasta_fecha'): ?>checked<?php endif; ?>/>
                               Hasta la Fecha
                             </label>
-                            <input class="span12 require dateITA dateMax" maxlength="10" datemin="" name=""  value="" type="text"  style="display: none;"  />
+                            <input class="span12 require dateITA dateMax" maxlength="10" datemin="" name="fechaEgreso[]"  value="<?php echo $trabajo->t_FechaEgreso ?>" type="text" <?php if ($trabajo->t_HastaLaFecha=='hasta_fecha'): ?>style="display:none"<?php endif; ?>/>
                           </div>
                         </div>
 
                         <div class="row-fluid">
                           <div class="span4">
                             <label> Promedio de Ingresos Mensuales <small>(en Quetzales)</small> </label>
-                            <input class="span12 number currency" maxlength="9" name="" value="" placeholder="000.00"  id="appendedPrependedInput" type="text">
+                            <input class="span12 number currency" maxlength="9" name="promedioIngresos[]" value="<?php echo $trabajo->t_PromedioIngresos ?>" placeholder="000.00"  id="appendedPrependedInput" type="text">
                           </div>
                           <div class="span4">
                             <label>Nombre de Jefe Inmediato </label>
-                            <input class="span12" maxlength="100" name="" value=""  type="text" />
+                            <input class="span12" maxlength="100" name="nombreJefeInmediato[]" value="<?php echo $trabajo->t_NombreJefeInmediato ?>"  type="text" />
                           </div>
                           <div class="span4">
                             <label>Teléfono de Jefe Inmediato </label>
-                            <input class="span12 phoneGT" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="" value=""  type="text" />
+                            <input class="span12 phoneGT" maxlength="8" minlength="8"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="telefonoJefeInmediato[]" value="<?php echo $trabajo->t_TelefonoJefeInmediato ?>"  type="text" />
                           </div>
                         </div>
 
                         <div class="row-fluid">
                           <div class="span12">
                             <label> <span class="required hidden">*</span><span>Responsabilidades del Puesto</span> </label>
-                            <textarea class="span12 require" maxlength="500" name="" ></textarea>
-                          </div>
-                        </div>
-
-                        <div class="row-fluid">
-                          <div class="span12">
-                            <label> Motivo de Retiro / Razón por la deseas cambiar de empleo </label>
-                            <textarea class="span12" maxlength="100" name="" ></textarea>
+                            <textarea class="span12 require" maxlength="500" name="responsavilidadesTrabajo[]" ><?php echo $trabajo->t_Responsabilidades ?></textarea>
                           </div>
                         </div>
 
                       </div>
                     </div>
-                  </div>
+
                 </fieldset>
+                <?php } ?>
 
                 <div class="row-fluid">
                   <div class="span12 text-center"> <a href="javascript:void(0)" id="addTrabajo" class="btn btn-primary">
                     <i class="icon-chevron-down icon-white"></i> Agregar Otro Trabajo</a> </div>
                 </div>
+                <br><br>
+
+              </div>
               </div>
               <h2>Coloca tus Referencias Personales (No Familiares)</h2>
               <em style="font-size: 12px;">Toma en cuenta que tu referencia recibirá una llamada telefónica o un correo electrónico para confirmar la información de contacto</em>
-              <label> Ingresa mínimo 3 referencias </label>
-
+              <?php
+              $userReferencias = (is_array($referencias)&&count($referencias)>0?$referencias:array(0=>array(),1=>array(),2=>array()));
+              $i=0;
+              foreach($userReferencias as $index => $referencia){ ?>
               <fieldset class="referencias-no-familiares">
                 <div class="section">
                   <div class="row-fluid">
@@ -109,25 +126,23 @@
                         <input type="hidden" name="" value="P" />
                         <div class="span2">
                           <label><i class="required">* </i>Nombre</label>
-                            <input class="span12 required-send" required="required" maxlength="70" name="PrimerNombre" value="" type="text" />
+                            <input class="span12 required-send" required="required" maxlength="70" name="nombreReferencia[]" value="<?php echo $referencia->tr_Nombre ?>" type="text" />
                         </div>
                         <div class="span2">
                           <label> Correo electrónico </label>
-                          <input class="span12" name=""  value="" type="email" />
+                          <input class="span12" name="correoReferencia[]" value="<?php echo $referencia->tr_Correo ?>" type="email" />
                         </div>
                         <div class="span2">
                           <label><i class="required">* </i>Teléfono</label>
-                          <input class="span12 phoneGT required-send" required="required" maxlength="8" minlength="8" name="Telefono"
-                                 onkeypress='return event.charCode >= 48 && event.charCode <= 57'
-				 value="" type="text" />
+                          <input class="span12 phoneGT required-send" required="required" maxlength="8" minlength="8" name="telefonoReferencia[]" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="<?php echo $referencia->tr_Telefono ?>" type="text" />
                         </div>
                         <div class="span2">
                           <label><i class="required">* </i>Ocupación</label>
-                          <input class="span12 required-send" required="required" maxlength="100" type="text" name="Ocupacion" value=""/>
+                          <input class="span12 required-send" required="required" maxlength="100" type="text" name="ocupacionReferencia[]" value="<?php echo $referencia->tr_Ocupacion ?>"/>
                         </div>
                         <div class="span3">
                           <label><i class="required">* </i>Tiempo de conocerlo (años)</label>
-                          <input class="span8 integer tiempo-anios required-send" min="0" required="required" maxlength="2" type="number" name="tiempo-anios" value=""/>
+                          <input class="span8 integer tiempo-anios required-send" min="0" max="40" required="required" minlength="1" maxlength="2" type="number" name="tiempoAniosReferencia[]" value="<?php echo $referencia->tr_TiempoConocerlos ?>"/>
                         </div>
                       </div>
                       <div class="row-fluid"> </div>
@@ -135,6 +150,9 @@
                   </div>
                 </div>
               </fieldset>
+              <?php } ?>
 
-              <div class="span12 text-center"> <a href="javascript:void(0)" class="btn btn-primary clone" id="addReferenciaNoFamiliar" type="button" > <i class="icon-chevron-down icon-white"></i> Agregar Otra Referencia</a> </div>
+              <div class="span9 text-center"> <a href="javascript:void(0)" class="btn btn-primary clone" id="addReferenciaNoFamiliar" type="button" >
+                <i class="icon-chevron-down icon-white"></i> Agregar Otra Referencia</a>
+              </div>
 </div>
