@@ -102,6 +102,45 @@ for($i=0 ;$i < count($_POST['idiomaNombre']); $i++) {
     'gc_usuarios_estudios_idioma', $insert_values
   );
 }
+
+// Page 3 - Experiencia Laboral
+for($i=0 ;$i < count($_POST['nombreEmpresa']); $i++) {
+  $insert_values = array(
+    'UserId' => $userID,
+    't_NombreEmpresa' => $_POST['nombreEmpresa'][$i],
+    't_TipoIndustria' => $_POST['tipoIndustria'][$i],
+    't_Direccion' => $_POST['direccionTrabajo'][$i],
+    't_Telefono' => $_POST['telefonoTrabajo'][$i],
+    't_Puesto' => $_POST['puestoTrabajo'][$i],
+    't_FechaIngreso' => $_POST['fechaIngreso'][$i],
+    't_HastaLaFecha' => $_POST['hasta_fecha_egreso'][$i],
+    't_FechaEgreso' => $_POST['fechaEgreso'][$i],
+    't_PromedioIngresos' => $_POST['promedioIngresos'][$i],
+    't_NombreJefeInmediato' => $_POST['nombreJefeInmediato'][$i],
+    't_TelefonoJefeInmediato' => $_POST['telefonoJefeInmediato'][$i],
+    't_Responsabilidades' => $_POST['responsavilidadesTrabajo'][$i],
+    't_FechaCreacion' => date( "{$date_format} {$time_format}", current_time( 'timestamp' ) )
+  );
+  $wpdb->insert(
+    'gc_usuarios_trabajos', $insert_values
+  );
+}
+
+// Page 3 - Referencias
+for($i=0 ;$i < count($_POST['nombreReferencia']); $i++) {
+  $insert_values = array(
+    'UserId' => $userID,
+    'tr_Nombre' => $_POST['nombreReferencia'][$i],
+    'tr_Correo' => $_POST['correoReferencia'][$i],
+    'tr_Telefono' => $_POST['telefonoReferencia'][$i],
+    'tr_Ocupacion' => $_POST['ocupacionReferencia'][$i],
+    'tr_TiempoConocerlos' => $_POST['tiempoAniosReferencia'][$i],
+    'tr_FechaCreacion' => date( "{$date_format} {$time_format}", current_time( 'timestamp' ) )
+  );
+  $wpdb->insert(
+    'gc_usuarios_trabajos_refencias', $insert_values
+  );
+}
 ?>
 
 Guardado!
